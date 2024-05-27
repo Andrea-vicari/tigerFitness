@@ -84,7 +84,7 @@ function UserProfile() {
     <div className="col" key={e._id}>
             <div className={bgType}>
                 <div className=''>
-                    <img src={`https://pulsefit-server.vercel.app/public/images/${e.image}`} style={{width:270}}/>
+                    <img src={`https://pulsefit-server.vercel.app/images/${e.image}`} style={{width:270}}/>
                 </div>
 
                 <div className="card-body">

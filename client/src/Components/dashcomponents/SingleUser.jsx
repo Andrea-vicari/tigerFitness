@@ -106,7 +106,7 @@ function SingleUser() {
               console.log(split)
               return(
             <div className="col-sm-4 py-3 border mb-2" key={e._id}>
-                <img src={`https://pulsefit-server.vercel.app/public/images/${e.image}`}  style={{width:70,marginBottom:20}}/>
+                <img src={`https://pulsefit-server.vercel.app/images/${e.image}`}  style={{width:70,marginBottom:20}}/>
                 <h3 className={textType}>Nome Utente: {e.username}</h3>
                 <p className={textType}>Data Iscrizione: {split[0]}</p>
 
