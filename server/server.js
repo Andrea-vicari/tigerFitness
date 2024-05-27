@@ -4,10 +4,13 @@ const mongoose = require('mongoose')
 require ('dotenv').config();
 const app = express();
 const cookieParser = require('cookie-parser')
+const path = require('path');
 
 
 app.use(express.json());
-app.use(express.static('public'))
+// app.use(express.static('public'))
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use(cors(
