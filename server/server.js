@@ -13,9 +13,7 @@ app.use(express.static('public'))
 app.use(cors(
     {
         // Use this in production (DO NOT PUT FINAL SLASH!!) //
-        // "https://fitness-center-j7uo.vercel.app"
-        // "https://pulsefit-client.vercel.app"
-        origin: ["http://localhost:4000/"],
+        origin: ["https://pulsefit-client.vercel.app/"],
         methods: ["POST", "GET", "PUT", "PATCH"],
         credentials: true
     }
