@@ -57,6 +57,15 @@ const loginUser = async (req, res)=> {
 
 }
 
+// See single
+const getSingleUser = async (req, res)=> {
+
+
+    const { id } = req.params;
+    const allUsers = await Users.find({"_id":id});
+    res.status(200).json(allUsers)
+}
+
 // See all
 const seeAllUser = async (req, res)=> {
 
@@ -150,5 +159,5 @@ const resetPassword = async (req, res)=> {
 
 
 module.exports = {
-    signupUser, loginUser, seeAllUser, forgotPassword, resetPassword
+    signupUser, loginUser, seeAllUser, forgotPassword, resetPassword, getSingleUser
 }

@@ -3,7 +3,7 @@ const multer = require("multer");
 const path = require('path');
 const Users = require('../models/UserModel');
 
-const {signupUser, loginUser, seeAllUser, forgotPassword, resetPassword} = require('../controllers/userController');
+const {signupUser, loginUser, seeAllUser, forgotPassword, resetPassword, getSingleUser} = require('../controllers/userController');
 
 
 const router = express.Router();
@@ -24,6 +24,9 @@ const uploadImage = multer({
 
 // See All
 router.get('/', seeAllUser)
+
+// See single user
+router.get('/:id', getSingleUser);
 
 // SignUp
 router.post('/signup', signupUser);
