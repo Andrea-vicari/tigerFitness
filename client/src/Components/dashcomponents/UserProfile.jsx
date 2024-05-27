@@ -20,7 +20,7 @@ function UserProfile() {
 
     const makeUSERCall = async () => {
         try {
-          const response = await fetch('https://pulsefit-nu.vercel.app/api/users/');
+          const response = await fetch('https://pulsefit-server.vercel.app/api/users/');
           const data = await response.json();
           setData(data)
 
@@ -55,7 +55,7 @@ function UserProfile() {
       const handleUpload = () =>{
         const formdata = new FormData()
         formdata.append('file', file)
-        axios.patch(`https://pulsefit-nu.vercel.app/api/users/${singleID}`, formdata)
+        axios.patch(`https://pulsefit-server.vercel.app/api/users/${singleID}`, formdata)
         .then(res=> res.status == 200 ? alert('Immagine caricata correttamente') : false)
          .catch(err => setError(err))
         console.log(file)
@@ -84,7 +84,7 @@ function UserProfile() {
     <div className="col" key={e._id}>
             <div className={bgType}>
                 <div className=''>
-                    <img src={`https://pulsefit-nu.vercel.app/images/${e.image}`} style={{width:270}}/>
+                    <img src={`https://pulsefit-server.vercel.app/images/${e.image}`} style={{width:270}}/>
                 </div>
 
                 <div className="card-body">

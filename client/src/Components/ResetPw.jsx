@@ -26,7 +26,7 @@ function ResetPw() {
       setEmail(email)
       const user = {email}
 
-      const response = await fetch('https://pulsefit-nu.vercel.app/api/users/forgot-password', {
+      const response = await fetch('https://pulsefit-server.vercel.app/api/users/forgot-password', {
 
           method: 'POST',
           body: JSON.stringify(user),

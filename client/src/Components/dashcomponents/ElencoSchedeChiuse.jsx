@@ -26,7 +26,7 @@ function ElencoSchedeChiuse(){
 
     const makeAPICall = async () => {
         try {
-          const response = await fetch(`https://pulsefit-nu.vercel.app/api/workouts/closed/closedWorks`, {mode:'cors'});
+          const response = await fetch(`https://pulsefit-server.vercel.app/api/workouts/closed/closedWorks`, {mode:'cors'});
           const data = await response.json();
           setData(data)
           console.log({ data})

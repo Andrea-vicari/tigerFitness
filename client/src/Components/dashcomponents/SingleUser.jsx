@@ -27,7 +27,7 @@ function SingleUser() {
 
   const makeAPICall = async () => {
     try {
-      const response = await fetch('https://pulsefit-nu.vercel.app/api/users/');
+      const response = await fetch('https://pulsefit-server.vercel.app/api/users/');
       const data = await response.json();
       setData(data)
 
@@ -58,7 +58,7 @@ function SingleUser() {
 
   const makeWORKOUTCall = async () => {
       try {
-        const response = await fetch(`https://pulsefit-nu.vercel.app/api/workouts/${userID}`, {mode:'cors'});
+        const response = await fetch(`https://pulsefit-server.vercel.app/api/workouts/${userID}`, {mode:'cors'});
         const work = await response.json();
         setWork(work)
 
@@ -106,7 +106,7 @@ function SingleUser() {
               console.log(split)
               return(
             <div className="col-sm-4 py-3 border mb-2" key={e._id}>
-                <img src={`https://pulsefit-nu.vercel.app/images/${e.image}`}  style={{width:70,marginBottom:20}}/>
+                <img src={`https://pulsefit-server.vercel.app/images/${e.image}`}  style={{width:70,marginBottom:20}}/>
                 <h3 className={textType}>Nome Utente: {e.username}</h3>
                 <p className={textType}>Data Iscrizione: {split[0]}</p>
 

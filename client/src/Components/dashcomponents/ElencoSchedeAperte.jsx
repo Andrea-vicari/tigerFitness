@@ -19,7 +19,7 @@ function ElencoSchedeAperte(){
 
     const makeAPICall = async () => {
         try {
-          const response = await fetch(`https://pulsefit-nu.vercel.app/api/workouts/${user.user_id}`, {mode:'cors'});
+          const response = await fetch(`https://pulsefit-server.vercel.app/api/workouts/${user.user_id}`, {mode:'cors'});
           const data = await response.json();
           setData(data)
           console.log({ data})

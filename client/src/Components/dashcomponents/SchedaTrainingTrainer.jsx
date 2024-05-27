@@ -20,7 +20,7 @@ function SchedaTrainingTrainer(){
 
     const makeAPICall = async () => {
         try {
-          const response = await fetch(`https://pulsefit-nu.vercel.app/api/workouts`, {mode:'cors'});
+          const response = await fetch(`https://pulsefit-server.vercel.app/api/workouts`, {mode:'cors'});
           const data = await response.json();
           setData(data)
 
@@ -68,7 +68,7 @@ function SchedaTrainingTrainer(){
 
         const workout = {status, dataChiusura}
 
-        const response = await fetch(`https://pulsefit-nu.vercel.app/api/workouts/${title}`, {
+        const response = await fetch(`https://pulsefit-server.vercel.app/api/workouts/${title}`, {
 
             method: 'PATCH',
             body: JSON.stringify(workout),
