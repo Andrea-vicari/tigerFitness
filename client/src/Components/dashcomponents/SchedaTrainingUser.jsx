@@ -45,6 +45,7 @@ function SchedaTraining(){
         element._id == title ? singleTraining.push(element) : terVar = true
       });
 
+      console.log(singleTraining)
       var registered = new Date().toDateString()
 
       const [error, setError] = useState(null)
