@@ -23,7 +23,7 @@ router.delete('/:id', deleteWorkout);
 router.patch('/:id', updateWorkOut);
 
 // Confirm
-router.patch('/:id', confirmWorkOut);
+router.patch('/close/:id', confirmWorkOut);
 
 
 
