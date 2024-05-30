@@ -202,7 +202,7 @@ function SchedaTraining(){
           </div>
           {/** FINE MODALE */}
 
-          {/** <Cronometro /> */}
+        <Cronometro />
 
 
             </div>
