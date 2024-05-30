@@ -6,9 +6,7 @@ import { useState } from 'react';
 
 function Cronometro() {
 
-  function openCrono(){
-    document.getElementById('cronometro').classList.add("d-block")
-  }
+
 
   function closeCrono(){
     document.getElementById('cronometro').classList.remove("d-block")
@@ -56,7 +54,7 @@ function Cronometro() {
                   <div className="modal-header d-flex justify-content-between">
                   <img src={logo} width="50"></img>
                     <h2 className="modal-title text-white mx-3">CRONOMETRO</h2>
-                    <i className='fa fa-times px-2 fs-4 text-danger' onClick={()=>closeCrono()}></i>Chiudi
+                    <i className='bi bi-times px-2 fs-4 text-danger' onClick={()=>closeCrono()}></i>Chiudi
 
                   </div>
                   <Timer time={time} />
