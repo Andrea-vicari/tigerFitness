@@ -58,7 +58,7 @@ function UserProfile() {
         axios.patch(`https://pulsefit-server.vercel.app/api/users/${singleID}`, formdata)
         .then(res=> res.status == 200 ? alert('Immagine caricata correttamente') : false)
          .catch(err => setError(err))
-        console.log(err)
+        console.log(error)
         console.log(file)
       }
 
