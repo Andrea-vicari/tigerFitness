@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import { UseAuthContext } from "../../hooks/UseAuthContext"
 import logo from "../../assets/images/pulseFit_logo.svg";
 import { useSelector } from 'react-redux'
-//import Cronometro from './Cronometro';
+import Cronometro from './Cronometro';
 
 function SchedaTraining(){
 
