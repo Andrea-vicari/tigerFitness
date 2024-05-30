@@ -44,10 +44,8 @@ router.post('/reset-password/:token', resetPassword)
 router.patch('/:id', uploadImage.single('file'), async (req, res)=>{
 
 
-
-
     if(req.file === undefined){
-        return res.status(400).json({error: "Ehiii!! Upload an image please"})
+        res.status(400).json({error: "Ehiii!! Upload an image please"})
     }
 
     const { id } = req.params;
