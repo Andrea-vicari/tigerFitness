@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "./Common/logo_fitness.svg";
+import logo from "../../assets/images/pulseFit_logo.svg"
 import Timer from './Timer';
 import TastiCrono from './TastiCrono';
 import { useState } from 'react';
