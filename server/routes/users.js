@@ -43,14 +43,18 @@ router.post('/reset-password/:token', resetPassword)
 // Upload user profile
 router.patch('/:id', uploadImage.single('file'), async (req, res)=>{
 
+    const { id } = req.params;
+    console.log(req.file.filename)
+    console.log(id)
+
 
     if(req.file === undefined){
         return res.status(400).json({error: "Ehiii!! Upload an image please"})
     }
 
-    const { id } = req.params;
-    console.log(req.file.filename)
-    console.log(id)
+    // const { id } = req.params;
+    // console.log(req.file.filename)
+    // console.log(id)
 
     const user = await Users.findByIdAndUpdate(id,{image:req.file.filename})
 
