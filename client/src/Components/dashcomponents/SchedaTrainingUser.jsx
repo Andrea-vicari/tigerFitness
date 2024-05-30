@@ -141,7 +141,7 @@ function SchedaTraining(){
                     </ul>
                     <button onClick={()=>openCrono()} className="btn btn-outline-danger d-inline-flex align-items-center px-4" type="button">
                         Cronometro
-                        <i className='fa fa-clock fs-1 ms-1'></i>
+                        <i className='bi bi-alarm fs-1 ms-1'></i>
                     </button>
                     <hr className="col-3 col-md-2 mb-3 w-100 text-danger"/>
                     <h3 className='text-white'>Eseguita il:</h3>
@@ -156,13 +156,13 @@ function SchedaTraining(){
 
                     <button onClick={(e)=>handleSubmit(e)} className="btn btn-success d-inline-flex align-items-center" type="button">
                     Allenamento Eseguito
-                    <i className='fa fa-thumbs-up ms-1'></i>
+                    <i className='bi bi-hand-thumbs-up ms-1'></i>
                     </button>
                     <hr className="col-3 col-md-2 w-100 text-danger"/>
 
                   <Link to="/elencoschedeapertepage" className="btn btn-outline-danger d-inline-flex align-items-center px-4" type="button">
                   Torna alla scheda
-                    <i className='fa fa-arrow-circle-left ms-1'></i>
+                    <i className='bi bi-arrow-left-circle ms-1'></i>
                   </Link>
 
                   </div>
@@ -193,7 +193,7 @@ function SchedaTraining(){
 
                   <div className="modal-footer">
                     <button type="button" onClick={()=>closeModal()} className="btn btn-danger align-items-center" data-bs-dismiss="modal" aria-label="Close">
-                    <i className='fa fa-times px-2 fs-4'></i>Chiudi
+                    <i className='bi bi-alarm px-2 fs-4'></i>Chiudi
                       </button>
                   </div>
                 </div>
