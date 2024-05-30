@@ -6,6 +6,10 @@ import { useState } from 'react';
 
 function Cronometro() {
 
+  function openCrono(){
+    document.getElementById('cronometro').classList.add("d-block")
+  }
+
   function closeCrono(){
     document.getElementById('cronometro').classList.remove("d-block")
   }
