@@ -51,7 +51,6 @@ function UserProfile() {
       const [error, setError] = useState(null)
       const [good, setGood] = useState(null)
 
-
       const handleUpload = () =>{
         const formdata = new FormData()
         formdata.append('file', file)

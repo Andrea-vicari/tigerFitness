@@ -19,6 +19,7 @@ app.use(cors(
         origin: ["https://pulsefit-client.vercel.app"],
         methods: ["POST", "GET", "PUT", "PATCH"],
         credentials: true
+
     }
 ));
 
