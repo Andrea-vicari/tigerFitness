@@ -51,10 +51,32 @@ function UserProfile() {
       const [error, setError] = useState(null)
       const [good, setGood] = useState(null)
 
+      {/*
+      updateUsersData() {
+
+  const { gender, phone, address, cityId, image, signature } = this.state;
+  const fd = new FormData();
+  fd.append('image', image, image.name);
+  fd.append('gender', gender);
+  fd.append('phone', phone);
+  fd.append('address', address);
+  fd.append('cityId', cityId);
+  fd.append('signature', signature);
+  fd.append('_method', 'PATCH');
+
+  axios.post(
+    `users/${this.props.id}`,
+    fd,
+    { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } }
+  );
+}
+    */}
+
       const handleUpload = () =>{
         const formdata = new FormData()
         formdata.append('file', file)
-        axios.patch(`https://pulsefit-server.vercel.app/api/users/${singleID}`, formdata)
+        axios.patch(`https://pulsefit-server.vercel.app/api/users/${singleID}`, formdata),
+        { headers: { 'Content-Type': 'application/json'}, }
         .then(res=> res.status == 200 ? alert('Immagine caricata correttamente') : false)
          .catch(err => setError(err))
         console.log(error.response.data)
