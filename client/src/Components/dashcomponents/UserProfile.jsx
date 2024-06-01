@@ -52,36 +52,7 @@ function UserProfile() {
       const [good, setGood] = useState(null)
 
 
-      const handleUpload = async (e) =>{
 
-        e.preventDefault()
-
-        // const workout = {registered}
-
-        const formdata = new FormData()
-        formdata.append('file', file)
-
-
-        const response = await fetch(`https://pulsefit-server.vercel.app/api/users/${singleID}`, {
-
-            method: 'PATCH',
-            body: JSON.stringify(formdata),
-            headers:{
-                'Content-Type': 'application/json'
-              }
-        })
-
-
-        const json = await response.json()
-
-        if(!response.ok){
-            setError(json.error)
-         }
-
-
-        }
-
-{/*
       const handleUpload = () =>{
         const formdata = new FormData()
         formdata.append('file', file)
@@ -93,7 +64,7 @@ function UserProfile() {
       }
 
 
-*/}
+
 
 
 
