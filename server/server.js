@@ -43,6 +43,6 @@ app.use(usersRoutes)
 
 app.use('/api/workouts', workoutsRoutes)
 app.use('/api/users', usersRoutes)
-app.use('/api/images', imagesRoutes)
+app.use('/api/images')
 
 
