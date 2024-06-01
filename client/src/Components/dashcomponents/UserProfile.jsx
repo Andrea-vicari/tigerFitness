@@ -51,17 +51,21 @@ function UserProfile() {
       const [error, setError] = useState(null)
       const [good, setGood] = useState(null)
 
-{/*
-      const handleSubmit = async (e) =>{
+
+      const handleUpload = async (e) =>{
 
         e.preventDefault()
 
-        const workout = {registered}
+        // const workout = {registered}
 
-        const response = await fetch(`https://pulsefit-server.vercel.app/api/workouts/close/${title}`, {
+        const formdata = new FormData()
+        formdata.append('file', file)
+
+
+        const response = await fetch(`https://pulsefit-server.vercel.app/api/users/${singleID}`, {
 
             method: 'PATCH',
-            body: JSON.stringify(workout),
+            body: JSON.stringify(formdata),
             headers:{
                 'Content-Type': 'application/json'
               }
@@ -74,25 +78,23 @@ function UserProfile() {
             setError(json.error)
          }
 
-        if(response.ok){
-            setDataEx(registered)
-            setError(null)
-            openModal()
-            console.log('Modificato', json)
-          }
 
         }
-*/}
 
+{/*
       const handleUpload = () =>{
         const formdata = new FormData()
         formdata.append('file', file)
         axios.patch(`https://pulsefit-server.vercel.app/api/users/${singleID}`, formdata)
         .then(res=> res.status == 200 ? alert('Immagine caricata correttamente') : false)
          .catch(err => setError(err))
-        console.log(err)
+        console.log(error)
         console.log(file)
       }
+
+
+*/}
+
 
 
       function closeModal(){
