@@ -54,6 +54,7 @@ function UserProfile() {
 
 
       const handleUpload = () =>{
+
         const formdata = new FormData()
         formdata.append('file', file)
         axios.patch(`https://pulsefit-server.vercel.app/api/users/${singleID}`, formdata)
