@@ -20,7 +20,7 @@ const userSchema = new mongoose.Schema({
         image:{
             type: String,
             required: false,
-            default: "blank-profile-picture.png"
+            default: "file_1715325537969.png"
         }
 
 },{ timestamps:true })
