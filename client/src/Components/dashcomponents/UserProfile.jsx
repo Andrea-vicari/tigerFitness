@@ -51,34 +51,46 @@ function UserProfile() {
       const [error, setError] = useState(null)
       const [good, setGood] = useState(null)
 
-      {/*
-      updateUsersData() {
+{/*
+      const handleSubmit = async (e) =>{
 
-  const { gender, phone, address, cityId, image, signature } = this.state;
-  const fd = new FormData();
-  fd.append('image', image, image.name);
-  fd.append('gender', gender);
-  fd.append('phone', phone);
-  fd.append('address', address);
-  fd.append('cityId', cityId);
-  fd.append('signature', signature);
-  fd.append('_method', 'PATCH');
+        e.preventDefault()
 
-  axios.post(
-    `users/${this.props.id}`,
-    fd,
-    { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } }
-  );
-}
-    */}
+        const workout = {registered}
+
+        const response = await fetch(`https://pulsefit-server.vercel.app/api/workouts/close/${title}`, {
+
+            method: 'PATCH',
+            body: JSON.stringify(workout),
+            headers:{
+                'Content-Type': 'application/json'
+              }
+        })
+
+
+        const json = await response.json()
+
+        if(!response.ok){
+            setError(json.error)
+         }
+
+        if(response.ok){
+            setDataEx(registered)
+            setError(null)
+            openModal()
+            console.log('Modificato', json)
+          }
+
+        }
+*/}
 
       const handleUpload = () =>{
         const formdata = new FormData()
         formdata.append('file', file)
-        axios.patch(`https://pulsefit-server.vercel.app/api/users/${singleID}`, formdata,{ headers: { 'Content-Type': 'application/json'}, })
+        axios.patch(`https://pulsefit-server.vercel.app/api/users/${singleID}`, formdata)
         .then(res=> res.status == 200 ? alert('Immagine caricata correttamente') : false)
          .catch(err => setError(err))
-        console.log(error.response.data)
+        console.log(err)
         console.log(file)
       }
 

@@ -30,6 +30,7 @@ function SchedaTraining(){
           console.log(e)
         }
       }
+
       useEffect(() => {
         if(user){
            makeAPICall();
@@ -78,7 +79,9 @@ function SchedaTraining(){
             setError(null)
             openModal()
             console.log('Modificato', json)
-          } }
+          }
+
+        }
 
 
     function closeModal(){
