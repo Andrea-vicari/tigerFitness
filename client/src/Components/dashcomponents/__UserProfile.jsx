@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import { useState, useEffect } from "react"
 import { useSelector } from 'react-redux'
 import { UseAuthContext } from "../../hooks/UseAuthContext"
-import { Link } from 'react-router-dom';
-import axios from 'axios'
+import { upload } from '@vercel/blob/client';
+import { useRef } from 'react';
 
 function UserProfile() {
 
@@ -51,22 +51,11 @@ function UserProfile() {
       const [error, setError] = useState(null)
       const [good, setGood] = useState(null)
 
+      const inputFileRef = useRef(null);
+      const [blob, setBlob] = useState(null);
 
 
-      const handleUpload = () =>{
-        const formdata = new FormData()
-        formdata.append('file', file)
-        axios.patch(`https://pulsefit-server.vercel.app/api/users/${singleID}`, formdata)
-        .then(res=> res.status == 200 ? alert('Immagine caricata correttamente') : false)
-         .catch(err => setError(err))
-        console.log(error)
-        console.log(file)
-      }
-
-
-
-
-
+      //const onChangePicture = useCallback
 
       function closeModal(){
         document.getElementById('modale_workout').classList.remove("d-block")
@@ -113,10 +102,31 @@ function UserProfile() {
                       </div>
                       <div className="modal-body py-3 text-white">
                       <div className="mb-3">
-                          <label htmlFor="formFile" className="form-label">Seleziona il file e clicca CARICA</label>
-                          <input className="form-control" type="file" required={true} id="formFile" onChange={(e)=> setFile(e.target.files[0])}/>
-                          <button className='btn btn-primary mt-3' onClick={handleUpload}>CARICA</button>
-                        {error && <p className='fs-3 text-danger mt-3'>Prego, Seleziona un immagine</p>}
+
+                         {/** Put here new component */}
+                         <form
+                            onSubmit={async (event) => {
+                              event.preventDefault();
+
+                              const file = inputFileRef.current.files[0];
+
+                              const newBlob = await upload(file.name, file, {
+                                access: 'public',
+                                handleUploadUrl: '/api/avatar/upload',
+                              });
+
+                              setBlob(newBlob);
+                            }}
+                          >
+                            <input name="file" ref={inputFileRef} type="file" required />
+                            <button type="submit">Upload</button>
+                          </form>
+                          {blob && (
+                            <div>
+                              Blob url: <a href={blob.url}>{blob.url}</a>
+                            </div>
+                          )}
+
 
                       </div>
 

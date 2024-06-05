@@ -9,6 +9,7 @@ const {signupUser, loginUser, seeAllUser, forgotPassword, resetPassword, getSing
 const router = express.Router();
 
 const storage = multer.diskStorage({
+
     destination: function(req, file, cb){
 
         return cb(null, "./public/images")
