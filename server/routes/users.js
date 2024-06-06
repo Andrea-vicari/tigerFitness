@@ -52,10 +52,10 @@ router.post('/:id', uploadImage.single('file'), async (req, res)=>{
 
     const { id } = req.params;
     console.log("OIBO'!!!")
-    console.log(req.file.filename)
+    // console.log(req.file.filename)
     console.log(id)
 
-    return
+
 
     // const user = await Users.findByIdAndUpdate(id,{image:req.file.filename})
     const user = await Users.create(id,{image:req.file.filename})
