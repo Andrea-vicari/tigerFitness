@@ -1,17 +1,12 @@
-const Images = require('../models/ImageModel');
-const mongoose = require('mongoose');
+const express = require('express');
 
-// Get all Images: OK
-const viewAllImages = async (req, res)=> {
 
-    console.log("Req from /")
-    console.log("View all Images")
+const {viewAllWorkouts} = require('../controllers/imageController');
 
-    const allImages = await Images.find({}).sort({createdAt: -1});
-    res.status(200).json(allImages)
+const router = express.Router();
 
-}
+router.get('/', viewAllWorkouts);
 
-module.exports = {
-    viewAllImages
-}
+
+
+module.exports = router
