@@ -13,3 +13,7 @@ const viewAllImages = async (req, res)=> {
     res.status(200).json(allImages)
 
 }
+
+module.exports = {
+    viewAllImages
+}
