@@ -1,11 +1,11 @@
 const express = require('express');
 
 
-const {viewAllWorkouts} = require('../controllers/imageController');
+const {viewAllImages} = require('../controllers/imageController');
 
 const router = express.Router();
 
-router.get('/', viewAllWorkouts);
+router.get('/', viewAllImages);
 
 
 
