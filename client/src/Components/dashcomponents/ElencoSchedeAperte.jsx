@@ -74,7 +74,7 @@ function ElencoSchedeAperte(){
                 <h3 className="text-white">Storico schede</h3>
                 <p>Elenco delle schede completate</p>
                 <ul className="list-unstyled">
-                <Link className="list-group-item list-group-item-action d-flex gap-3" to="/elencoschedechiuse">
+                <Link className="list-group-item list-group-item-action d-flex gap-3" to="/elencoschedechiusepage">
                 <i className="bi bi-arrow-right-circle-fill fs-4 text-danger"></i>
                     <div className="d-flex gap-2 w-100 justify-content-between">
                           <div>
