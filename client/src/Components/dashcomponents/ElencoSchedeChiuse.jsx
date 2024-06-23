@@ -56,7 +56,7 @@ function ElencoSchedeChiuse(){
 
         <div className="container-fluid pt-5 mt-5">
             <div className="col-md-6 pb-4 mx-auto">
-            <div className="bg-dark p-3 rounded w-100 text-white">
+            <div className={"p-3 rounded w-100" + " " + textType + " " + bgType}>
                   <h3 className="text-white">Schede Completate</h3>
                   <hr className="col-3 col-md-2 mb-3"/>
 
