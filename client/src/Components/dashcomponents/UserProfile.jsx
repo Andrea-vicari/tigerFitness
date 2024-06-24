@@ -57,7 +57,7 @@ function UserProfile() {
 
         const formdata = new FormData()
         formdata.append('file', file)
-        axios.post(`https://pulsefit-server.vercel.app/api/users/${singleID}`, formdata)
+        axios.patch(`https://pulsefit-server.vercel.app/api/users/${singleID}`, formdata)
         .then(res=> res.status == 200 ? alert('Immagine caricata correttamente') : false)
          .catch(err => setError(err))
         console.log(error)
