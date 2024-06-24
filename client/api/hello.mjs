@@ -1,8 +1,5 @@
 
 
-export const config = {
-  runtime: 'nodejs', // this is a pre-requisite
-};
 
 export default function handler(request, response) {
   const { name = 'World' } = request.query;
