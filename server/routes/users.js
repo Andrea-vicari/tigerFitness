@@ -42,7 +42,7 @@ router.post('/forgot-password', forgotPassword)
 router.post('/reset-password/:token', resetPassword)
 
 // Upload user profile
-router.post('/:id', uploadImage.single('file'), async (req, res)=>{
+router.patch('/:id', uploadImage.single('file'), async (req, res)=>{
 
     /*
     if(req.file === undefined){
