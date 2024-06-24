@@ -1,3 +1,8 @@
-export function GET(request) {
-    return new Response(`Hello from ${process.env.VERCEL_REGION}`);
-  }
+export const config = {
+  supportsResponseStreaming: true,
+};
+
+export default function handler(request, response) {
+  const { name = 'World' } = request.query;
+  return response.send(`Hello ${name}!`);
+}
