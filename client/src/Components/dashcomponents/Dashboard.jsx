@@ -56,19 +56,18 @@ function Dashboard() {
                             </div>}
                             {/** Below only for ADMINS */}
                             {role == "admin" &&
-                            <div className='card mb-3'>
-                            <div className="row g-0">
-                                <div className="col-md-4">
-                                <i className='bi bi-people-fill fs-1'></i>
+                            <div className="col-sm-4 mb-3" key={e._id}>
+                                <div className="list-group">
+                                <Link to={`/singleuser/${e._id}`} state={e._id} className="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
+                                <img src={userlistImg}  style={{width:70}}/>
+                                    <div className="d-flex gap-2 w-100 justify-content-between">
+                                    <div>
+
+                                        <h4 className="mb-0">{e.username}</h4>
+                                    </div>
+                                    </div>
+                                </Link>
                                 </div>
-                                <div className="col-md-8">
-                                <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
-                                    <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p className="card-text"><small className="text-body-secondary">Last updated 3 mins ago</small></p>
-                                </div>
-                                </div>
-                            </div>
                             </div>
                             }
                             {/** Below only for USERS */}
