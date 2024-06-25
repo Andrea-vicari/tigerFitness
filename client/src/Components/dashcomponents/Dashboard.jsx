@@ -78,9 +78,9 @@ function Dashboard() {
                                             <img src={newTrainingImg} className="img-fluid rounded mb-2"/>
                                             </div>
                                             <div className="col-md-6">
-                                                <h2>Aggiungi Training</h2>
+                                                <h2>Aggiungi Workout</h2>
                                                 <p>Vedi l'elenco completo degli utenti da dove potrai vedere/aggiungere i workout di ogni singolo utente </p>
-                                                <Link to="/userslist" type="button" className="btn btn-sm btn-outline-primary">Vai alla lista utenti</Link>
+                                                <Link to="/singletraining" type="button" className="btn btn-sm btn-outline-primary">Aggiungi Workout</Link>
                                             </div>
                                     </div>
 
