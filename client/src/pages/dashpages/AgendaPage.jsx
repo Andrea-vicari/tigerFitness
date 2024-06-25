@@ -1,8 +1,15 @@
 import React from 'react'
+import Footer from '../../Components/Common/Footer';
+import Navbar from '../../Components/Common/NavbarFixedTop';
+import Agenda from '../../Components/dashcomponents/Agenda';
 
 function AgendaPage() {
   return (
-    <div>AgendaPage</div>
+    <>
+    <Navbar />
+    <Agenda />
+    <Footer />
+    </>
   )
 }
 
