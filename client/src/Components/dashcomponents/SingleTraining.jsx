@@ -21,6 +21,7 @@ const SingleTraining = () =>{
   console.log(today)
 
     const [data, setData] = useState([]);
+
     const [title, setTitle] = useState('')
     const [loads, setLoad] = useState('')
     const [rest, setRest] = useState('')
@@ -78,8 +79,8 @@ const SingleTraining = () =>{
           const response = await fetch('https://pulsefit-server.vercel.app/api/users/');
           const data = await response.json();
           setData(data)
-
-          console.log({ data})
+          console.log("TUUCA")
+          console.log(data)
         }
         catch (e) {
           console.log(e)
