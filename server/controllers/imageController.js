@@ -16,6 +16,24 @@ const viewAllImages = async (req, res)=> {
 
 }
 
+const uploadImages = async (req, res)=> {
+
+    const {image} = req.body
+
+
+    // Add doc to the Mongo DB
+
+    try{
+        const image = await Images.create({image})
+        res.status(200).json(image)
+    }
+
+    catch(error){
+        res.status(400).json({error: error.message})
+    }
+
+}
+
 module.exports = {
-    viewAllImages
+    viewAllImages, uploadImages
 }
