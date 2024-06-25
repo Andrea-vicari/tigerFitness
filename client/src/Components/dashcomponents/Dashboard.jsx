@@ -56,7 +56,7 @@ function Dashboard() {
                             </div>}
                             {/** Below only for ADMINS */}
                             {role == "admin" &&
-                            <div className="col-sm-4 mb-3" key={e._id}>
+                            <div className="col-sm-4 mb-3">
                                 <div className="list-group">
                                 <Link to={`/singleuser/${e._id}`} state={e._id} className="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
                                 <img src={userlistImg}  style={{width:70}}/>
