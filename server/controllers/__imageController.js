@@ -2,6 +2,7 @@
 const Images = require('../models/ImageModel');
 const mongoose = require('mongoose');
 
+var fs = require('fs');
 var multer = require('multer');
 
 
