@@ -59,7 +59,7 @@ function Dashboard() {
                             <div className='card mb-3'>
                             <div className="row g-0">
                                 <div className="col-md-4">
-                                <img src={userlistImg} className="img-fluid rounded-start" alt="..."/>
+                                <i className='bi bi-people-fill fs-1'></i>
                                 </div>
                                 <div className="col-md-8">
                                 <div className="card-body">
