@@ -6,15 +6,26 @@ const bookingsSchema = new mongoose.Schema({
         type: String,
         required: false
     },
-    data:{},
-    orario:{},
+    giorno:{
+        type:Number
+    },
+    mese:{
+        type:String
+    },
+    anno:{
+        type:Number
+    },
+
+    ora:{
+        type:Number
+    },
+    minuto:{
+        type:Number
+    },
     status:{
         type: String,
-        default:"IN APPROVAZIONE",
-        required: false
+        default:"IN APPROVAZIONE"
     }
-
-
 
 },{ timestamps:true })
 
