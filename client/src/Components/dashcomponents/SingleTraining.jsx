@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/images/pulseFit_logo.svg";
 import { useSelector } from 'react-redux'
 
-var userID
+
 
 const SingleTraining = () =>{
 
@@ -14,16 +14,13 @@ const SingleTraining = () =>{
   themeType == "ligth" ? bgType = "bg-light" : bgType = "bg-dark"
   themeType == "ligth" ? textType = "" : textType = "text-bg-dark"
 
-  let clicked = useLocation();
-
-  userID = clicked.state
 
 
   var today = new Date().toDateString()
 
   console.log(today)
 
-
+    const [data, setData] = useState([]);
     const [title, setTitle] = useState('')
     const [loads, setLoad] = useState('')
     const [rest, setRest] = useState('')
@@ -75,6 +72,25 @@ const SingleTraining = () =>{
 
 
     }
+
+    const makeAPICall = async () => {
+        try {
+          const response = await fetch('https://pulsefit-server.vercel.app/api/users/');
+          const data = await response.json();
+          setData(data)
+
+          console.log({ data})
+        }
+        catch (e) {
+          console.log(e)
+        }
+      }
+      useEffect(() => {
+        if(user){
+           makeAPICall();
+        }
+
+      }, [user])
 
     function closeModal(){
       document.getElementById('modale_workout').classList.remove("d-block")
