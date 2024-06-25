@@ -1,4 +1,4 @@
-const Bookings = require('../models/bookingModel');
+const Bookings = require('../models/BookingModel');
 const mongoose = require('mongoose');
 
 // Get all Bookings: OK
