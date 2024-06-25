@@ -46,30 +46,16 @@ function Dashboard() {
                             <div className="col-md-9 mt-5">
 
                                 <div className="p-5 bg-body-tertiary border rounded-3">
-                                <div className="col-md-4">
-                                    <img src={userlistImg} className="img-fluid rounded-start" alt="..."/>
-                                    </div>
+                                <div className="col-md-4 d-flex">
+                                    <img src={userlistImg} className="img-fluid rounded-start"/>
+
                                     <h2>Lista Utenti</h2>
                                     <p>Vedi l'elenco completo degli utenti da dove potrai vedere/aggiungere i workout di ogni singolo utente </p>
                                     <Link to="/userslist" type="button" className="btn btn-sm btn-outline-primary">Vai alla lista utenti</Link>
+                                    </div>
                                 </div>
                             </div>}
-                            {/** Below only for ADMINS */}
-                            {role == "admin" &&
-                            <div className="col-sm-4 mb-3">
-                                <div className="list-group">
 
-                                <img src={userlistImg}  style={{width:70}}/>
-                                    <div className="d-flex gap-2 w-100 justify-content-between">
-                                    <div>
-
-                                    <Link to="/userslist" type="button" className="btn btn-sm btn-outline-primary">Vai alla lista utenti</Link>
-                                    </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            }
                             {/** Below only for USERS */}
                             {role == "user" &&
                             <div className="col-md-9 mt-5">
