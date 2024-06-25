@@ -7,20 +7,24 @@ const bookingsSchema = new mongoose.Schema({
         required: false
     },
     giorno:{
-        type:Number
+        type:Number,
+        required: true
     },
     mese:{
-        type:String
+        type:String,
+        required: true
     },
     anno:{
-        type:Number
+        type:Number,
+        required: true
     },
-
     ora:{
-        type:Number
+        type:Number,
+        required: true
     },
     minuto:{
-        type:Number
+        type:Number,
+        required: true
     },
     status:{
         type: String,
