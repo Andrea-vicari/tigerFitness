@@ -58,15 +58,15 @@ function Dashboard() {
                             {role == "admin" &&
                             <div className="col-sm-4 mb-3">
                                 <div className="list-group">
-                                <Link to={`/singleuser/${e._id}`} state={e._id} className="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
+
                                 <img src={userlistImg}  style={{width:70}}/>
                                     <div className="d-flex gap-2 w-100 justify-content-between">
                                     <div>
 
-                                        <h4 className="mb-0">{e.username}</h4>
+                                    <Link to="/userslist" type="button" className="btn btn-sm btn-outline-primary">Vai alla lista utenti</Link>
                                     </div>
                                     </div>
-                                </Link>
+
                                 </div>
                             </div>
                             }
