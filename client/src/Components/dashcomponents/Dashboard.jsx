@@ -55,6 +55,23 @@ function Dashboard() {
                                     </div>
                                 </div>
                             </div>}
+                                {/** Below only for ADMINS */}
+                                {role == "admin" &&
+
+                                <div className="col-md-9 mt-5">
+
+                                    <div className="p-5 bg-body-tertiary border rounded-3">
+                                    <div className="col-md-4 d-flex">
+                                        <img src={userlistImg} className="img-fluid rounded-start"/>
+
+                                        <div className="d-flex">
+                                                <div className="p-2 flex-grow-1">Flex item</div>
+                                                <div className="p-2">Flex item</div>
+                                                <div className="p-2">Third flex item</div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>}
 
                             {/** Below only for USERS */}
                             {role == "user" &&
