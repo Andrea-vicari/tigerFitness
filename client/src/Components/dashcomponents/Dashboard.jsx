@@ -59,13 +59,26 @@ function Dashboard() {
                                     </div>
 
                                 </div>
-                                <div className="p-3 bg-body-tertiary border rounded-3">
+                                <div className="p-3 bg-body-tertiary border rounded-3 mt-2">
                                     <div className='row'>
                                         <div className="col-md-3">
                                             <img src={elencoPren} className="img-fluid rounded-start"/>
                                             </div>
                                             <div className="col-md-6">
                                                 <h2>Elenco Prenotazioni</h2>
+                                                <p>Vedi l'elenco completo degli utenti da dove potrai vedere/aggiungere i workout di ogni singolo utente </p>
+                                                <Link to="/userslist" type="button" className="btn btn-sm btn-outline-primary">Vai alla lista utenti</Link>
+                                            </div>
+                                    </div>
+
+                                </div>
+                                <div className="p-3 bg-body-tertiary border rounded-3 mt-2">
+                                    <div className='row'>
+                                        <div className="col-md-3">
+                                            <img src={newTrainingImg} className="img-fluid rounded-start"/>
+                                            </div>
+                                            <div className="col-md-6">
+                                                <h2>Aggiungi Training</h2>
                                                 <p>Vedi l'elenco completo degli utenti da dove potrai vedere/aggiungere i workout di ogni singolo utente </p>
                                                 <Link to="/userslist" type="button" className="btn btn-sm btn-outline-primary">Vai alla lista utenti</Link>
                                             </div>
