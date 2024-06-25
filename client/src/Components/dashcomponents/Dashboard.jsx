@@ -46,14 +46,17 @@ function Dashboard() {
                             <div className="col-md-9 mt-5">
 
                                 <div className="p-3 bg-body-tertiary border rounded-3">
-                                <div className="col-md-3">
-                                <img src={userlistImg} className="img-fluid rounded-start"/>
+                                <div className='row'>
+                                    <div className="col-md-3">
+                                        <img src={userlistImg} className="img-fluid rounded-start"/>
+                                        </div>
+                                        <div className="col-md-6">
+                                            <h2 className='flex-fill'>Lista Utenti</h2>
+                                            <p className='flex-fill'>Vedi l'elenco completo degli utenti da dove potrai vedere/aggiungere i workout di ogni singolo utente </p>
+                                            <Link to="/userslist" type="button" className="flex-fill btn btn-sm btn-outline-primary">Vai alla lista utenti</Link>
+                                        </div>
                                 </div>
-                                <div className="col-md-6">
-                                    <h2 className='flex-fill'>Lista Utenti</h2>
-                                    <p className='flex-fill'>Vedi l'elenco completo degli utenti da dove potrai vedere/aggiungere i workout di ogni singolo utente </p>
-                                    <Link to="/userslist" type="button" className="flex-fill btn btn-sm btn-outline-primary">Vai alla lista utenti</Link>
-                                </div>
+
                                 </div>
                             </div>}
 
