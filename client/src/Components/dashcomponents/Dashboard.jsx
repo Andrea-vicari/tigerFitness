@@ -49,7 +49,7 @@ function Dashboard() {
                                 <div className="p-3 bg-body-tertiary border rounded-3">
                                     <div className='row'>
                                         <div className="col-md-3">
-                                            <img src={userlistImg} className="img-fluid rounded-start"/>
+                                            <img src={userlistImg} className="img-fluid rounded mb-2"/>
                                             </div>
                                             <div className="col-md-6">
                                                 <h2>Lista Utenti</h2>
@@ -62,7 +62,7 @@ function Dashboard() {
                                 <div className="p-3 bg-body-tertiary border rounded-3 mt-2">
                                     <div className='row'>
                                         <div className="col-md-3">
-                                            <img src={elencoPren} className="img-fluid rounded-start"/>
+                                            <img src={elencoPren} className="img-fluid rounded mb-2"/>
                                             </div>
                                             <div className="col-md-6">
                                                 <h2>Elenco Prenotazioni</h2>
@@ -75,7 +75,7 @@ function Dashboard() {
                                 <div className="p-3 bg-body-tertiary border rounded-3 mt-2">
                                     <div className='row'>
                                         <div className="col-md-3">
-                                            <img src={newTrainingImg} className="img-fluid rounded-start"/>
+                                            <img src={newTrainingImg} className="img-fluid rounded mb-2"/>
                                             </div>
                                             <div className="col-md-6">
                                                 <h2>Aggiungi Training</h2>
