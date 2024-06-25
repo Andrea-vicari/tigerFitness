@@ -2,6 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { UseAuthContext } from "../../hooks/UseAuthContext";
 import userlistImg from '../../assets/images/UserList.jpg'
+import elencoPren from '../../assets/images/elencoPrenotazioni_640.jpg'
 import newTrainingImg from '../../assets/images/NewTraining.jpg'
 import { Link } from 'react-router-dom';
 import UserProfile from '../dashcomponents/UserProfile'
@@ -51,8 +52,8 @@ function Dashboard() {
                                             <img src={userlistImg} className="img-fluid rounded-start"/>
                                             </div>
                                             <div className="col-md-6">
-                                                <h2 className='flex-fill'>Lista Utenti</h2>
-                                                <p className='flex-fill'>Vedi l'elenco completo degli utenti da dove potrai vedere/aggiungere i workout di ogni singolo utente </p>
+                                                <h2>Lista Utenti</h2>
+                                                <p>Vedi l'elenco completo degli utenti da dove potrai vedere/aggiungere i workout di ogni singolo utente </p>
                                                 <Link to="/userslist" type="button" className="btn btn-sm btn-outline-primary">Vai alla lista utenti</Link>
                                             </div>
                                     </div>
@@ -61,11 +62,11 @@ function Dashboard() {
                                 <div className="p-3 bg-body-tertiary border rounded-3">
                                     <div className='row'>
                                         <div className="col-md-3">
-                                            <img src={userlistImg} className="img-fluid rounded-start"/>
+                                            <img src={elencoPren} className="img-fluid rounded-start"/>
                                             </div>
                                             <div className="col-md-6">
-                                                <h2 className='flex-fill'>Lista Utenti</h2>
-                                                <p className='flex-fill'>Vedi l'elenco completo degli utenti da dove potrai vedere/aggiungere i workout di ogni singolo utente </p>
+                                                <h2>Elenco Prenotazioni</h2>
+                                                <p>Vedi l'elenco completo degli utenti da dove potrai vedere/aggiungere i workout di ogni singolo utente </p>
                                                 <Link to="/userslist" type="button" className="btn btn-sm btn-outline-primary">Vai alla lista utenti</Link>
                                             </div>
                                     </div>
