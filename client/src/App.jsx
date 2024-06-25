@@ -30,6 +30,7 @@ import SchedaTrainerPage from './pages/dashpages/SchedaTrainerPage';
 import SchedaUtentePage from './pages/dashpages/SchedaUtentePage';
 import ElencoSchedeApertePage from './pages/dashpages/ElencoSchedeApertePage';
 import ElencoSchedeChiusePage from './pages/dashpages/ElencoSchedeChiusePage';
+import AgendaPage from './pages/dashpages/AgendaPage';
 import NutrizionePage from './pages/NutrizionePage';
 function App() {
 
@@ -75,6 +76,7 @@ function App() {
             <Route path="/elencoschedeapertepage" element={user ? <ElencoSchedeApertePage /> : <Navigate to="/login"/>} />
             <Route path="/elencoschedechiusepage" element={user ? <ElencoSchedeChiusePage /> : <Navigate to="/login"/>} />
             <Route path="/userslist" element={<UsersList />} />
+            <Route path="/agenda" element={<AgendaPage />} />
             <Route path="/resetpassword" element={<ResetPassword />} />
             <Route path="/sentpassword" element={<SentPassword />} />
             <Route path="/newpassword/:token" element={<NewPassword />} />
