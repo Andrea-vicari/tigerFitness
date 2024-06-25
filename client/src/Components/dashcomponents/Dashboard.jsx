@@ -43,6 +43,9 @@ function Dashboard() {
                             {/** Below only for ADMINS */}
                             {role == "admin" &&
                             <div className="col-md-9 mt-5">
+                                <div class="col-md-4">
+                                    <img src={userlistImg} class="img-fluid rounded-start" alt="..."/>
+                                    </div>
                                 <div className="p-5 bg-body-tertiary border rounded-3">
                                     <h2>Lista Utenti</h2>
                                     <p>Vedi l'elenco completo degli utenti da dove potrai vedere/aggiungere i workout di ogni singolo utente </p>
