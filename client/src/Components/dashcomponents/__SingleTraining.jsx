@@ -80,7 +80,7 @@ const SingleTraining = () =>{
           const data = await response.json();
           setData(data)
           console.log("TUUCA")
-          console.log(data)
+          console.log({data})
         }
         catch (e) {
           console.log(e)
@@ -109,6 +109,9 @@ const SingleTraining = () =>{
           <div className={"p-3 rounded w-100 " + bgType + textType}>
             <h2 className={textType}>Inserisci WorkOut</h2>
             <form onSubmit={handleSubmit}>
+                <div className="mb-3">
+
+                </div>
 
               <div className="mb-3">
                 <label htmlFor="title">

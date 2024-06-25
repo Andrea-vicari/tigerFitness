@@ -80,7 +80,7 @@ function Dashboard() {
                                             <div className="col-md-6">
                                                 <h2>Aggiungi Workout</h2>
                                                 <p>Vedi l'elenco completo degli utenti da dove potrai vedere/aggiungere i workout di ogni singolo utente </p>
-                                                <Link to="/singletraining" type="button" className="btn btn-sm btn-outline-primary">Aggiungi Workout</Link>
+                                                <Link to="/userslist" type="button" className="btn btn-sm btn-outline-primary">Aggiungi Workout</Link>
                                             </div>
                                     </div>
 
