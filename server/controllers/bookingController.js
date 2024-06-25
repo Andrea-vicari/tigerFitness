@@ -12,6 +12,27 @@ const viewAllBookings = async (req, res)=> {
 
 }
 
+// Create a NEW booking:
+const createNewBooking = async (req, res)=> {
+
+
+    const {user, giorno, mese, anno, ora, minuto } = req.body
+
+
+    // Add doc to the Mongo DB
+
+    try{
+        const booking = await Bookings.create({user, giorno, mese, anno, ora, minuto})
+        res.status(200).json(booking)
+    }
+
+    catch(error){
+        res.status(400).json({error: error.message})
+    }
+
+}
+
 module.exports = {
-    viewAllBookings
+    viewAllBookings,
+    createNewBooking
 }
