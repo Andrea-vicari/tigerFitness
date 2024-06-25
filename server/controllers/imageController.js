@@ -24,8 +24,8 @@ const uploadImages = async (req, res)=> {
     // Add doc to the Mongo DB
 
     try{
-        const image = await Images.create({image})
-        res.status(200).json(image)
+        const Image = await Images.create({image})
+        res.status(200).json(Image)
     }
 
     catch(error){
