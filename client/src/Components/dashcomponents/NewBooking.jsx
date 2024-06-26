@@ -92,7 +92,7 @@ const NewBooking = () =>{
 
         <div className="d-flex justify-content-center align-items-center py-5">
           <div className={"p-3 rounded w-100 " + bgType + textType}>
-            <h2 className={textType}>Inserisci WorkOut</h2>
+            <h2 className={textType}>Prenota la tua prossima lezione</h2>
             <form onSubmit={handleSubmit}>
 
               <div className="mb-3">

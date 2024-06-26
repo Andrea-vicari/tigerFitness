@@ -105,7 +105,7 @@ function Dashboard() {
                             {/** Below only for USERS */}
                             {role == "user" &&
                             <div className="col-md-9 mt-5">
-                             <div className="p-3 bg-body-tertiary border rounded-3">
+                             <div className="p-3 bg-body-tertiary border rounded-3 mb-2">
                                     <div className='row'>
                                         <div className="col-md-3">
                                             <img src={newTrainingImg} className="img-fluid rounded mb-2"/>
