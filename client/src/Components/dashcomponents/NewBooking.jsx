@@ -22,7 +22,7 @@ const NewBooking = () =>{
 
 
   const {user} = UseAuthContext()
-  userID = user.userID
+  userID = user
 
   console.log("userID===")
   console.log(userID)
