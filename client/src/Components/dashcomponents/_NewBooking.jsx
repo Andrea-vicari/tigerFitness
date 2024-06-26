@@ -29,10 +29,6 @@ const NewBooking = () =>{
 
   var today = new Date().toDateString()
 
-  const monthsList = [
-    "Gennaio","Febbraio","Marzo","Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"
-];
-
   console.log(today)
     const [utente, setUser] = useState('')
     const [giorno, setGiorno] = useState('')
@@ -108,7 +104,6 @@ const NewBooking = () =>{
                 <label htmlFor="title">
                   <strong>Giorno</strong>
                 </label>
-
                 <input
                   type="number"
                   placeholder="Scegli giorno"
@@ -126,17 +121,17 @@ const NewBooking = () =>{
               <label htmlFor="title">
                   <strong>Mese</strong>
                 </label>
-
-                <select onChange={(e) => setMese(e.target.value)}>
-                <option>Please choose one option</option>
-                {monthsList.map((option, index) => {
-                    return (
-                        <option key={index}>
-                            {option}
-                        </option>
-                    );
-                })}
-                </select>
+                <input
+                  type="number"
+                  placeholder="Scegli mese"
+                  autoComplete="off"
+                  name="text"
+                  className="form-control rounded-0"
+                  min="0" max="12" step="1"
+                  onChange={(e) => setMese(e.target.value)}
+                  value={mese}
+                  required={true}
+                />
               </div>
 
               <div className="mb-3">
