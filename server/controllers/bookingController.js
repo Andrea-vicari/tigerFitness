@@ -35,9 +35,11 @@ const createNewBooking = async (req, res)=> {
 const viewSingleBooking = async (req, res) => {
     console.log("======")
     console.log("Req from /id")
-    console.log("View single workouts")
+    console.log("View single booking")
 
     const { id } = req.params;
+
+    console.log(id)
 
     const allBookings = await Bookings.find({}).sort({createdAt: -1});
     res.status(200).json(allBookings)
