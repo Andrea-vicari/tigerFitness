@@ -39,14 +39,15 @@ function ElencoPrenUtente() {
 
       }, [user])
 
+      var usID = user.user_id
       console.log(" *** user *** ")
-      console.log(user)
+      console.log(usID)
 
       let userBookings = [];
       let terVar = false
 
       data.forEach(element => {
-        element._id == title ? userBookings.push(element) : terVar = true
+        element.user.user_id == usID ? userBookings.push(element) : terVar = true
       });
 
       console.log(userBookings)
