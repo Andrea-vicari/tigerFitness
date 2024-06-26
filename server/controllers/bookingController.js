@@ -16,13 +16,13 @@ const viewAllBookings = async (req, res)=> {
 const createNewBooking = async (req, res)=> {
 
 
-    const {user, giorno, mese, anno, ora, minuto } = req.body
+    const {user, today, giorno, mese, anno, ora, minuto } = req.body
 
 
     // Add doc to the Mongo DB
 
     try{
-        const booking = await Bookings.create({user, giorno, mese, anno, ora, minuto})
+        const booking = await Bookings.create({user, today, giorno, mese, anno, ora, minuto})
         res.status(200).json(booking)
     }
 
