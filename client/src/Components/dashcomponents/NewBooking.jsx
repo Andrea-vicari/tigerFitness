@@ -127,7 +127,7 @@ const NewBooking = () =>{
                   <strong>Mese</strong>
                 </label>
 
-                <select onChange={(e) => setMese(e.target.value)}>
+                <select className="form-select" onChange={(e) => setMese(e.target.value)}>
                 <option>Please choose one option</option>
                 {monthsList.map((option, index) => {
                     return (
