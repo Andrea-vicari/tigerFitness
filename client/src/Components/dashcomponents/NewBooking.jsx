@@ -20,6 +20,7 @@ const NewBooking = () =>{
   // userID = clicked.state
 
   const {user} = UseAuthContext()
+  console.log("=== user")
   console.log(user)
 
   var today = new Date().toDateString()
