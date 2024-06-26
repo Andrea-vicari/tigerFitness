@@ -47,8 +47,18 @@ const viewSingleBooking = async (req, res) => {
     res.status(200).json(singleBooking)
 }
 
+const updateStatusBooking = async (req, res) =>{
+    const {status } = req.body
+    const { id } = req.params;
+    const singleBooking = await Bookings.findOneAndUpdate({"user.user_id": id},{
+        ...req.body
+    })
+
+}
+
 module.exports = {
     viewAllBookings,
     createNewBooking,
-    viewSingleBooking
+    viewSingleBooking,
+    updateStatusBooking
 }
