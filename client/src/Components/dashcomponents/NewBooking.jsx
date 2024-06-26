@@ -35,12 +35,6 @@ const NewBooking = () =>{
     const [ora, setOra] = useState('')
     const [minuto, setMinuto] = useState('')
 
-    // const [title, setTitle] = useState('')
-    // const [loads, setLoad] = useState('')
-    // const [rest, setRest] = useState('')
-    // const [reps, setReps] = useState('')
-    // const [series, setSeries] = useState('')
-
     const [date, setToday] = useState('')
     const [error, setError] = useState(null)
     const [emptyFields, setemptyFields] = useState([])
@@ -52,7 +46,7 @@ const NewBooking = () =>{
         setUser(utente)
         setToday(today)
         openModal()
-        const booking = {today, user, giorno, mese, anno, ora, minuto}
+        const booking = {today, utente, giorno, mese, anno, ora, minuto}
 
         const response = await fetch('https://pulsefit-server.vercel.app/api/bookings', {
 
