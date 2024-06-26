@@ -198,7 +198,7 @@ const NewBooking = () =>{
               <div className="modal-dialog-centered modal-xl bg-dark" role="document">
                 <div className="modal-content rounded-4 shadow bg-dark" >
                   <div className="modal-header d-flex justify-content-between">
-                  <img src={logo} style= {width=100} className='img-fluid'/>
+                  <img src={logo} style={{width: 100}} className='img-fluid'/>
                     <h2 className="modal-title text-white text-center">LEZIONE PRENOTATA</h2>
 
                   </div>
