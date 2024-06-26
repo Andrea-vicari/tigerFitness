@@ -41,8 +41,10 @@ const viewSingleBooking = async (req, res) => {
 
     console.log(id)
 
-    const allBookings = await Bookings.find({}).sort({createdAt: -1});
-    res.status(200).json(allBookings)
+    const singleBooking = await Bookings.find(user{"user_id":id});
+    // await Workouts.find({"user":id})
+
+    res.status(200).json(singleBooking)
 }
 
 module.exports = {
