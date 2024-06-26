@@ -3,10 +3,10 @@ import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/images/pulseFit_logo.svg";
 import { useSelector } from 'react-redux'
 import { UseAuthContext } from "../../hooks/UseAuthContext";
-import { useId } from 'react';
 
 
-//var userID
+
+var userID
 
 const NewBooking = () =>{
 
@@ -19,11 +19,13 @@ const NewBooking = () =>{
 
   // let clicked = useLocation();
 
-  // userID = clicked.state
+
 
   const {user} = UseAuthContext()
-  console.log("=== user")
-  console.log(user)
+  userID = user
+
+  console.log("userID===")
+  console.log(userID)
 
   var today = new Date().toDateString()
 
