@@ -63,11 +63,14 @@ function ElencoPrenUtente() {
                       return(
                         <div className="col" key={e._id}>
                             <div className="card">
-                                <h5 className="card-header">Featured</h5>
+                                <h5 className="card-header">Data Prenotazione: {e.today}</h5>
                                 <div className="card-body">
-                                    <h5 className="card-title">Special title treatment</h5>
-                                    <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <a href="#" className="btn btn-primary">Go somewhere</a>
+                                    <h5 className="card-title">Giorno scelto: {e.giorno}</h5>
+                                    <h5 className="card-title">Mese scelto: {e.mese}</h5>
+                                    <h5 className="card-title">Ora scelta: {e.ora} </h5>
+                                    <h5 className="card-title">Minuto scelto: {e.minuto}</h5>
+                                    <hr/>
+                                    <h5 className="card-title">Stato: {e.status}</h5>
                                 </div>
                             </div>
                         </div>
