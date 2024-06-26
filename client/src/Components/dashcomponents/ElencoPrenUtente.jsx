@@ -70,7 +70,7 @@ function ElencoPrenUtente() {
                                     <h5 className="card-title">Ora scelta: {e.ora} </h5>
                                     <h5 className="card-title">Minuto scelto: {e.minuto}</h5>
                                     <hr/>
-                                    <h5 className="card-title">Stato: {e.status}</h5>
+                                    <h5 className="card-title">Stato: <span className='text-warning'>{e.status}</span></h5>
                                 </div>
                             </div>
                         </div>
