@@ -39,18 +39,11 @@ function ElencoPrenUtente() {
 
       }, [user])
 
-      var usID = user.user_id
+
       console.log(" *** user *** ")
-      console.log(usID)
+      console.log(user)
 
-      let userBookings = [];
-      let terVar = false
 
-      data.forEach(element => {
-        element.user.user_id == usID ? userBookings.push(element) : terVar = true
-      });
-
-      console.log(userBookings)
 
     return (
         <React.Fragment>
