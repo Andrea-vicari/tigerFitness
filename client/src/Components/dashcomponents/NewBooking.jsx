@@ -21,14 +21,14 @@ const NewBooking = () =>{
 
   // userID = clicked.state
 
-  const {utente} = UseAuthContext()
+  const {user} = UseAuthContext()
   console.log("=== user")
-  console.log(utente)
+  console.log(user)
 
   var today = new Date().toDateString()
 
   console.log(today)
-    const [user, setUser] = useState('')
+    const [utente, setUser] = useState('')
     const [giorno, setGiorno] = useState('')
     const [mese, setMese] = useState('')
     const [anno, setAnno] = useState('')
@@ -43,10 +43,10 @@ const NewBooking = () =>{
 
         e.preventDefault()
 
-        setUser(utente)
+        setUser(user)
         setToday(today)
         openModal()
-        const booking = {today, utente, giorno, mese, anno, ora, minuto}
+        const booking = {today, user, giorno, mese, anno, ora, minuto}
 
         const response = await fetch('https://pulsefit-server.vercel.app/api/bookings', {
 
@@ -181,7 +181,7 @@ const NewBooking = () =>{
                 />
               </div>
 
-              <button type="submit" className="btn btn-danger w-100 rounded-0 mt-3" onClick={()=>setUser(utente)}>
+              <button type="submit" className="btn btn-danger w-100 rounded-0 mt-3" onClick={()=>setUser(user)}>
                 Inserisci
               </button>
 
