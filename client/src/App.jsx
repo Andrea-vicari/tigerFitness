@@ -31,6 +31,7 @@ import SchedaTrainerPage from './pages/dashpages/SchedaTrainerPage';
 import SchedaUtentePage from './pages/dashpages/SchedaUtentePage';
 import ElencoSchedeApertePage from './pages/dashpages/ElencoSchedeApertePage';
 import ElencoSchedeChiusePage from './pages/dashpages/ElencoSchedeChiusePage';
+import ElencoPrenotazioniUtentePage from './pages/dashpages/ElencoPrenotazioniUtentePage';
 import AgendaPage from './pages/dashpages/AgendaPage';
 import NutrizionePage from './pages/NutrizionePage';
 function App() {
@@ -77,6 +78,7 @@ function App() {
             <Route path="/dashboardpage" element={user ? <DashboardPage /> : <Navigate to="/login"/>} />
             <Route path="/elencoschedeapertepage" element={user ? <ElencoSchedeApertePage /> : <Navigate to="/login"/>} />
             <Route path="/elencoschedechiusepage" element={user ? <ElencoSchedeChiusePage /> : <Navigate to="/login"/>} />
+            <Route path="/elencoprenotazioniutente" element={<ElencoPrenotazioniUtentePage />} />
             <Route path="/userslist" element={<UsersList />} />
             <Route path="/agenda" element={<AgendaPage />} />
             <Route path="/resetpassword" element={<ResetPassword />} />
