@@ -11,7 +11,7 @@ const bookingsSchema = new mongoose.Schema({
         required: true
     },
     mese:{
-        type:String,
+        type:Number,
         required: true
     },
     anno:{

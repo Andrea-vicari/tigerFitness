@@ -3,6 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/images/pulseFit_logo.svg";
 import { useSelector } from 'react-redux'
 import { UseAuthContext } from "../../hooks/UseAuthContext";
+import { useId } from 'react';
+
 
 //var userID
 
@@ -19,20 +21,26 @@ const NewBooking = () =>{
 
   // userID = clicked.state
 
-  const {user} = UseAuthContext()
+  const {utente} = UseAuthContext()
   console.log("=== user")
-  console.log(user)
+  console.log(utente)
 
   var today = new Date().toDateString()
 
   console.log(today)
+    const [user, setUser] = useState('')
+    const [giorno, setGiorno] = useState('')
+    const [mese, setMese] = useState('')
+    const [anno, setAnno] = useState('')
+    const [ora, setOra] = useState('')
+    const [minuto, setMinuto] = useState('')
 
+    // const [title, setTitle] = useState('')
+    // const [loads, setLoad] = useState('')
+    // const [rest, setRest] = useState('')
+    // const [reps, setReps] = useState('')
+    // const [series, setSeries] = useState('')
 
-    const [title, setTitle] = useState('')
-    const [loads, setLoad] = useState('')
-    const [rest, setRest] = useState('')
-    const [reps, setReps] = useState('')
-    const [series, setSeries] = useState('')
     const [date, setToday] = useState('')
     const [error, setError] = useState(null)
     const [emptyFields, setemptyFields] = useState([])
@@ -41,15 +49,15 @@ const NewBooking = () =>{
 
         e.preventDefault()
 
-        setUser(userID)
+        setUser(utente)
         setToday(today)
         openModal()
-        const workout = {today, user, title, series, reps, rest, loads}
+        const booking = {today, user, giorno, mese, anno, ora, minuto}
 
-        const response = await fetch('https://pulsefit-server.vercel.app/api/workouts', {
+        const response = await fetch('https://pulsefit-server.vercel.app/api/bookings', {
 
             method: 'POST',
-            body: JSON.stringify(workout),
+            body: JSON.stringify(booking),
             headers:{
                 'Content-Type': 'application/json'
               }
@@ -66,11 +74,11 @@ const NewBooking = () =>{
         if(response.ok){
             console.log('Aggiunto', json)
             setToday('')
-            setTitle('')
-            setLoad('')
-            setReps('')
-            setRest('')
-            setSeries('')
+            setGiorno('')
+            setMese('')
+            setAnno('')
+            setOra('')
+            setMinuto('')
             setUser('')
             setError(null)
             setemptyFields([])
@@ -98,92 +106,92 @@ const NewBooking = () =>{
 
               <div className="mb-3">
                 <label htmlFor="title">
-                  <strong>Esercizio</strong>
+                  <strong>Giorno</strong>
                 </label>
                 <input
-                  type="text"
-                  placeholder="Inserisci Esercizio"
+                  type="number"
+                  placeholder="Scegli giorno"
                   autoComplete="off"
                   name="text"
                   className="form-control rounded-0"
-                  onChange={(e) => setTitle(e.target.value)}
-                  value={title}
+                  min="0" max="31" step="1"
+                  onChange={(e) => setGiorno(e.target.value)}
+                  value={giorno}
                   required={true}
                 />
               </div>
 
               <div className="mb-3">
-                <label htmlFor="reps">
-                  <strong>Ripetizioni</strong>
+              <label htmlFor="title">
+                  <strong>Mese</strong>
                 </label>
                 <input
                   type="number"
-                  placeholder="Inserisci Ripezìtizioni"
-                  autoComplete="off"
-                  name="number"
-                  className="form-control rounded-0"
-                  onChange={(e) => setReps(e.target.value)}
-                  value={reps}
-                  required={true}
-                />
-              </div>
-
-              <div className="mb-3">
-                <label htmlFor="series">
-                  <strong>Serie</strong>
-                </label>
-                <input
-                  type="number"
-                  placeholder="Inserisci Serie"
-                  autoComplete="off"
-                  name="number"
-                  className="form-control rounded-0"
-                  onChange={(e) => setSeries(e.target.value)}
-                  value={series}
-                  required={true}
-                />
-              </div>
-
-
-              <div className="mb-3">
-                <label htmlFor="rest">
-                  <strong>Riposo(Sec)</strong>
-                </label>
-                <input
-                  type="number"
-                  placeholder="Inserisci Riposo"
+                  placeholder="Scegli mese"
                   autoComplete="off"
                   name="text"
                   className="form-control rounded-0"
-                  onChange={(e) => setRest(e.target.value)}
-                  value={rest}
+                  min="0" max="12" step="1"
+                  onChange={(e) => setMese(e.target.value)}
+                  value={mese}
                   required={true}
                 />
               </div>
 
               <div className="mb-3">
-                <label htmlFor="loads">
-                  <strong>Carico(Kg)</strong>
+              <label htmlFor="title">
+                  <strong>Anno</strong>
                 </label>
                 <input
                   type="number"
-                  placeholder="Inserisci Carico"
+                  placeholder="Scegli anno"
                   autoComplete="off"
                   name="text"
                   className="form-control rounded-0"
-                  onChange={(e) => setLoad(e.target.value)}
-                  value={loads}
+                  min="2024" max="2030" step="1"
+                  onChange={(e) => setAnno(e.target.value)}
+                  value={anno}
+                  required={true}
+                />
+              </div>
+              <div className="mb-3">
+              <label htmlFor="title">
+                  <strong>Ora</strong>
+                </label>
+                <input
+                  type="number"
+                  placeholder="Scegli ora"
+                  autoComplete="off"
+                  name="text"
+                  className="form-control rounded-0"
+                  min="7" max="21" step="1"
+                  onChange={(e) => setOra(e.target.value)}
+                  value={ora}
+                  required={true}
+                />
+              </div>
+              <div className="mb-3">
+              <label htmlFor="title">
+                  <strong>Minuto</strong>
+                </label>
+                <input
+                  type="number"
+                  placeholder="Scegli minuto"
+                  autoComplete="off"
+                  name="text"
+                  className="form-control rounded-0"
+                  min="0" max="30" step="30"
+                  onChange={(e) => setMinuto(e.target.value)}
+                  value={minuto}
                   required={true}
                 />
               </div>
 
-
-
-              <button type="submit" className="btn btn-danger w-100 rounded-0 mt-3" onClick={()=>setUser(userID)}>
+              <button type="submit" className="btn btn-danger w-100 rounded-0 mt-3" onClick={()=>setUser(utente)}>
                 Inserisci
               </button>
 
-              <Link to={`/elencoutenti/`} type="submit" className="btn btn-outline-danger w-100 rounded-0 mt-3">
+              <Link to={`/dashboardpage`} type="submit" className="btn btn-outline-danger w-100 rounded-0 mt-3">
                 Torna Indietro
               </Link>
               {error && <div className="error text-danger fs-4 mt-3">{error}</div>}
