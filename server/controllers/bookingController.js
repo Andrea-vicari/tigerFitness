@@ -38,6 +38,9 @@ const viewSingleBooking = async (req, res) => {
     console.log("View single workouts")
 
     const { id } = req.params;
+
+    const allBookings = await Bookings.find({}).sort({createdAt: -1});
+    res.status(200).json(allBookings)
 }
 
 module.exports = {
