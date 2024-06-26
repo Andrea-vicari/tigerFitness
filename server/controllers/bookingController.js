@@ -56,7 +56,7 @@ const updateStatusBooking = async (req, res) =>{
     if(!singleBooking){
         return res.status(400).json({error: "No WorkOut found"})
     }
-    res.status(200).json(singleBooking);
+    res.status(200).json(singleBooking)
 
 }
 
