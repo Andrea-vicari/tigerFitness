@@ -19,8 +19,6 @@ function ElencoPrenUtente() {
 
     const [data, setData] = useState([]);
 
-    console.log(" *** user *** ")
-    console.log(user.email)
 
     const makeAPICall = async () => {
         try {
