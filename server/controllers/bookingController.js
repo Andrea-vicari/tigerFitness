@@ -32,7 +32,16 @@ const createNewBooking = async (req, res)=> {
 
 }
 
+const viewSingleBooking = async (req, res) => {
+    console.log("======")
+    console.log("Req from /id")
+    console.log("View single workouts")
+
+    const { id } = req.params;
+}
+
 module.exports = {
     viewAllBookings,
-    createNewBooking
+    createNewBooking,
+    viewSingleBooking
 }
