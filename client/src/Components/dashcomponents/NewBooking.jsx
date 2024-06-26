@@ -45,7 +45,7 @@ const NewBooking = () =>{
 
         e.preventDefault()
 
-        setUser(user)
+        setUser(userID)
         setToday(today)
         openModal()
         const booking = {today, user, giorno, mese, anno, ora, minuto}
@@ -183,7 +183,7 @@ const NewBooking = () =>{
                 />
               </div>
 
-              <button type="submit" className="btn btn-danger w-100 rounded-0 mt-3" onClick={()=>setUser(user)}>
+              <button type="submit" className="btn btn-danger w-100 rounded-0 mt-3" onClick={()=>setUser(userID)}>
                 Inserisci
               </button>
 
