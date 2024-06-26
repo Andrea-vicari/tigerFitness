@@ -53,6 +53,10 @@ const updateStatusBooking = async (req, res) =>{
     const singleBooking = await Bookings.findOneAndUpdate({"_id":id},{
         ...req.body
     })
+    if(!singleBooking){
+        return res.status(400).json({error: "No WorkOut found"})
+    }
+    res.status(200).json(singleBooking);
 
 }
 
