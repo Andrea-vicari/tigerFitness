@@ -42,6 +42,15 @@ function ElencoPrenUtente() {
       console.log(" *** user *** ")
       console.log(user)
 
+      let userBookings = [];
+      let terVar = false
+
+      data.forEach(element => {
+        element._id == title ? userBookings.push(element) : terVar = true
+      });
+
+      console.log(userBookings)
+
     return (
         <React.Fragment>
                 <div className='container-fluid pt-1 mt-5 bg-stripe'>
