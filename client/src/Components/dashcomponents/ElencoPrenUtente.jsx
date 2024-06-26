@@ -39,6 +39,8 @@ function ElencoPrenUtente() {
 
       }, [user])
 
+      console.log(" *** user *** ")
+      console.log(user)
 
     return (
         <React.Fragment>
