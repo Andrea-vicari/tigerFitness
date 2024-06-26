@@ -26,6 +26,7 @@ import DashboardPage from './pages/dashpages/DashboardPage';
 import UsersList from './pages/dashpages/UsersListPage';
 import SingleUserPage from './pages/dashpages/SingleUserPage';
 import NewTrainingPage from './pages/dashpages/NewTrainingPage';
+import NewBookingPage from './pages/dashpages/NewBookingPage';
 import SchedaTrainerPage from './pages/dashpages/SchedaTrainerPage';
 import SchedaUtentePage from './pages/dashpages/SchedaUtentePage';
 import ElencoSchedeApertePage from './pages/dashpages/ElencoSchedeApertePage';
@@ -65,6 +66,7 @@ function App() {
             <Route path="/nutrizione" element={<NutrizionePage />} />
             <Route path="/singlepost" element={<SinglePost />} />
             <Route path="/newtraining/:id" element={<NewTrainingPage />} />
+            <Route path="/newbooking" element={<NewBookingPage />} />
             <Route path="/schedatrainerpage/:id" element={<SchedaTrainerPage />} />
             <Route path="/schedautentepage/:id" element={<SchedaUtentePage />} />
             <Route path="/singleproject" element={<SingleProject />} />

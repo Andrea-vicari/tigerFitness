@@ -110,7 +110,24 @@ function Dashboard() {
                                     <p>Clicca per accedere alla scheda allenamento attiva</p>
                                     <Link to="/elencoschedeapertepage" type="button" className="btn btn-sm btn-primary">Vai alla scheda</Link>
                                 </div>
-                            </div>}
+
+                                <div className="p-3 bg-body-tertiary border rounded-3">
+                                    <div className='row'>
+                                        <div className="col-md-3">
+                                            <img src={agendaImg} className="img-fluid rounded mb-2"/>
+                                            </div>
+                                            <div className="col-md-6">
+                                                <h2>Agenda</h2>
+                                                <p>Vedi l'elenco completo degli utenti da dove potrai vedere/aggiungere i workout di ogni singolo utente </p>
+                                                <Link to="/newbooking" type="button" className="btn btn-sm btn-outline-primary">Prenota la lezione</Link>
+                                            </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            }
 
                         </div>
                     </div>
