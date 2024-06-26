@@ -42,7 +42,7 @@ const viewSingleBooking = async (req, res) => {
     console.log(id)
 
     const singleBooking = await Bookings.find({"user.user_id": id});
-    // await Workouts.find({"user":id})
+
 
     res.status(200).json(singleBooking)
 }
