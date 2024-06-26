@@ -105,10 +105,18 @@ function Dashboard() {
                             {/** Below only for USERS */}
                             {role == "user" &&
                             <div className="col-md-9 mt-5">
-                                <div className="p-5 bg-body-tertiary border rounded-3">
-                                    <h2>Scheda Training</h2>
-                                    <p>Clicca per accedere alla scheda allenamento attiva</p>
-                                    <Link to="/elencoschedeapertepage" type="button" className="btn btn-sm btn-primary">Vai alla scheda</Link>
+                             <div className="p-3 bg-body-tertiary border rounded-3">
+                                    <div className='row'>
+                                        <div className="col-md-3">
+                                            <img src={newTrainingImg} className="img-fluid rounded mb-2"/>
+                                            </div>
+                                            <div className="col-md-6">
+                                                <h2>Scheda Training</h2>
+                                                <p>Clicca per accedere alla scheda allenamento attiva</p>
+                                                <Link to="/elencoschedeapertepage" type="button" className="btn btn-sm btn-outline-primary">vai alla scheda</Link>
+                                            </div>
+                                    </div>
+
                                 </div>
 
                                 <div className="p-3 bg-body-tertiary border rounded-3">
