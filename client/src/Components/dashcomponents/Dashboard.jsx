@@ -125,9 +125,22 @@ function Dashboard() {
                                             <img src={agendaImg} className="img-fluid rounded mb-2"/>
                                             </div>
                                             <div className="col-md-6">
-                                                <h2>Agenda</h2>
-                                                <p>Vedi l'elenco completo degli utenti da dove potrai vedere/aggiungere i workout di ogni singolo utente </p>
+                                                <h2>Prenota Lezione</h2>
+                                                <p>Prenota qui la tua prossima lezione</p>
                                                 <Link to="/newbooking" type="button" className="btn btn-sm btn-outline-primary">Prenota la lezione</Link>
+                                            </div>
+                                    </div>
+
+                                </div>
+                                <div className="p-3 bg-body-tertiary border rounded-3">
+                                    <div className='row'>
+                                        <div className="col-md-3">
+                                            <img src={elencoPren} className="img-fluid rounded mb-2"/>
+                                            </div>
+                                            <div className="col-md-6">
+                                                <h2>Controlla le prenotazioni</h2>
+                                                <p>Controlla lo stato delle tue prenotazioni</p>
+                                                <Link to="/" type="button" className="btn btn-sm btn-outline-primary">Controlla</Link>
                                             </div>
                                     </div>
 
