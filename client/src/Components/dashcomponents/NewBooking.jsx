@@ -29,9 +29,21 @@ const NewBooking = () =>{
 
   var today = new Date().toDateString()
 
-  const monthsList = [
+  const elencoMesi = [
     "Gennaio","Febbraio","Marzo","Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"
-];
+  ];
+  const elencoGiorni = [
+    1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31
+  ];
+  const elencoOre = [
+    8,9,10,11,12,13,14,15,16,17,18,19,20,21
+  ];
+  const elencoMinuti = [
+    0,30
+  ];
+  const elencoAnni = [
+    2024,2025,2026,2027,2028,2029,2030,2031
+  ];
 
   console.log(today)
     const [utente, setUser] = useState('')
@@ -104,22 +116,21 @@ const NewBooking = () =>{
             <h2 className={textType}>Prenota la tua prossima lezione</h2>
             <form onSubmit={handleSubmit}>
 
-              <div className="mb-3">
-                <label htmlFor="title">
+            <div className="mb-3">
+              <label htmlFor="title">
                   <strong>Giorno</strong>
                 </label>
 
-                <input
-                  type="number"
-                  placeholder="Scegli giorno"
-                  autoComplete="off"
-                  name="text"
-                  className="form-control rounded-0"
-                  min="0" max="31" step="1"
-                  onChange={(e) => setGiorno(e.target.value)}
-                  value={giorno}
-                  required={true}
-                />
+                <select className="form-select" onChange={(e) => setGiorno(e.target.value)}>
+                <option>Scegli il giorno</option>
+                {elencoGiorni.map((option, index) => {
+                    return (
+                        <option key={index}>
+                            {option}
+                        </option>
+                    );
+                })}
+                </select>
               </div>
 
               <div className="mb-3">
@@ -128,8 +139,8 @@ const NewBooking = () =>{
                 </label>
 
                 <select className="form-select" onChange={(e) => setMese(e.target.value)}>
-                <option>Please choose one option</option>
-                {monthsList.map((option, index) => {
+                <option>Scegli il mese</option>
+                {elencoMesi.map((option, index) => {
                     return (
                         <option key={index}>
                             {option}
@@ -143,49 +154,50 @@ const NewBooking = () =>{
               <label htmlFor="title">
                   <strong>Anno</strong>
                 </label>
-                <input
-                  type="number"
-                  placeholder="Scegli anno"
-                  autoComplete="off"
-                  name="text"
-                  className="form-control rounded-0"
-                  min="2024" max="2030" step="1"
-                  onChange={(e) => setAnno(e.target.value)}
-                  value={anno}
-                  required={true}
-                />
+
+                <select className="form-select" onChange={(e) => setAnno(e.target.value)}>
+                <option>Scegli l'annno</option>
+                {elencoAnni.map((option, index) => {
+                    return (
+                        <option key={index}>
+                            {option}
+                        </option>
+                    );
+                })}
+                </select>
               </div>
               <div className="mb-3">
               <label htmlFor="title">
                   <strong>Ora</strong>
                 </label>
-                <input
-                  type="number"
-                  placeholder="Scegli ora"
-                  autoComplete="off"
-                  name="text"
-                  className="form-control rounded-0"
-                  min="7" max="21" step="1"
-                  onChange={(e) => setOra(e.target.value)}
-                  value={ora}
-                  required={true}
-                />
+
+                <select className="form-select" onChange={(e) => setOra(e.target.value)}>
+                <option>Scegli l'ora</option>
+                {elencoOre.map((option, index) => {
+                    return (
+                        <option key={index}>
+                            {option}
+                        </option>
+                    );
+                })}
+                </select>
               </div>
+
               <div className="mb-3">
               <label htmlFor="title">
                   <strong>Minuto</strong>
                 </label>
-                <input
-                  type="number"
-                  placeholder="Scegli minuto"
-                  autoComplete="off"
-                  name="text"
-                  className="form-control rounded-0"
-                  min="0" max="30" step="30"
-                  onChange={(e) => setMinuto(e.target.value)}
-                  value={minuto}
-                  required={true}
-                />
+
+                <select className="form-select" onChange={(e) => setMinuto(e.target.value)}>
+                <option>Scegli minuto</option>
+                {elencoMinuti.map((option, index) => {
+                    return (
+                        <option key={index}>
+                            {option}
+                        </option>
+                    );
+                })}
+                </select>
               </div>
 
               <button type="submit" className="btn btn-danger w-100 rounded-0 mt-3" onClick={()=>setUser(userID)}>
