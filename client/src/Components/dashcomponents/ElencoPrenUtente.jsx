@@ -59,7 +59,9 @@ function ElencoPrenUtente() {
                 <div className="container">
 
                     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                        <div className="col">
+                    {data.map((e)=>{
+                      return(
+                        <div className="col" key={e._id}>
                             <div className="card">
                                 <h5 className="card-header">Featured</h5>
                                 <div className="card-body">
@@ -69,6 +71,7 @@ function ElencoPrenUtente() {
                                 </div>
                             </div>
                         </div>
+                        )})}
 
 
 
