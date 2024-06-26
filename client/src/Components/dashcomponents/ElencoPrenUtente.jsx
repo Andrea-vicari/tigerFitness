@@ -1,12 +1,8 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { UseAuthContext } from "../../hooks/UseAuthContext";
-import userlistImg from '../../assets/images/UserList.jpg'
-import elencoPren from '../../assets/images/elencoPrenotazioni_640.jpg'
-import newTrainingImg from '../../assets/images/NewTraining.jpg'
-import agendaImg from '../../assets/images/Agenda_640.jpg'
-import { Link } from 'react-router-dom';
-import UserProfile from '../dashcomponents/UserProfile'
+import { useState, useEffect } from "react"
+
 
 function ElencoPrenUtente() {
 
@@ -21,7 +17,28 @@ function ElencoPrenUtente() {
 
     const {user} = UseAuthContext()
 
-    console.log(role)
+    const [data, setData] = useState([]);
+
+    const makeAPICall = async () => {
+        try {
+          const response = await fetch(`https://pulsefit-server.vercel.app/api/bookings/`, {mode:'cors'});
+          const data = await response.json();
+          setData(data)
+
+          console.log({ data})
+        }
+        catch (e) {
+          console.log(e)
+        }
+      }
+
+      useEffect(() => {
+        if(user){
+           makeAPICall();
+        }
+
+      }, [user])
+
 
     return (
         <React.Fragment>
