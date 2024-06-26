@@ -19,6 +19,9 @@ function ElencoPrenUtente() {
 
     const [data, setData] = useState([]);
 
+    console.log(" *** user *** ")
+    console.log(user.user_id)
+
     const makeAPICall = async () => {
         try {
           const response = await fetch(`https://pulsefit-server.vercel.app/api/bookings/`, {mode:'cors'});
@@ -40,8 +43,7 @@ function ElencoPrenUtente() {
       }, [user])
 
 
-      console.log(" *** user *** ")
-      console.log(user)
+
 
 
 
