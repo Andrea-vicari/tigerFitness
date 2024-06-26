@@ -50,7 +50,7 @@ const viewSingleBooking = async (req, res) => {
 const updateStatusBooking = async (req, res) =>{
     const {status } = req.body
     const { id } = req.params;
-    const singleBooking = await Bookings.findOneAndUpdate({"user.user_id": id},{
+    const singleBooking = await Bookings.findOneAndUpdate({"_id":id},{
         ...req.body
     })
 
