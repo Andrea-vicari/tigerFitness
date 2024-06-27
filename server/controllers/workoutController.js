@@ -33,7 +33,7 @@ const getSingleWorkout = async (req, res)=> {
 const getClosedWorkout = async (req, res)=> {
     console.log("***********")
     console.log("Req from /closed")
-    console.log("IL POMPIERE PAURA NON NE HA!!!")
+
     const workout = await Workouts.find({"status":"CHIUSO"});
     // const workout = await Workouts.findById(id);
 

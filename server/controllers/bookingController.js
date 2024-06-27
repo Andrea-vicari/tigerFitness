@@ -53,11 +53,8 @@ const viewSingleBooking = async (req, res) => {
 // View Booking to be approved
 const viewBookingTBA = async (req, res) =>{
 
-    const  toBeApproved = "IN APPROVAZIONE";
 
-    console.log(id)
-
-    const bookingTBA = await Bookings.find({"status": toBeApproved});
+    const bookingTBA = await Bookings.find({"status": "IN APPROVAZIONE"});
     if(!bookingTBA){
         return res.status(400).json({error: "No WorkOut found"})
     }
