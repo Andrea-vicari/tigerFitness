@@ -32,6 +32,7 @@ const createNewBooking = async (req, res)=> {
 
 }
 
+// View booking for a single user_id
 const viewSingleBooking = async (req, res) => {
     console.log("======")
     console.log("Req from /id")
@@ -42,9 +43,26 @@ const viewSingleBooking = async (req, res) => {
     console.log(id)
 
     const singleBooking = await Bookings.find({"user.user_id": id});
-
+    if(!singleBooking){
+        return res.status(400).json({error: "No WorkOut found"})
+    }
 
     res.status(200).json(singleBooking)
+}
+
+// View Booking to be approved
+const viewBookingTBA = async (req, res) =>{
+
+    const  toBeApproved = "IN APPROVAZIONE";
+
+    console.log(id)
+
+    const bookingTBA = await Bookings.find({"status": toBeApproved});
+    if(!bookingTBA){
+        return res.status(400).json({error: "No WorkOut found"})
+    }
+
+    res.status(200).json(bookingTBA)
 }
 
 const updateStatusBooking = async (req, res) =>{
@@ -64,5 +82,6 @@ module.exports = {
     viewAllBookings,
     createNewBooking,
     viewSingleBooking,
-    updateStatusBooking
+    updateStatusBooking,
+    viewBookingTBA
 }
