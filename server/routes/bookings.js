@@ -10,7 +10,7 @@ router.get('/', viewAllBookings);
 router.post('/', createNewBooking);
 router.get('/:id', viewSingleBooking)
 router.patch('/:id', updateStatusBooking)
-router.patch('/tba/gettba', viewBookingTBA)
+router.get('/tba', viewBookingTBA)
 
 
 module.exports = router;
