@@ -67,6 +67,7 @@ function ElencoPrenTrainer() {
                             <div className="card">
                                 <h5 className="card-header">Data Prenotazione: {e.today}</h5>
                                 <div className="card-body">
+                                    <h5 className="card-title">Utente: {e.user.email}</h5>
                                     <h5 className="card-title">Giorno scelto: {e.giorno}</h5>
                                     <h5 className="card-title">Mese scelto: {e.mese}</h5>
                                     <h5 className="card-title">Ora scelta: {e.ora} </h5>
