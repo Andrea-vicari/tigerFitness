@@ -22,7 +22,7 @@ function ElencoPrenTrainer() {
 
     const makeAPICall = async () => {
         try {
-          const response = await fetch(`https://pulsefit-server.vercel.app/api/bookings/}`, {mode:'cors'});
+          const response = await fetch(`https://pulsefit-server.vercel.app/api/bookings/`, {mode:'cors'});
           const data = await response.json();
           setData(data)
 
