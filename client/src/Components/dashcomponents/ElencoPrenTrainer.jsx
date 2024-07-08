@@ -50,13 +50,14 @@ function ElencoPrenTrainer() {
                 <div className='container-fluid pt-1 mt-5 bg-stripe'>
                     <div className='container text-center mt-5 pb-1'>
                         <h1 className='display-2 text-white text-uppercase'>Elenco Prenotazioni</h1>
-                        <p className='text-center fs-3'>Start with us your next training!</p>
+                        
                     </div>
                 </div>
             <section className={"py-3" + " " + bgType + " " + textType}>
 
                 <div className="container">
                     <h1 className="section-title pt-5">Elenco Prenotazioni</h1>
+                    <p className='text-center fs-3'>Start with us your next training!</p>
                 <div className="container">
 
                     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
