@@ -1,4 +1,4 @@
-import React from 'react'
+coimport React from 'react'
 import { useSelector } from 'react-redux'
 import { UseAuthContext } from "../../hooks/UseAuthContext";
 import userlistImg from '../../assets/images/UserList.jpg'
@@ -82,7 +82,7 @@ function Dashboard() {
                                             <div className="col-md-6">
                                                 <h2>Elenco Prenotazioni</h2>
                                                 <p>Vedi l'elenco completo degli utenti da dove potrai vedere/aggiungere i workout di ogni singolo utente </p>
-                                                <Link to="/userslist" type="button" className="btn btn-sm btn-outline-primary">Vai alla lista utenti</Link>
+                                                <Link to="/elencoprenotazionitrainer" type="button" className="btn btn-sm btn-outline-primary">Vai alla lista utenti</Link>
                                             </div>
                                     </div>
 
