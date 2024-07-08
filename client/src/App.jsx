@@ -80,7 +80,6 @@ function App() {
             <Route path="/elencoschedeapertepage" element={user ? <ElencoSchedeApertePage /> : <Navigate to="/login"/>} />
             <Route path="/elencoschedechiusepage" element={user ? <ElencoSchedeChiusePage /> : <Navigate to="/login"/>} />
             <Route path="/elencoprenotazioniutente" element={<ElencoPrenotazioniUtentePage />} />
-          {/*<Route path="/elencoprenotazionitrainer" element={<ElencoPrenotazioniTrainerPage />} /> */}
             <Route path="/userslist" element={<UsersList />} />
             <Route path="/agenda" element={<AgendaPage />} />
             <Route path="/resetpassword" element={<ResetPassword />} />
