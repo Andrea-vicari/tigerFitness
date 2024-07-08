@@ -32,6 +32,7 @@ import SchedaUtentePage from './pages/dashpages/SchedaUtentePage';
 import ElencoSchedeApertePage from './pages/dashpages/ElencoSchedeApertePage';
 import ElencoSchedeChiusePage from './pages/dashpages/ElencoSchedeChiusePage';
 import ElencoPrenotazioniUtentePage from './pages/dashpages/ElencoPrenotazioniUtentePage';
+import ElencoPrenotazioniTrainerPage from './pages/dashpages/ElencoPrenotazioniTrainerPage';
 import AgendaPage from './pages/dashpages/AgendaPage';
 import NutrizionePage from './pages/NutrizionePage';
 function App() {
