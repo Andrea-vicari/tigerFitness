@@ -32,7 +32,7 @@ import SchedaUtentePage from './pages/dashpages/SchedaUtentePage';
 import ElencoSchedeApertePage from './pages/dashpages/ElencoSchedeApertePage';
 import ElencoSchedeChiusePage from './pages/dashpages/ElencoSchedeChiusePage';
 import ElencoPrenotazioniUtentePage from './pages/dashpages/ElencoPrenotazioniUtentePage';
-// import ElencoPrenotazioniTrainerPage from './pages/dashpages/ElencoPrenotazioniTrainerPage';
+import ElencoPrenotazioniTrainerPage from './pages/dashpages/ElencoPrenotazioniTrainerPage';
 import AgendaPage from './pages/dashpages/AgendaPage';
 import NutrizionePage from './pages/NutrizionePage';
 function App() {
@@ -80,6 +80,7 @@ function App() {
             <Route path="/elencoschedeapertepage" element={user ? <ElencoSchedeApertePage /> : <Navigate to="/login"/>} />
             <Route path="/elencoschedechiusepage" element={user ? <ElencoSchedeChiusePage /> : <Navigate to="/login"/>} />
             <Route path="/elencoprenotazioniutente" element={<ElencoPrenotazioniUtentePage />} />
+            <Route path="/elencoprenotazionitrainer" element={<ElencoPrenotazioniTrainerPage />} />
             <Route path="/userslist" element={<UsersList />} />
             <Route path="/agenda" element={<AgendaPage />} />
             <Route path="/resetpassword" element={<ResetPassword />} />
