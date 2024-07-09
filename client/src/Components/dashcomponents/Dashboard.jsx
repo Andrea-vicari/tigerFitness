@@ -53,8 +53,8 @@ function Dashboard() {
                                             <img src={agendaImg} className="img-fluid rounded mb-2"/>
                                             </div>
                                             <div className="col-md-6">
-                                                <h2>Agenda</h2>
-                                                <p>Vedi l'elenco completo degli utenti da dove potrai vedere/aggiungere i workout di ogni singolo utente </p>
+                                                <h2>Agenda Prenotazioni</h2>
+                                                <p>Vedi l'elenco delle prenotazioni confermate </p>
                                                 <Link to="/agenda" type="button" className="btn btn-sm btn-outline-primary">Vai alla lista utenti</Link>
                                             </div>
                                     </div>
