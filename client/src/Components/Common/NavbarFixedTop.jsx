@@ -27,6 +27,12 @@ function NavbarFixedTop() {
 
    const {user} = UseAuthContext()
 
+  const role = useSelector((state) => state.setRole.value)
+
+const {user} = UseAuthContext()
+
+console.log(role)
+
   return (
     <>
         <div className='container'>
