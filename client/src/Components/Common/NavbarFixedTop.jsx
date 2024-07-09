@@ -29,7 +29,6 @@ function NavbarFixedTop() {
 
   const role = useSelector((state) => state.setRole.value)
 
-const {user} = UseAuthContext()
 
 console.log("role FROM THE NAVBAR")
 console.log(role)
