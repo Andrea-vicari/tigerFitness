@@ -40,7 +40,9 @@ console.log(role)
         <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme={count}>
         <div className="container">
             <Link className="navbar-brand d-flex" to={'/'}>
+            {role == "admin" &&
             <img src={logo} style={{width:200}}/>
+            }
             </Link>
             <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
