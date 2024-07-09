@@ -80,9 +80,9 @@ function Dashboard() {
                                             <img src={elencoPren} className="img-fluid rounded mb-2"/>
                                             </div>
                                             <div className="col-md-6">
-                                                <h2>Elenco Prenotazioni</h2>
-                                                <p>Vedi l'elenco completo degli utenti da dove potrai vedere/aggiungere i workout di ogni singolo utente </p>
-                                                <Link to="/elencoprenotazionitrainer" type="button" className="btn btn-sm btn-outline-primary">Vai alla lista utenti</Link>
+                                                <h2>Prenotazioni da approvare</h2>
+                                                <p>Vedi l'elenco delle prenotazioni da confermare/approvare  </p>
+                                                <Link to="/elencoprenotazionitrainer" type="button" className="btn btn-sm btn-outline-primary">Vedi Prenotazioni</Link>
                                             </div>
                                     </div>
 
