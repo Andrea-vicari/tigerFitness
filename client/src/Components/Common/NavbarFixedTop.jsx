@@ -31,6 +31,7 @@ function NavbarFixedTop() {
 
 const {user} = UseAuthContext()
 
+console.log("role FROM THE NAVBAR")
 console.log(role)
 
   return (
