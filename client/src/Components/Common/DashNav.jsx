@@ -49,6 +49,9 @@ function NavbarFixedTop() {
             {role == "admin" &&
             <TrainerMenu />
             }
+            {role == "user" &&
+            <UserMenu />
+            }
           <LogMenu />
           <DarkSelector />
             </div>
