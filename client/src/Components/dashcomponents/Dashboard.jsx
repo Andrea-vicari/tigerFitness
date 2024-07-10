@@ -145,6 +145,19 @@ function Dashboard() {
                                     </div>
 
                                 </div>
+                                <div className="p-3 bg-body-tertiary border rounded-3 mb-2">
+                                    <div className='row'>
+                                        <div className="col-md-3">
+                                            <img src={elencoPren} className="img-fluid rounded mb-2"/>
+                                            </div>
+                                            <div className="col-md-6">
+                                                <h2>Schede Completate</h2>
+                                                <p>Vedi le schede completate</p>
+                                                <Link to="/elencoschedeapertepage" type="button" className="btn btn-sm btn-outline-primary">Vedi</Link>
+                                            </div>
+                                    </div>
+
+                                </div>
 
                             </div>
 
