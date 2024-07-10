@@ -154,7 +154,7 @@ function Dashboard() {
                                             <div className="col-md-6">
                                                 <h2>Schede Completate</h2>
                                                 <p>Vedi le schede completate</p>
-                                                <Link to="/elencoschedeapertepage" type="button" className="btn btn-sm btn-outline-primary">Vedi</Link>
+                                                <Link to="/elencoschedechiusepage" type="button" className="btn btn-sm btn-outline-primary">Vedi</Link>
                                             </div>
                                     </div>
 
