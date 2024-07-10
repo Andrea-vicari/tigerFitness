@@ -54,13 +54,13 @@ function NavbarFixedTop() {
                 <Link className={splitLocation[1] == "elencoschedeapertepage" ? "active nav-link fs-4" : "nav-link fs-4"} to={'/elencoschedeapertepage'} >Scheda Training</Link>
               </li>
               <li className="nav-item">
-                <Link className={splitLocation[1] == "Prenota Lezione" ? "active nav-link fs-4" : "nav-link fs-4"} to={'/newbooking'}>Prenota Lezione</Link>
+                <Link className={splitLocation[1] == "newbooking" ? "active nav-link fs-4" : "nav-link fs-4"} to={'/newbooking'}>Prenota Lezione</Link>
               </li>
               <li className="nav-item">
-                <Link className={splitLocation[1] == "Controlla prenotazioni" ? "active nav-link fs-4" : "nav-link fs-4"} to={'/elencoprenotazioniutente'}>Controlla prenotazioni</Link>
+                <Link className={splitLocation[1] == "elencoprenotazioniutente" ? "active nav-link fs-4" : "nav-link fs-4"} to={'/elencoprenotazioniutente'}>Controlla prenotazioni</Link>
               </li>
               <li className="nav-item">
-                <Link className={splitLocation[1] == "blogpage" ? "active nav-link fs-4" : "nav-link fs-4"} to={'/elencoschedechiusepage'}>Schede Completate</Link>
+                <Link className={splitLocation[1] == "elencoschedechiusepage" ? "active nav-link fs-4" : "nav-link fs-4"} to={'/elencoschedechiusepage'}>Schede Completate</Link>
               </li>
 
 
