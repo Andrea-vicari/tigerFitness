@@ -13,6 +13,10 @@ function UserMenu() {
    //Javascript split method to get the name of the path in array
    // Ex. splitLocation: ['', 'aboutus']
    const splitLocation = pathname.split("/");
+
+    const {user} = UseAuthContext()
+
+  const role = useSelector((state) => state.setRole.value)
   
   return (
     <ul className="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
