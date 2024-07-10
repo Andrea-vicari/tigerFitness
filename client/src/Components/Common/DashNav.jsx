@@ -1,7 +1,8 @@
 import React from 'react'
 import { UseAuthContext } from "../../hooks/UseAuthContext";
 import DarkSelector from '../Common/SwitchDark'
-import SocialMenu from '../Common/SocialMenu';
+import TrainerMenu from '../Common/TrainerMenu';
+import UserMenu from '../Common/UserMenu';
 import LogMenu from '../Common/LogMenu';
 import { useSelector, useDispatch } from 'react-redux'
 import { Link } from "react-router-dom";
