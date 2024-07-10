@@ -5,6 +5,7 @@ import userlistImg from '../../assets/images/UserList.jpg'
 import elencoPren from '../../assets/images/elencoPrenotazioni_640.jpg'
 import newTrainingImg from '../../assets/images/NewTraining.jpg'
 import agendaImg from '../../assets/images/Agenda_640.jpg'
+import ckeckClosed from '../../assets/images/weights-3483560_640.jpg'
 import { Link } from 'react-router-dom';
 import UserProfile from '../dashcomponents/UserProfile'
 
@@ -148,7 +149,7 @@ function Dashboard() {
                                 <div className="p-3 bg-body-tertiary border rounded-3 mb-2">
                                     <div className='row'>
                                         <div className="col-md-3">
-                                            <img src={elencoPren} className="img-fluid rounded mb-2"/>
+                                            <img src={ckeckClosed} className="img-fluid rounded mb-2"/>
                                             </div>
                                             <div className="col-md-6">
                                                 <h2>Schede Completate</h2>
