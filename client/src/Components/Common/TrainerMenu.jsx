@@ -3,6 +3,16 @@ import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 
 function TrainerMenu() {
+    //assigning location variable
+  const location = useLocation();
+
+  //destructuring pathname from location
+  const { pathname } = location;
+
+   //Javascript split method to get the name of the path in array
+   // Ex. splitLocation: ['', 'aboutus']
+   const splitLocation = pathname.split("/");
+  
   return (
     <ul className="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
 
