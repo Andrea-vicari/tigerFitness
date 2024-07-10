@@ -1,4 +1,4 @@
-import NavbarFixedTop from '../Components/Common/NavbarFixedTop';
+import DashNav from '../Components/Common/DashNav';
 import Footer from '../Components/Common/Footer';
 import Slider from '../Components/Slider';
 import CalltoActionSmall from '../Components/CallToActionSmall';
@@ -13,7 +13,7 @@ function HomepageOne() {
 
   return (
     <>
-    <NavbarFixedTop />
+    <DashNav />
     <Slider />
     <Services />
     <CallToAction />
