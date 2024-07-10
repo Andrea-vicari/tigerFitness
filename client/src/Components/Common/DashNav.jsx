@@ -46,7 +46,9 @@ function NavbarFixedTop() {
             <span className="navbar-toggler-icon"></span>
             </button>
             <div className="navbar-collapse collapse pt-2" id="navbarCollapse">
-            
+            {role == "admin" &&
+            <TrainerMenu />
+            }
           <LogMenu />
           <DarkSelector />
             </div>
