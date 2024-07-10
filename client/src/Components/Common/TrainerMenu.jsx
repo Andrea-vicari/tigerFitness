@@ -11,7 +11,7 @@ function TrainerMenu() {
                 <Link className={splitLocation[1] == "elencoschedeapertepage" ? "active nav-link fs-4" : "nav-link fs-4"} to={'/elencoschedeapertepage'} >Prenotazioni confermate</Link>
               </li>
               <li className="nav-item">
-                <Link className={splitLocation[1] == "newbooking" ? "active nav-link fs-4" : "nav-link fs-4"} to={'/newbooking'}>Elenco utenti</Link>
+                <Link className={splitLocation[1] == "userslist" ? "active nav-link fs-4" : "nav-link fs-4"} to={'/userslist'}>Elenco utenti</Link>
               </li>
               <li className="nav-item">
                 <Link className={splitLocation[1] == "elencoprenotazioniutente" ? "active nav-link fs-4" : "nav-link fs-4"} to={'/elencoprenotazioniutente'}>Controlla prenotazioni</Link>
