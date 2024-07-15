@@ -1,4 +1,4 @@
-import React from 'react'
+isimport React from 'react'
 import RegisterImg from "../assets/images/RegisterImg.jpg"
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
@@ -48,7 +48,7 @@ function Register() {
                     </label>
                     <input
                       type="text"
-                      placeholder="Insert username"
+                      placeholder="Inserisci nome utente"
                       autoComplete="off"
                       name="username"
                       className="form-control rounded-0"
@@ -62,7 +62,7 @@ function Register() {
                     </label>
                     <input
                       type="email"
-                      placeholder="Insert Email"
+                      placeholder="Inserisci Email"
                       autoComplete="off"
                       name="email"
                       className="form-control rounded-0"
@@ -76,7 +76,7 @@ function Register() {
                     </label>
                     <input
                       type="password"
-                      placeholder="Insert Password"
+                      placeholder="Scegli Password"
                       name="password"
                       className="form-control rounded-0"
                       onChange={(e) => setPassword(e.target.value)}
