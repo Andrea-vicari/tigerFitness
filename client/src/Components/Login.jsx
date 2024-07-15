@@ -68,17 +68,17 @@ function Login() {
                       />
                     </div>
                     <button type="submit" className="btn btn-danger w-100 rounded-0 mt-3" disabled={isLoading}>
-                      Login
+                      Accedi
                     </button>
                     {error && <div className="error text-danger fs-4 mt-3">{error}</div>}
                   </form>
                   <p className="mt-5">Non hai in account?</p>
                   <Link to="/register" className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
-                    Register
+                    Registrati
                   </Link>
                   <p className="mt-5">Password dimenticata?</p>
                   <Link to="/resetpassword" className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
-                    Reset password
+                    Resetta password
                   </Link>
 
                 </div>
