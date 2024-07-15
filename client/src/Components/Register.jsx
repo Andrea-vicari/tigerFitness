@@ -1,3 +1,4 @@
+import React from 'react'
 import RegisterImg from "../assets/images/RegisterImg.jpg"
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
