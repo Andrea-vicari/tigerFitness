@@ -72,11 +72,11 @@ function Login() {
                     </button>
                     {error && <div className="error text-danger fs-4 mt-3">{error}</div>}
                   </form>
-                  <p className="mt-5">Don't have an account?</p>
+                  <p className="mt-5">Non hai in account?</p>
                   <Link to="/register" className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
                     Register
                   </Link>
-                  <p className="mt-5">Lost the password?</p>
+                  <p className="mt-5">Password dimenticata?</p>
                   <Link to="/resetpassword" className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
                     Reset password
                   </Link>
