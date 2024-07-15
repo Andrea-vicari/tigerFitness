@@ -58,7 +58,7 @@ function App() {
     <React.Fragment>
       <ScrollToTop>
         <Routes>
-            <Route path="/" element={<Login />} />
+            <Route path="/" element={<LoginPage />} />
             <Route path="/chisiamo" element={<AboutUsPage />} />
             <Route path="/servizi" element={<ServicePage />} />
             <Route path="/contatti" element={<ContactPage />} />
