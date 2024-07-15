@@ -40,17 +40,11 @@ function Register() {
               <div className="col-sm-6">
                 <h1 className='text-primary text-uppercase'>Entra nel team</h1>
                 <p>Potrai accedere online alle tue schede, registrarne l'esecuzione, potrai prenotare la tua prossima lezione e consultare gli eventi organizzati dal nostro gruppo</p>
-                <ul className='list-unstyled'>
-                    <li className='mt-2'><i className="bi bi-chevron-right text-primary"></i> <strong>Certified trainers</strong></li>
-                    <li className='mt-2'><i className="bi bi-chevron-right text-primary"></i> <strong>Certified trainers</strong></li>
-                    <li className='mt-2'><i className="bi bi-chevron-right text-primary"></i> <strong>Certified trainers</strong></li>
-
-                </ul>
                 <div className={"w-75" + textType}>
                 <form onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="email">
-                      <strong>Username *</strong>
+                      <strong>Nome utente *</strong>
                     </label>
                     <input
                       type="text"
@@ -90,13 +84,13 @@ function Register() {
                     />
                   </div>
                   <button type="submit" className="btn btn-danger w-100 rounded-0 mt-3" disabled={isLoading}>
-                    Register
+                    Registrati
                   </button>
                   {error && <div className="error text-danger fs-4 mt-3">{error}</div>}
                       </form>
-                      <p className="mt-5">Already have an account?</p>
+                      <p className="mt-5">Gia registrato?</p>
                   <Link to="/login" className="btn btn-default border w-100 bg-light rounded-0 text-decoration-none">
-                        Login
+                        Accedi
                   </Link>
 
                 </div>
