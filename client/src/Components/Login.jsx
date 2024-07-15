@@ -35,7 +35,7 @@ function Login() {
                       <img className="img-fluid rounded-4" src={LoginImg} alt=""/>
               </div>
               <div className="col-sm-6">
-                <h1 className='text-primary text-uppercase'>Welcome!</h1>
+                <h1 className='text-primary text-uppercase'>Benvenuti!</h1>
                 <p>Nam id felis eu felis consequat adipiscing. Suspendisse sit amet faucibus nunc, dignissim vehicula enim. Vestibulum luctus turpis sit amet varius venenatis.</p>
                 <div className={"w-75" + textType}>
                   <form onSubmit={handleSubmit}>
