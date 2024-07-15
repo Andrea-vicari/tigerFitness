@@ -98,7 +98,7 @@ function UserProfile() {
                     <h4 className="card-title mb-4 mt-2">{e.username}</h4>
                     <hr></hr>
                     <p className="card-text">Data Iscrizione: {split[0]}</p>
-                    <button className='btn btn-primary mt-1' onClick={()=>openModal()}>Aggiungi Immagine Profilo</button>
+
                 </div>
             </div>
 
