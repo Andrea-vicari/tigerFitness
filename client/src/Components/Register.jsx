@@ -38,8 +38,8 @@ function Register() {
                       <img className="img-fluid rounded-4" src={RegisterImg} alt=""/>
               </div>
               <div className="col-sm-6">
-                <h1 className='text-primary text-uppercase'>Enter the Team</h1>
-                <p>Nam id felis eu felis consequat adipiscing. Suspendisse sit amet faucibus nunc, dignissim vehicula enim. Vestibulum luctus turpis sit amet varius venenatis.</p>
+                <h1 className='text-primary text-uppercase'>Entra nel team</h1>
+                <p>Potrai accedere online alle tue schede, registrarne l'esecuzione, potrai prenotare la tua prossima lezione e consultare gli eventi organizzati dal nostro gruppo</p>
                 <ul className='list-unstyled'>
                     <li className='mt-2'><i className="bi bi-chevron-right text-primary"></i> <strong>Certified trainers</strong></li>
                     <li className='mt-2'><i className="bi bi-chevron-right text-primary"></i> <strong>Certified trainers</strong></li>
