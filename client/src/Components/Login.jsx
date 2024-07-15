@@ -36,7 +36,7 @@ function Login() {
               </div>
               <div className="col-sm-6">
                 <h1 className='text-primary text-uppercase'>Benvenuti!</h1>
-                <p>Nam id felis eu felis consequat adipiscing. Suspendisse sit amet faucibus nunc, dignissim vehicula enim. Vestibulum luctus turpis sit amet varius venenatis.</p>
+                <p>Registrati oggi stesso al nostro sito. Potrai accedere online alle tue schede, registrarne l'esecuzione, potrai prenotare la tua prossima lezione e consultare gli eventi organizzati dal nostro gruppo</p>
                 <div className={"w-75" + textType}>
                   <form onSubmit={handleSubmit}>
 
