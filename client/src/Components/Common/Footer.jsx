@@ -39,7 +39,6 @@ function Footer() {
 
           <ul className="nav col-md-4 justify-content-end">
             <li className="nav-item"><Link to="/" className="nav-link px-2 text-white">Home</Link></li>
-            <li className="nav-item"><Link to="/aboutus" className="nav-link px-2 text-white">About</Link></li>
             <li className="nav-item"><Link to="/faqpage" className="nav-link px-2 text-white">FAQs</Link></li>
             <li className="nav-item"><Link to="/privacy" className="nav-link px-2 text-white">Privacy</Link></li>
           </ul>
