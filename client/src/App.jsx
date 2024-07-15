@@ -72,15 +72,15 @@ function App() {
             <Route path="/schedatrainerpage/:id" element={<SchedaTrainerPage />} />
             <Route path="/schedautentepage/:id" element={<SchedaUtentePage />} />
             <Route path="/singleproject" element={<SingleProject />} />
-            <Route path="/singleuser/:id" element={user ? <SingleUserPage />: <Navigate to="/login"/>} />
+            <Route path="/singleuser/:id" element={user ? <SingleUserPage /> : <Navigate to="/login"/>} />
             <Route path="/*" element={<Error404 />} />
             <Route path="/login" element={user ? <Navigate to="/dashboardpage"/> : <LoginPage />} />
             <Route path="/register" element={!user ? <RegisterPage/> : <Navigate to="/login"/>}/>
             <Route path="/dashboardpage" element={user ? <DashboardPage /> : <Navigate to="/login"/>} />
             <Route path="/elencoschedeapertepage" element={user ? <ElencoSchedeApertePage /> : <Navigate to="/login"/>} />
             <Route path="/elencoschedechiusepage" element={user ? <ElencoSchedeChiusePage /> : <Navigate to="/login"/>} />
-            <Route path="/elencoprenotazioniutente" element={<ElencoPrenotazioniUtentePage />} />
-            <Route path="/elencoprenotazionitrainer" element={<ElencoPrenotazioniTrainerPage />} />
+            <Route path="/elencoprenotazioniutente" element={user ? <ElencoPrenotazioniUtentePage /> : <Navigate to="/login"/>} />
+            <Route path="/elencoprenotazionitrainer" element={user ? <ElencoPrenotazioniTrainerPage /> : <Navigate to="/login"/>} />
             <Route path="/userslist" element={<UsersList />} />
             <Route path="/agenda" element={<AgendaPage />} />
             <Route path="/resetpassword" element={<ResetPassword />} />
