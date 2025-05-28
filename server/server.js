@@ -13,6 +13,7 @@ cloudinary.config({
     secure: false
 });
 
+console.log("BELOW CLOUDINARY CONFIGURATION")
 console.log(cloudinary.config())
 
 
