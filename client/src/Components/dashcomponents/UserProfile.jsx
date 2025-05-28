@@ -64,12 +64,7 @@ function UserProfile() {
         console.log(file)
       }
 
-
-
-
-
-
-      function closeModal(){
+     function closeModal(){
         document.getElementById('modale_workout').classList.remove("d-block")
 
       }
@@ -78,6 +73,8 @@ function UserProfile() {
 
       }
 
+      console.log("singleUser")
+      console.log(singleUser)
 
   return (
     <>
