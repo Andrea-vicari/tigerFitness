@@ -18,7 +18,6 @@ app.use(express.json({limit: '50mb'}));
 app.use(express.urlencoded({extended:true, limit: '50mb'}));
 
 
-
 console.log(process.cwd())
 
 app.use(cors(
@@ -44,16 +43,14 @@ mongoose.connect(process.env.MONGODB_URI)
 const workoutsRoutes = require('./routes/workouts');
 const usersRoutes = require('./routes/users');
 const bookingsRoutes = require('./routes/bookings');
-// const imagesRoutes = require('./routes/images');
 
 app.use(workoutsRoutes)
 app.use(usersRoutes)
 app.use(bookingsRoutes)
-// app.use(imagesRoutes)
 
 app.use('/api/workouts', workoutsRoutes)
 app.use('/api/users', usersRoutes)
 app.use('/api/bookings', bookingsRoutes)
-// app.use('/api/images', imagesRoutes)
+
 
 
