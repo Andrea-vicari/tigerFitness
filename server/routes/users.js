@@ -2,6 +2,7 @@ const express = require('express');
 const multer = require("multer");
 const path = require('path');
 const Users = require('../models/UserModel');
+const cloudinary = require('cloudinary').v2;
 
 const {signupUser, loginUser, seeAllUser, forgotPassword, resetPassword, getSingleUser} = require('../controllers/userController');
 
