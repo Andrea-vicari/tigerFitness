@@ -31,7 +31,7 @@ app.use(cors(
     }
 ));
 
-app.use(cookieParser())
+
 
 mongoose.connect(process.env.MONGODB_URI)
     .then(()=>{
