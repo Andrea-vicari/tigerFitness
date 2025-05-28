@@ -20,6 +20,7 @@ const AggiungiImmagine = () => {
   const [res, setRes] = useState({});
   const [immagineUrl, setImmagineUrl] = useState('')
   const handleSelectFile = (e) => setFile(e.target.files[0]);
+
   const handleUpload = async () => {
     try {
       setLoading(true);

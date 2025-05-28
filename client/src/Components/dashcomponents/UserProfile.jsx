@@ -47,12 +47,15 @@ function UserProfile() {
       });
 
 
-      const [file, setFile ] = useState()
-      const [error, setError] = useState(null)
-      const [good, setGood] = useState(null)
+      const [file, setFile] = useState(null);
+      const [loading, setLoading] = useState(false);
+      const [res, setRes] = useState({});
+      const [immagineUrl, setImmagineUrl] = useState('')
 
 
+      const handleSelectFile = (e) => setFile(e.target.files[0]);
 
+      /*
       const handleUpload = () =>{
 
         const formdata = new FormData()
@@ -63,6 +66,26 @@ function UserProfile() {
         console.log(error)
         console.log(file)
       }
+      */
+
+      const handleUpload = async () => {
+        try {
+          setLoading(true);
+          const data = new FormData();
+          data.append("my_file", file);
+          const res = await axios.post("https://autoparts-flame.vercel.app/api/componenti/upload", data);
+          setRes(res.data);
+          var urlImmagine = res.data.secure_url
+          setImmagineUrl(urlImmagine)
+          console.log("@@@@@@@")
+          console.log(immagineUrl)
+
+        } catch (error) {
+          alert(error.message);
+        } finally {
+          setLoading(false);
+        }
+      };
 
      function closeModal(){
         document.getElementById('modale_workout').classList.remove("d-block")
