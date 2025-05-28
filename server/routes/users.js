@@ -62,32 +62,7 @@ router.post('/forgot-password', forgotPassword)
 // Reset password
 router.post('/reset-password/:token', resetPassword)
 
-// Upload user profile
-router.patch('/:id', uploadImage.single('file'), async (req, res)=>{
 
-    /*
-    if(req.file === undefined){
-      return res.status(400).json({error: "Ehiii!! Upload an image please"})
-    }
-    */
-
-    const { id } = req.params;
-    console.log("OIBO'!!!")
-    // console.log(req.file.filename)
-    console.log(id)
-
-
-
-    const user = await Users.findByIdAndUpdate(id,{image:req.file.filename})
-    // const user = await Users.create(id,{image:req.file.filename})
-
-    if(!user){
-        return res.status(400).json({error: "No WorkOut found"})
-    }
-    res.status(200).json(user);
-
-
-})
 
 
 module.exports = router;
