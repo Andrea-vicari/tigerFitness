@@ -137,7 +137,7 @@ function UserProfile() {
                           <label htmlFor="formFile" className="form-label">Seleziona il file e clicca CARICA</label>
                           <input className="form-control" type="file" required={true} id="formFile" onChange={(e)=> setFile(e.target.files[0])}/>
                           <button className='btn btn-primary mt-3' onClick={handleUpload}>CARICA</button>
-                        {error && <p className='fs-3 text-danger mt-3'>Prego, Seleziona un immagine</p>}
+
 
                       </div>
 
