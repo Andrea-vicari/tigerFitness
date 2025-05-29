@@ -42,7 +42,7 @@ router.post("/upload", upload.single("my_file"), async (req, res) => {
 	}
   });
 
-  const {signupUser, loginUser, seeAllUser, forgotPassword, resetPassword, getSingleUser} = require('../controllers/userController');
+  const {signupUser, loginUser, seeAllUser, forgotPassword, resetPassword, getSingleUser, modificaURLimmagine} = require('../controllers/userController');
 
 // See All
 router.get('/', seeAllUser)
@@ -61,6 +61,8 @@ router.post('/forgot-password', forgotPassword)
 
 // Reset password
 router.post('/reset-password/:token', resetPassword)
+
+router.patch('/aggiungi-immagine-utente/:id', modificaURLimmagine);
 
 
 

@@ -157,7 +157,11 @@ const resetPassword = async (req, res)=> {
 
 }
 
+//
+const modificaURLimmagine = async (req, res) => {
+
+}
 
 module.exports = {
-    signupUser, loginUser, seeAllUser, forgotPassword, resetPassword, getSingleUser
+    signupUser, loginUser, seeAllUser, forgotPassword, resetPassword, getSingleUser, modificaURLimmagine
 }
