@@ -160,6 +160,14 @@ const resetPassword = async (req, res)=> {
 //
 const modificaURLimmagine = async (req, res) => {
     console.log(req.body)
+    Users.findOneAndUpdate({_id: id}, {image:req.body})
+    .then(comp => res.json({ msg: 'Updated successfully' }))
+    .catch(err =>
+      res.status(400).json({ error: 'Unable to update the Database' }
+
+      )
+
+    );
 }
 
 module.exports = {
