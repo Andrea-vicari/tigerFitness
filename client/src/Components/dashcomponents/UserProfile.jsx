@@ -55,19 +55,6 @@ function UserProfile() {
 
       const handleSelectFile = (e) => setFile(e.target.files[0]);
 
-      /*
-      const handleUpload = () =>{
-
-        const formdata = new FormData()
-        formdata.append('file', file)
-        axios.patch(`https://pulsefit-server.vercel.app/api/users/${singleID}`, formdata)
-        .then(res=> res.status == 200 ? alert('Immagine caricata correttamente') : false)
-         .catch(err => setError(err))
-        console.log(error)
-        console.log(file)
-      }
-      */
-
       const handleUpload = async () => {
         try {
           setLoading(true);
