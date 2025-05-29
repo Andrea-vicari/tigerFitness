@@ -86,6 +86,9 @@ function UserProfile() {
       console.log("singleUser")
       console.log(singleUser)
 
+    /// AGGIUNGI QUI UN PATCH CON AXIOS CHE VA A MODIFICARE ALLO USER IL PARAMETRO IMAGE 
+    // ORA OCCUPATO DA 'https://res.cloudinary.com/dwb35ynpk/image/upload/v1748458136/blank-profile-picture_teszkp.png
+
   return (
     <>
     {singleUser.map((e)=>{
