@@ -90,7 +90,7 @@ function UserProfile() {
     // ORA OCCUPATO DA 'https://res.cloudinary.com/dwb35ynpk/image/upload/v1748458136/blank-profile-picture_teszkp.png
     // VEDI ESEMPIO QUI SOTTO
     /*
-        const onSubmit = (e) => {
+    const modificaURL = (e) => {
     e.preventDefault();
 
     const data = {
