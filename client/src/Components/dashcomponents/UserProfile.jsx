@@ -62,12 +62,10 @@ function UserProfile() {
           data.append("my_file", file);
           const res = await axios.post("https://pulsefit-server.vercel.app/api/users/upload", data);
           setRes(res.data);
-          console.log("$$$$$ sotto res data secureURL")
-            console.log(res.data.secure_url)
           var urlImmagine = res.data.secure_url
           setImmagineUrl(urlImmagine)
-          console.log("@@@@@@@")
-          console.log(immagineUrl)
+          console.log("@@@@@@@ SOTTO IMMAGINE URL")
+          console.log(urlImmagine)
 
         } catch (error) {
           alert(error.message);
