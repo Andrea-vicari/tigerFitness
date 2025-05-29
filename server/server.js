@@ -14,7 +14,7 @@ cloudinary.config({
 });
 
 console.log("BELOW CLOUDINARY CONFIGURATION")
-console.log(cloudinary.config())
+//console.log(cloudinary.config())
 
 
 app.use(express.json({limit: '50mb'}));
