@@ -160,6 +160,7 @@ const resetPassword = async (req, res)=> {
 //
 const modificaURLimmagine = async (req, res) => {
     console.log(req.body)
+    const { id } = req.params;
     Users.findOneAndUpdate({_id: id}, {image:req.body})
     .then(comp => res.json({ msg: 'Updated successfully' }))
     .catch(err =>
