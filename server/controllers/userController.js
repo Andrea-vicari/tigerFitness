@@ -159,7 +159,7 @@ const resetPassword = async (req, res)=> {
 
 //
 const modificaURLimmagine = async (req, res) => {
-
+    console.log(req.body)
 }
 
 module.exports = {
