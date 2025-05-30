@@ -99,7 +99,7 @@ function UserProfile() {
 
     const modificaURL = (e) => {
     e.preventDefault();
-
+    alert('Chiamata alla funzione')
     const data = {
       urlImmagine:immagine
     };
