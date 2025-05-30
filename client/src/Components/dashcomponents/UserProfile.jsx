@@ -113,12 +113,7 @@ function UserProfile() {
       });
   };
     
-          useEffect(() => {
-        if(user){
-           modificaURL();
-        }
 
-      }, [user])
 
   return (
     <>
