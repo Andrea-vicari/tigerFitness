@@ -56,6 +56,8 @@ function UserProfile() {
       const handleSelectFile = (e) => setFile(e.target.files[0]);
 
       const handleUpload = async () => {
+
+          modificaURL()
           
         try {
           setLoading(true);
@@ -99,7 +101,7 @@ function UserProfile() {
     alert('Chiamata alla funzione')
         
     const data = {
-      urlImmagine:immagine
+      urlImmagine:immagineUrl
     };
 
     axios
