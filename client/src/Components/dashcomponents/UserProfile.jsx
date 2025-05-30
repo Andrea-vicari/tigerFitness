@@ -92,11 +92,11 @@ function UserProfile() {
      urlImmagine:immagineUrl
   });
 
-    modificaURL()
+    
 
     const modificaURL = () => {
     
-    alert('Chiamata alla funzione')
+    //alert('Chiamata alla funzione')
         
     const data = {
       urlImmagine:immagine
