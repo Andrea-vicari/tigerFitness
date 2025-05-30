@@ -96,7 +96,7 @@ function UserProfile() {
 
     const modificaURL = () => {
     
-    //alert('Chiamata alla funzione')
+    alert('Chiamata alla funzione')
         
     const data = {
       urlImmagine:immagine
@@ -112,7 +112,13 @@ function UserProfile() {
         console.log('Error in AggiornaInfoComp!');
       });
   };
-  
+    
+          useEffect(() => {
+        if(user){
+           modificaURL();
+        }
+
+      }, [user])
 
   return (
     <>
