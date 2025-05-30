@@ -16,8 +16,9 @@ function UserProfile() {
     const [data, setData] = useState([]);
     const {user} = UseAuthContext()
     var singleID = user.user_id
+    console.log("Sotto Single ID")
     console.log(singleID)
-
+    
     const makeUSERCall = async () => {
         try {
           const response = await fetch('https://pulsefit-server.vercel.app/api/users/');
