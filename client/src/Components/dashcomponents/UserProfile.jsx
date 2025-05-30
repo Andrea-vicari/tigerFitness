@@ -16,8 +16,7 @@ function UserProfile() {
     const [data, setData] = useState([]);
     const {user} = UseAuthContext()
     var singleID = user.user_id
-    console.log("Sotto Single ID")
-    console.log(singleID)
+
     
     const makeUSERCall = async () => {
         try {
@@ -100,13 +99,14 @@ function UserProfile() {
     const modificaURL = () => {
     
     alert('Chiamata alla funzione')
+    alert(singleID)
         
     const data = {
       urlImmagine:immagineUrl
     };
 
     axios
-      .patch(`https://pulsefit-server.vercel.app/api/users/aggiungi-immagine-utente/{$singleID}`, data)
+      .patch(`https://pulsefit-server.vercel.app/api/users/aggiungi-immagine-utente/$singleID`, data)
       .then((res) => {
         navigate(`/dashboardpage`);
       })
