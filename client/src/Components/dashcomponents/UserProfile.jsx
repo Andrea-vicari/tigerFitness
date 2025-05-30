@@ -96,7 +96,7 @@ function UserProfile() {
 
     const modificaURL = () => {
     
-    console.log('Chiamata alla funzione')
+    alert('Chiamata alla funzione')
         
     const data = {
       urlImmagine:immagine
