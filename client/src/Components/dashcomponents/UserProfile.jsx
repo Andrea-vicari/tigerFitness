@@ -77,7 +77,7 @@ function UserProfile() {
 
      function closeModal(){
         document.getElementById('modale_workout').classList.remove("d-block")
-         modificaURL()
+         
 
       }
       function openModal(){
@@ -97,6 +97,7 @@ function UserProfile() {
     const modificaURL = () => {
     
     alert('Chiamata alla funzione')
+        
     const data = {
       urlImmagine:immagine
     };
