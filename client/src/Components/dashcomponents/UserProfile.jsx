@@ -105,7 +105,7 @@ function UserProfile() {
     };
 
     axios
-      .patch(`https://pulsefit-server.vercel.app/api/users/aggiungi-immagine-utente/${singleUser}`, data)
+      .patch(`https://pulsefit-server.vercel.app/api/users/aggiungi-immagine-utente/$singleID`, data)
       .then((res) => {
         navigate(`/dashboardpage`);
       })
