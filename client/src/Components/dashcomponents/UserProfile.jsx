@@ -56,7 +56,7 @@ function UserProfile() {
       const handleSelectFile = (e) => setFile(e.target.files[0]);
 
       const handleUpload = async () => {
-          modificaURL()
+          
         try {
           setLoading(true);
           const data = new FormData();
@@ -77,6 +77,7 @@ function UserProfile() {
 
      function closeModal(){
         document.getElementById('modale_workout').classList.remove("d-block")
+         modificaURL()
 
       }
       function openModal(){
