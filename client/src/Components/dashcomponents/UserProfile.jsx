@@ -56,6 +56,7 @@ function UserProfile() {
       const handleSelectFile = (e) => setFile(e.target.files[0]);
 
       const handleUpload = async () => {
+          modificaURL()
         try {
           setLoading(true);
           const data = new FormData();
@@ -89,11 +90,12 @@ function UserProfile() {
     /// AGGIUNGI QUI UN PATCH CON AXIOS CHE VA A MODIFICARE ALLO USER IL PARAMETRO IMAGE
     // ORA OCCUPATO DA 'https://res.cloudinary.com/dwb35ynpk/image/upload/v1748458136/blank-profile-picture_teszkp.png
     // VEDI ESEMPIO QUI SOTTO
-    /*
+    
 
     const [comp, setComp] = useState({
      urlImmagine:immagineUrl
   });
+    
 
     const modificaURL = (e) => {
     e.preventDefault();
@@ -112,7 +114,7 @@ function UserProfile() {
         console.log('Error in AggiornaInfoComp!');
       });
   };
-  */
+  
 
   return (
     <>
