@@ -98,7 +98,7 @@ function UserProfile() {
 
     const modificaURL = () => {
     
-    alert('Chiamata alla funzione')
+   
     alert(singleID)
         
     const data = {
