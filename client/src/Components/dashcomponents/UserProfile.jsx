@@ -91,7 +91,8 @@ function UserProfile() {
     const [comp, setComp] = useState({
      urlImmagine:immagineUrl
   });
-    
+
+    modificaURL()
 
     const modificaURL = () => {
     
