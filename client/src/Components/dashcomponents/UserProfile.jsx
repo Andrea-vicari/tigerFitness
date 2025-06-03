@@ -107,10 +107,11 @@ function UserProfile() {
     alert(singleUser)
 
         
-        
+     /*   
     const data = {
       urlImmagine:imag
     };
+    */
 
     console.log("Qui sotto immagine")
     console.log(imag)
