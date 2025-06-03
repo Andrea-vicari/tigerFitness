@@ -97,7 +97,7 @@ function UserProfile() {
     console.log(urlImmagine)
 
     const [comp, setComp] = useState({
-     urlImmagine:immagineUrl
+     urlImmagine:imag
   });
 
     const navigate = useNavigate();
