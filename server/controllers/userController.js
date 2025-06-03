@@ -162,7 +162,7 @@ const modificaURLimmagine = async (req, res) => {
     console.log(req.body.image)
     const { id } = req.params;
     console.log(id)
-    const { nuovaImmagine} = req.body
+    const { nuovaImmagine} = req.body.image
     Users.findOneAndUpdate({_id: id}, {"image":nuovaImmagine})
     .then(comp => res.json({ msg: 'Updated successfully' }))
     .catch(err =>
