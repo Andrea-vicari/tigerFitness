@@ -159,7 +159,7 @@ const resetPassword = async (req, res)=> {
 
 const modificaURLimmagine = async (req, res) => {
     console.log("Da modificaURLimmagine ROUTE")
-    console.log(req.body)
+    console.log(req.body.image)
     const { id } = req.params;
     console.log(id)
     const { nuovaImmagine} = req.body
