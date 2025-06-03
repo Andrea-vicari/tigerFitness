@@ -162,7 +162,7 @@ const modificaURLimmagine = async (req, res) => {
     const { id } = req.params;
     console.log(id)
     const { nuovaImmagine} = req.body
-    Users.findOneAndUpdate({_id: id}, {image:nuovaImmagine})
+    Users.findOneAndUpdate({_id: id}, {"image":nuovaImmagine})
     .then(comp => res.json({ msg: 'Updated successfully' }))
     .catch(err =>
       res.status(400).json({ error: 'Unable to update the Database' }
