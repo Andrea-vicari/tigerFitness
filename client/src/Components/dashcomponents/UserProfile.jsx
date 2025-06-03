@@ -59,8 +59,6 @@ function UserProfile() {
 
       const handleUpload = async () => {
 
-
-
         try {
           setLoading(true);
           const data = new FormData();
@@ -91,34 +89,15 @@ function UserProfile() {
 
       }
 
-      console.log("singleUser")
-      console.log(singleUser)
-     console.log("urlImmagine '''''' ")
-    console.log(urlImmagine)
-
-
 
     const navigate = useNavigate();
 
 
     const modificaURL = (imag) => {
 
-
-    alert(singleUser)
-
-
-
-
-    console.log("Qui sotto immagine")
-    console.log(imag)
-
-
     const data = {
       image:imag
     };
-
-
-
 
     axios
       .patch(`https://pulsefit-server.vercel.app/api/users/aggiungi-immagine-utente/6654d16cc3e78209fb9b37de`, data)
@@ -131,42 +110,6 @@ function UserProfile() {
       });
   };
 
-/*
-      const handleSubmit = async (e) =>{
-
-        e.preventDefault()
-
-        setStatus("CHIUSO")
-        setDatachiusura(dataChiusura)
-
-        const workout = {status, dataChiusura}
-
-        const response = await fetch(`https://pulsefit-server.vercel.app/api/workouts/${title}`, {
-
-            method: 'PATCH',
-            body: JSON.stringify(workout),
-            headers:{
-                'Content-Type': 'application/json'
-              }
-        })
-
-
-        const json = await response.json()
-
-        if(!response.ok){
-            setError(json.error)
-         }
-
-        if(response.ok){
-            setStatus("CHIUSO")
-            setDatachiusura(dataChiusura)
-            setError(null)
-            openModal()
-            console.log('Modificato', json)
-          } }
-
-
-*/
 
   return (
     <>
@@ -204,7 +147,7 @@ function UserProfile() {
                       <div className="modal-body py-3 text-white">
                       <div className="mb-3">
                           <label htmlFor="formFile" className="form-label">Seleziona il file e clicca CARICA</label>
-                          <input className="form-control" type="file" required={true} id="formFile" onChange={(e)=> setFile(e.target.files[0])}/>
+                          <input className="form-control" type="file" required={true} id="formFile" onChange={handleSelectFile}/>
                           <button className='btn btn-primary mt-3' onClick={handleUpload}>CARICA</button>
 
 

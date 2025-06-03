@@ -158,11 +158,10 @@ const resetPassword = async (req, res)=> {
 }
 
 const modificaURLimmagine = async (req, res) => {
-    console.log("Da modificaURLimmagine ROUTE")
-    console.log(req.body.image)
+
     const { id } = req.params;
-    console.log(id)
-    const { nuovaImmagine} = req.body.image
+
+
     Users.findOneAndUpdate({_id: id}, {...req.body})
     .then(comp => res.json({ msg: 'Updated successfully' }))
     .catch(err =>
