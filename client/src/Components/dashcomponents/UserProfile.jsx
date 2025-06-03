@@ -96,9 +96,7 @@ function UserProfile() {
      console.log("urlImmagine '''''' ")
     console.log(urlImmagine)
 
-    const [comp, setComp] = useState({
-     urlImmagine:imag
-  });
+
 
     const navigate = useNavigate();
 
@@ -111,7 +109,7 @@ function UserProfile() {
         
         
     const data = {
-      urlImmagine:immagineUrl
+      urlImmagine:imag
     };
 
     console.log("Qui sotto immagine")
