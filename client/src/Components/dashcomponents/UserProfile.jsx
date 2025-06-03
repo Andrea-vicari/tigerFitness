@@ -99,11 +99,13 @@ function UserProfile() {
     const modificaURL = () => {
     
    
-    alert(singleID)
+    
         
     const data = {
       urlImmagine:immagineUrl
     };
+
+        alert(data)
 
     axios
       .patch(`https://pulsefit-server.vercel.app/api/users/aggiungi-immagine-utente/6654d16cc3e78209fb9b37de`, data)
