@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from "react"
 import { useSelector } from 'react-redux'
 import { UseAuthContext } from "../../hooks/UseAuthContext"
-import { Link, Navigate } from 'react-router-dom';
+import { Link, useNavigate  } from 'react-router-dom';
 import axios from 'axios'
 
 function UserProfile() {
