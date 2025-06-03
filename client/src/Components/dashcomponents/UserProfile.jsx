@@ -40,6 +40,8 @@ function UserProfile() {
       var singleUser = [];
       let terVar = false
 
+    var urlImmagine;
+
       data.forEach(element => {
         console.log(element)
         element._id == singleID  ? singleUser.push(element) : terVar = true
@@ -65,7 +67,7 @@ function UserProfile() {
           data.append("my_file", file);
           const res = await axios.post("https://pulsefit-server.vercel.app/api/users/upload", data);
           setRes(res.data);
-          var urlImmagine = res.data.secure_url
+          urlImmagine = res.data.secure_url
           setImmagineUrl(urlImmagine)
           console.log("@@@@@@@ SOTTO IMMAGINE URL")
           console.log(urlImmagine)
