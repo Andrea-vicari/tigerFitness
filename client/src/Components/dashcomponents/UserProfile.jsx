@@ -89,6 +89,8 @@ function UserProfile() {
 
       console.log("singleUser")
       console.log(singleUser)
+     console.log("urlImmagine '''''' ")
+    console.log(urlImmagine)
 
     const [comp, setComp] = useState({
      urlImmagine:immagineUrl
