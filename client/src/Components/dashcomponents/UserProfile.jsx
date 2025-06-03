@@ -107,19 +107,21 @@ function UserProfile() {
     alert(singleUser)
 
 
-     /*
-    const data = {
-      urlImmagine:imag
-    };
-    */
+
 
     console.log("Qui sotto immagine")
     console.log(imag)
 
 
+    const data = {
+      urlImmagine:imag
+    };
+
+
+
 
     axios
-      .patch(`https://pulsefit-server.vercel.app/api/users/aggiungi-immagine-utente/6654d16cc3e78209fb9b37de`, imag)
+      .patch(`https://pulsefit-server.vercel.app/api/users/aggiungi-immagine-utente/6654d16cc3e78209fb9b37de`, data)
       .then((res) => {
         navigate(`/dashboardpage`);
       })
