@@ -59,7 +59,7 @@ function UsersList() {
         <div className="col-sm-4 mb-3" key={e._id}>
           <div className="list-group">
             <Link to={`/singleuser/${e._id}`} state={e._id} className="list-group-item list-group-item-action d-flex gap-3 py-3 align-items-center" aria-current="true">
-            <img src={`https://pulsefit-server.vercel.app/images/${e.image}`}  style={{width:70}}/>
+            <img src={e.image}  style={{width:70}}/>
               <div className="d-flex gap-2 w-100 justify-content-between">
                 <div>
 
