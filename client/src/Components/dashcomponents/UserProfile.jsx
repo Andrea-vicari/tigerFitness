@@ -94,7 +94,8 @@ function UserProfile() {
      urlImmagine:immagineUrl
   });
 
-    
+    const navigate = useNavigate();
+
 
     const modificaURL = () => {
     
