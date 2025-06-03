@@ -59,7 +59,7 @@ function UserProfile() {
 
       const handleUpload = async () => {
 
-          modificaURL()
+          
           
         try {
           setLoading(true);
@@ -77,6 +77,8 @@ function UserProfile() {
         } finally {
           setLoading(false);
         }
+          modificaURL(urlImmagine)
+          
       };
 
      function closeModal(){
@@ -101,17 +103,19 @@ function UserProfile() {
     const navigate = useNavigate();
 
 
-    const modificaURL = () => {
+    const modificaURL = (imag) => {
     
    
     alert(singleUser)
+
+        
         
     const data = {
       urlImmagine:immagineUrl
     };
 
     console.log("Qui sotto immagine")
-    console.log(data)
+    console.log(imag)
 
         
 
