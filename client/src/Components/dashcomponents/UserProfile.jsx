@@ -17,7 +17,7 @@ function UserProfile() {
     const {user} = UseAuthContext()
     var singleID = user.user_id
 
-    
+
     const makeUSERCall = async () => {
         try {
           const response = await fetch('https://pulsefit-server.vercel.app/api/users/');
@@ -59,8 +59,8 @@ function UserProfile() {
 
       const handleUpload = async () => {
 
-          
-          
+
+
         try {
           setLoading(true);
           const data = new FormData();
@@ -78,12 +78,12 @@ function UserProfile() {
           setLoading(false);
         }
           modificaURL(urlImmagine)
-          
+
       };
 
      function closeModal(){
         document.getElementById('modale_workout').classList.remove("d-block")
-         
+
 
       }
       function openModal(){
@@ -102,12 +102,12 @@ function UserProfile() {
 
 
     const modificaURL = (imag) => {
-    
-   
+
+
     alert(singleUser)
 
-        
-     /*   
+
+     /*
     const data = {
       urlImmagine:imag
     };
@@ -116,10 +116,10 @@ function UserProfile() {
     console.log("Qui sotto immagine")
     console.log(imag)
 
-        
+
 
     axios
-      .patch(`https://pulsefit-server.vercel.app/api/users/aggiungi-immagine-utente/6654d16cc3e78209fb9b37de`, data)
+      .patch(`https://pulsefit-server.vercel.app/api/users/aggiungi-immagine-utente/6654d16cc3e78209fb9b37de`, imag)
       .then((res) => {
         navigate(`/dashboardpage`);
       })
@@ -128,7 +128,7 @@ function UserProfile() {
         console.log('Error in AggiornaInfoComp!');
       });
   };
-    
+
 /*
       const handleSubmit = async (e) =>{
 
