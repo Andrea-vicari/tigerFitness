@@ -105,6 +105,7 @@ function UserProfile() {
       urlImmagine:immagineUrl
     };
 
+    console.log("Qui sotto immagine")
     console.log(data)
 
         
