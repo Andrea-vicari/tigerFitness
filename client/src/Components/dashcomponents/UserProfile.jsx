@@ -114,7 +114,7 @@ function UserProfile() {
 
 
     const data = {
-      urlImmagine:imag
+      image:imag
     };
 
 
