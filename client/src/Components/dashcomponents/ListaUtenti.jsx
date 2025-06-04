@@ -18,7 +18,7 @@ function ListaUtenti() {
   themeType == "ligth" ? textType = "" : textType = "text-bg-dark"
   themeType == "ligth" ? tableType = "table-ligth" : tableType = "table-dark"
 
-  const [componenti, setComponenti] = useState([])
+  const [utenti, setUtenti] = useState([])
   // initialize the loading state as true
   const [loading, setLoading] = useState(true)
   // initialize the error state as null
@@ -32,12 +32,12 @@ function ListaUtenti() {
   const [postsPerPage, setPostsPerPage] = useState(5);
 
   useEffect(() => {
-    fetch('https://autoparts-flame.vercel.app/api/componenti')
+    fetch('https://autoparts-flame.vercel.app/api/utenti')
       .then(response => response.json())
       .then(componentiDalServer => {
         console.log("*****")
         console.log(componentiDalServer)
-        setComponenti(componentiDalServer)
+        setUtenti(componentiDalServer)
         setComponentiFiltrati(componentiDalServer)
       })
       .catch(err => {
@@ -58,7 +58,7 @@ function ListaUtenti() {
     setNomeFilter('')
   }
 
-  const filteredProducts = componenti.filter((product) =>
+  const filteredProducts = utenti.filter((product) =>
     product.marca.toLowerCase().includes(marcaFilter.toLowerCase()) &&
     product.modello.toLowerCase().includes(modelloFilter.toLowerCase()) &&
     product.nome.toLowerCase().includes(nomeFilter.toLowerCase())
@@ -75,14 +75,14 @@ function ListaUtenti() {
     setCurrentPage(pageNumber);
   }
 
-  var totaleComponenti = componenti.length
+  var totaleComponenti = utenti.length
   console.log(totaleComponenti)
 
   return (
     <>
       <div className='container-fluid pt-1 mt-5 bg-login d-none d-sm-block'>
         <div className='container text-center mt-5 pb-1'>
-          <h1 className='display-2 text-white text-uppercase'>Elenco Componenti</h1>
+          <h1 className='display-2 text-white text-uppercase'>Elenco utenti</h1>
         </div>
       </div>
 
@@ -117,7 +117,7 @@ function ListaUtenti() {
         <div className="col-sm-2 d-none d-sm-block">
         <div className='py-4'>
           <label>
-          Componenti per pagina:
+          utenti per pagina:
           <select value={postsPerPage}
             onChange={e => setPostsPerPage(e.target.value)}
             className='mx-3' name="compPerPage">
@@ -134,7 +134,7 @@ function ListaUtenti() {
           <div className="col-sm-2 d-none d-sm-flex justify-content-end">
             <div className='pt-3'>
 
-              <ScaricaListaCompCSV componenti={componenti}/>
+              <ScaricaListaCompCSV utenti={utenti}/>
 
             </div>
           </div>
@@ -174,10 +174,10 @@ function ListaUtenti() {
                 </tr>
               </thead>
               <tbody>
-                <Lista componenti={currentPosts} loading={loading} />
+                <Lista utenti={currentPosts} loading={loading} />
               </tbody>
             </table>
-            <Pagination length={componenti.length} postsPerPage={postsPerPage} handlePagination={handlePagination} currentPage={currentPage} />
+            <Pagination length={utenti.length} postsPerPage={postsPerPage} handlePagination={handlePagination} currentPage={currentPage} />
           </div>
         </div>
 
