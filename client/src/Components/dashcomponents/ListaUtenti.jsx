@@ -9,7 +9,6 @@ import Pagination from './Pagination'
 
 function ListaUtenti() {
 
-
   const themeType = useSelector((state) => state.counter.value)
 
   let bgType, textType, tableType;
