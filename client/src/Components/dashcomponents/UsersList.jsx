@@ -48,7 +48,7 @@ function UsersList() {
   return (
     <>
     <div className={'container-fluid mt-5 ' + bgType}>
-    <h1 className="section-title pt-5">USER LIST</h1>
+    <h1 className="section-title pt-5">USERS LIST</h1>
       <p className='text-center fs-3'>Start with us your next training!</p>
 
     <div className={'container ' + bgType}>
