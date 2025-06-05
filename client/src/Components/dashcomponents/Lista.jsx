@@ -21,7 +21,7 @@ const Lista = ({ utenti, loading }) => {
 
             {utenti.length ===0 ?
               <h2 className='text-center pt-3 pb-3'>Nessun componente trovato</h2>
-            : componenti.map((data, index) => (
+            : utenti.map((data, index) => (
                 <tr key={index}>
                     
                 <td><img src={data.urlImmagine}/></td>
