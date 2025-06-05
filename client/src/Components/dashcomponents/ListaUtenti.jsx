@@ -23,7 +23,7 @@ function ListaUtenti() {
   const [loading, setLoading] = useState(true)
   // initialize the error state as null
   const [error, setError] = useState(null)
-  const [componentiFiltrati, setComponentiFiltrati] = useState([])
+  const [utentiFiltrati, setutentiFiltrati] = useState([])
   const [marcaFilter, setMarcaFilter] = useState('');
   const [modelloFilter, setModelloFilter] = useState('');
   const [nomeFilter, setNomeFilter] = useState('');
@@ -38,7 +38,7 @@ function ListaUtenti() {
         console.log("*****")
         console.log(componentiDalServer)
         setUtenti(componentiDalServer)
-        setComponentiFiltrati(componentiDalServer)
+        setutentiFiltrati(componentiDalServer)
       })
       .catch(err => {
         console.log(err)
