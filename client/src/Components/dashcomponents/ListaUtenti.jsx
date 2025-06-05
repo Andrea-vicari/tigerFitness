@@ -58,7 +58,7 @@ function ListaUtenti() {
     setNomeFilter('')
   }
 
-  const filteredProducts = utenti.filter((product) =>
+  const filteredUtenti = utenti.filter((product) =>
     product.marca.toLowerCase().includes(marcaFilter.toLowerCase()) &&
     product.modello.toLowerCase().includes(modelloFilter.toLowerCase()) &&
     product.nome.toLowerCase().includes(nomeFilter.toLowerCase())
@@ -66,7 +66,7 @@ function ListaUtenti() {
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = filteredProducts.slice(indexOfFirstPost, indexOfLastPost);
+  const currentPosts = filteredUtenti.slice(indexOfFirstPost, indexOfLastPost);
 
   console.log("currentPosts")
   console.log(currentPosts)
