@@ -24,7 +24,6 @@ function ListaUtenti() {
   // initialize the error state as null
   const [error, setError] = useState(null)
   const [utentiFiltrati, setutentiFiltrati] = useState([])
-  const [marcaFilter, setMarcaFilter] = useState('');
   const [nomeFilter, setNomeFilter] = useState('');
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -52,12 +51,10 @@ function ListaUtenti() {
   }, [])
 
   const resettaRicerca = () =>{
-    setMarcaFilter('')
-    setNomeFilter('')
+     setNomeFilter('')
   }
 
   const filteredUtenti = utenti.filter((product) =>
-    product.marca.toLowerCase().includes(marcaFilter.toLowerCase()) &&
     product.nome.toLowerCase().includes(nomeFilter.toLowerCase())
   );
 
@@ -93,13 +90,6 @@ function ListaUtenti() {
           placeholder="Inserisci il nome"
           value={nomeFilter}
           onChange={(e) => setNomeFilter(e.target.value)}
-        />
-        <input
-          className="mb-2 mx-2 pb-1"
-          type="text"
-          placeholder="Inserisci la marca"
-          value={marcaFilter}
-          onChange={(e) => setMarcaFilter(e.target.value)}
         />
         
         <button className='btn btn-outline-info py-1 rounded-0' onClick={()=>resettaRicerca()}>RESET</button>
