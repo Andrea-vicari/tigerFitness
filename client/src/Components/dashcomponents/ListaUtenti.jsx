@@ -34,11 +34,11 @@ function ListaUtenti() {
   useEffect(() => {
     fetch('https://autoparts-flame.vercel.app/api/utenti')
       .then(response => response.json())
-      .then(componentiDalServer => {
+      .then(utentiDalServer => {
         console.log("*****")
-        console.log(componentiDalServer)
-        setUtenti(componentiDalServer)
-        setutentiFiltrati(componentiDalServer)
+        console.log(utentiDalServer)
+        setUtenti(utentiDalServer)
+        setutentiFiltrati(utentiDalServer)
       })
       .catch(err => {
         console.log(err)
