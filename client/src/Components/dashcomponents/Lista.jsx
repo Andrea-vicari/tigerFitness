@@ -25,11 +25,7 @@ const Lista = ({ componenti, loading }) => {
                 <tr key={index}>
                     
                 <td><img src={data.urlImmagine}/></td>
-                <td className='pt-3'>
-                  <a href={'https://www.google.com/search?q=' + data.codice} target="_blank">{data.codice}</a>
-
-                </td>
-                <td className='pt-3'>{data.nome}</td>
+                <td className='pt-3'>{data.username}</td>
                 <td className='pt-3'>{data.categoria}</td>
                 <td className='pt-3'>{data.condizione}</td>
                 <td className='pt-3'>{data.marca}</td>
