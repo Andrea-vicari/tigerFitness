@@ -32,7 +32,7 @@ function ListaUtenti() {
   const [postsPerPage, setPostsPerPage] = useState(5);
 
   useEffect(() => {
-    fetch('https://autoparts-flame.vercel.app/api/utenti')
+    fetch('https://pulsefit-server.vercel.app/api/users/')
       .then(response => response.json())
       .then(utentiDalServer => {
         console.log("*****")
@@ -75,8 +75,8 @@ function ListaUtenti() {
     setCurrentPage(pageNumber);
   }
 
-  var totaleComponenti = utenti.length
-  console.log(totaleComponenti)
+  var totaleUtenti = utenti.length
+  console.log(totaleUtenti)
 
   return (
     <>
