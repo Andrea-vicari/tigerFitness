@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import LigthBox from './LigthBox';
+//import LigthBox from './LigthBox';
 
 
 const Lista = ({ componenti, loading }) => {
@@ -23,7 +23,8 @@ const Lista = ({ componenti, loading }) => {
               <h2 className='text-center pt-3 pb-3'>Nessun componente trovato</h2>
             : componenti.map((data, index) => (
                 <tr key={index}>
-                <td><LigthBox immagine={data.urlImmagine}/></td>
+                    
+                <td><img src={data.urlImmagine}/></td>
                 <td className='pt-3'>
                   <a href={'https://www.google.com/search?q=' + data.codice} target="_blank">{data.codice}</a>
 
