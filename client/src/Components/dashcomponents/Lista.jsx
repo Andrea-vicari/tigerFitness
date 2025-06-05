@@ -26,20 +26,9 @@ const Lista = ({ componenti, loading }) => {
                     
                 <td><img src={data.urlImmagine}/></td>
                 <td className='pt-3'>{data.username}</td>
-                <td className='pt-3'>{data.categoria}</td>
-                <td className='pt-3'>{data.condizione}</td>
-                <td className='pt-3'>{data.marca}</td>
-                <td className='pt-3'>{data.modello}</td>
-                <td className='pt-3'>{data.versione}</td>
-                <td className='pt-3'>{data.annoImmatricolazione}</td>
-                <td className='pt-3'>
-                  <p id="modello-componente" className="mb-0">SCAFFALE: {data.scaffale}</p>
-                  <p id="modello-componente" className="mb-0 py-0">CAMPATA: {data.campata}</p>
-                  <p id="modello-componente" className="mb-0">RIPIANO: {data.ripiano}</p>
-                  <p id="modello-componente" className="mb-0">CASSETTA: {data.cassetta}</p>
-                </td>
-                <td className='pt-3'>{data.peso} Kg</td>
-                <td className='pt-3'>
+                <td className='pt-3'>{data.email}</td>
+                <td className='pt-3'>{data.createdAt}</td>
+                   <td className='pt-3'>
                   <Link to={`/modificacomponente/${data._id}`} state={data._id} type="button" className="btn btn-sm btn-outline-danger mx-1">
                     <i className='bi bi-zoom-in'></i>
                   </Link>
