@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Lista = ({ utenti, loading }) => {
 
     console.log("== &&&& ===0")
-    console.log(componenti)
+    console.log(utenti)
 
 
     if (loading) {
