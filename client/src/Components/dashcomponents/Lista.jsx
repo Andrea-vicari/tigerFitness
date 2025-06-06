@@ -19,8 +19,11 @@ const Lista = ({ utenti, loading }) => {
         let key = entry[0];
         let value = entry[1];
         console.log("HHHHHH");
-        console.log(key, value);
+        value == "createdAt" ? utenti.dataIsc = "Ciao" : false
     });
+
+    console.log("TTTT")
+     console.log(utenti)
 
 
     return (
