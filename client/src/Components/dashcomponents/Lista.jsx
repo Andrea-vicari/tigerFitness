@@ -15,10 +15,11 @@ const Lista = ({ utenti, loading }) => {
         )
     }
 
-    for (const property in utenti') {
-        console.log("Proprietà dell oggetto utenti")
-        console.log(`${property}: ${utenti[property]}`);
-     }
+    Object.entries(utenti).map(entry => {
+        let key = entry[0];
+        let value = entry[1];
+        console.log(key, value);
+    });
 
 
     return (
