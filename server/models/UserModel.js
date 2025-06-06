@@ -21,6 +21,10 @@ const userSchema = new mongoose.Schema({
             type: String,
             required: false,
             default: "file_1715325537969.png"
+        },
+        dataIscrizione:{
+          type: String,
+          required: false,   
         }
 
 },{ timestamps:true })
