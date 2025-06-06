@@ -13,10 +13,10 @@ const createToken = (_id) =>{
 //SignUp
 const signupUser = async (req, res)=> {
 
-    const {email, password, username, dataIscrizione } = req.body;
+    const {email, password, username } = req.body;
 
     try{
-        const user = await Users.signup(email, password, username, dataIscrizione)
+        const user = await Users.signup(email, password, username)
 
         // Token creation
         const token = createToken(user._id)
