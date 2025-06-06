@@ -13,19 +13,18 @@ function Register() {
     themeType == "ligth" ? textType = "" : textType = "text-bg-dark"
     themeType == "ligth" ? buttonType = "btn-outline-dark" : buttonType = "btn-outline-light"
 
-    const today = new Date().toDateString()
+    
 
     // Submit functions
     const [username, setUsername] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
-    const [dataIscrizione, setdataIscrizione] = useState(today)
-    const {signup, isLoading, error} = useSignup()
+     const {signup, isLoading, error} = useSignup()
 
     const handleSubmit = async (e) => {
       e.preventDefault()
-      setdataIscrizione(today)
-      await signup(email, password, username, dataIscrizione)
+      
+      await signup(email, password, username)
     }
 
 
