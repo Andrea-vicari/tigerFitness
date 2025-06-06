@@ -17,8 +17,8 @@ const Lista = ({ utenti, loading }) => {
 
     for (const property in utenti') {
         console.log("Proprietà dell oggetto utenti")
-  console.log(`${property}: ${utenti[property]}`);
-}
+        console.log(`${property}: ${utenti[property]}`);
+     }
 
 
     return (
