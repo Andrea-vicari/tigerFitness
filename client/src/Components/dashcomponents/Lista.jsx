@@ -20,10 +20,11 @@ const Lista = ({ utenti, loading }) => {
         let value = entry[1];
         console.log("HHHHHH");
         value == "createdAt" ? utenti.dataIsc = "Ciao" : false
+        console.log("TTTT")
+     console.log(utenti)
     });
 
-    console.log("TTTT")
-     console.log(utenti)
+    
 
 
     return (
