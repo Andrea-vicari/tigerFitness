@@ -7,14 +7,14 @@ export const useSignup = () =>{
     const [isLoading, setisLoading] = useState(null)
     const { user, dispatch  } = UseAuthContext()
 
-    const signup = async (email, password, username, dataIscrizione) => {
+    const signup = async (email, password, username) => {
         setisLoading(true)
         setError(null)
 
         const response = await fetch('https://pulsefit-server.vercel.app/api/users/signup', {
 
             method: 'POST',
-            body: JSON.stringify({email, password, username, dataIscrizione}),
+            body: JSON.stringify({email, password, username}),
             headers:{
                 'Content-Type': 'application/json'
               }
