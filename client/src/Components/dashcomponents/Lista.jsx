@@ -15,16 +15,7 @@ const Lista = ({ utenti, loading }) => {
         )
     }
 
-    Object.entries(utenti).map(entry => {
-        let key = entry[0];
-        let value = entry[1];
-        console.log("HHHHHH");
-        utenti.dataIsc = "Ciao" 
-        
-     console.log(utenti)
-    });
-
-    
+  
 
 
     return (
