@@ -13,10 +13,10 @@ const createToken = (_id) =>{
 //SignUp
 const signupUser = async (req, res)=> {
 
-    const {email, password, username } = req.body;
+    const {email, password, username, dataIscrizione } = req.body;
 
     try{
-        const user = await Users.signup(email, password, username)
+        const user = await Users.signup(email, password, username, dataIscrizione)
 
         // Token creation
         const token = createToken(user._id)
@@ -24,7 +24,6 @@ const signupUser = async (req, res)=> {
         const user_id = user._id
 
         let role = "user"
-
 
         res.status(200).json({email, token, user_id, role});
     }
