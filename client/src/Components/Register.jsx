@@ -24,7 +24,7 @@ function Register() {
 
     const handleSubmit = async (e) => {
       e.preventDefault()
-
+      setdataIscrizione(today)
       await signup(email, password, username, dataIscrizione)
     }
 
