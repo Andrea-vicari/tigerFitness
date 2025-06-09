@@ -69,6 +69,7 @@ function App() {
             <Route path="/nutrizione" element={<NutrizionePage />} />
             <Route path="/singlepost" element={<SinglePost />} />
             <Route path="/newtraining/:id" element={<NewTrainingPage />} />
+            <Route path="/cancella-utente-page/:id" element={<CancellaUtentePage />} />
             <Route path="/newbooking" element={user ? <NewBookingPage /> : <Navigate to="/login"/>} />
             <Route path="/schedatrainerpage/:id" element={<SchedaTrainerPage />} />
             <Route path="/schedautentepage/:id" element={<SchedaUtentePage />} />
