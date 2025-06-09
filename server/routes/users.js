@@ -51,7 +51,7 @@ router.get('/', seeAllUser)
 router.get('/:id', getSingleUser);
 
 // Delete a user
-router.delete('/:id', deleteUser)
+router.delete('/cancella-singolo-utente/:id', deleteUser)
 
 // SignUp
 router.post('/signup', signupUser);
