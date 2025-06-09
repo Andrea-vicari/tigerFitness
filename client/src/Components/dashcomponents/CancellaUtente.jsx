@@ -7,7 +7,7 @@ import axios from 'axios'
 
 var componenteDaCancID
 
-function CancellaComponente() {
+function CancellaUtente() {
 
   const themeType = useSelector((state) => state.counter.value)
 
@@ -117,5 +117,5 @@ function CancellaComponente() {
   )
 }
 
-export default CancellaComponente
+export default CancellaUtente
 
