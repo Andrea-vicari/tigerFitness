@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { useEffect } from "react";
 import {  Link, useLocation, Navigate, useNavigate } from 'react-router-dom';
-import logo from "../../assets/images/logo-autoparts-footer.svg";
+import logo from "../../assets/images/pulseFit_logo.svg";
 import axios from 'axios'
 
 var componenteDaCancID
