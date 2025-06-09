@@ -25,6 +25,7 @@ import SentPassword from './pages/SentPassword';
 import DashboardPage from './pages/dashpages/DashboardPage';
 import UsersList from './pages/dashpages/UsersListPage';
 import SingleUserPage from './pages/dashpages/SingleUserPage';
+import CancellaUtentePage from './pages/dashpages/CancellaUtentePage';
 import NewTrainingPage from './pages/dashpages/NewTrainingPage';
 import NewBookingPage from './pages/dashpages/NewBookingPage';
 import SchedaTrainerPage from './pages/dashpages/SchedaTrainerPage';
