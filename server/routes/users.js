@@ -42,7 +42,7 @@ router.post("/upload", upload.single("my_file"), async (req, res) => {
 	}
   });
 
-  const {signupUser, loginUser, seeAllUser, forgotPassword, resetPassword, getSingleUser, modificaURLimmagine} = require('../controllers/userController');
+  const {signupUser, loginUser, deleteUser, seeAllUser, forgotPassword, resetPassword, getSingleUser, modificaURLimmagine} = require('../controllers/userController');
 
 // See All
 router.get('/', seeAllUser)
