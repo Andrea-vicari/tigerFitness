@@ -72,6 +72,23 @@ const seeAllUser = async (req, res)=> {
     res.status(200).json(allUsers)
 }
 
+// Delete a WorkOut
+const deleteUser = async (req, res)=> {
+
+    const { id } = req.params;
+
+    if (!mongoose.Types.ObjectId.isValid(id)){
+        return res.status(404).json({error: "No User found"})
+    }
+
+    const singleUser = await Users.findOneAndDelete({_id: id})
+
+    if(!singleUser){
+        return res.status(400).json({error: "No User found"})
+      }
+      res.status(200).json(singleUser);
+}
+
 const forgotPassword = async (req, res)=> {
 
     const {email} = req.body
@@ -172,5 +189,5 @@ const modificaURLimmagine = async (req, res) => {
 }
 
 module.exports = {
-    signupUser, loginUser, seeAllUser, forgotPassword, resetPassword, getSingleUser, modificaURLimmagine
+    signupUser, loginUser, seeAllUser, deleteUser, forgotPassword, resetPassword, getSingleUser, modificaURLimmagine
 }
