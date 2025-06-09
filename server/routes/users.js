@@ -50,6 +50,9 @@ router.get('/', seeAllUser)
 // See single user
 router.get('/:id', getSingleUser);
 
+// Delete a user
+router.delete('/:id', deleteUser)
+
 // SignUp
 router.post('/signup', signupUser);
 
