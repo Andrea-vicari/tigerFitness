@@ -22,7 +22,7 @@ function CancellaUtente() {
 
   utenteDaCancID = clicked.state
 
-  console.log('ID del prodotto da cancellare')
+  console.log('ID del utente da cancellare')
   console.log(utenteDaCancID)
 
                         function closeModal(){
