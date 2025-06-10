@@ -27,7 +27,7 @@ function CancellaUtente() {
 
                         function closeModal(){
 				      document.getElementById('modale_prodotto').classList.remove("d-block")
-				      navigate("/elencocomponenti");
+				      navigate("/userslist");
 				    }
 				    function openModal(){
 				      document.getElementById('modale_prodotto').classList.add("d-block")
@@ -65,7 +65,7 @@ function CancellaUtente() {
                         <i className='bi bi-trash'></i> OK, CANCELLA
                       </button>
 
-                      <Link to="/elencocomponenti" type="button" className="btn btn-large btn-outline-danger mx-1 mt-3">
+                      <Link to="/userslist" type="button" className="btn btn-large btn-outline-danger mx-1 mt-3">
                         <i className='bi bi-arrow-left-circle'></i> NO, TORNA ALL'ELENCO UTENTI
                       </Link>
                     </div>
