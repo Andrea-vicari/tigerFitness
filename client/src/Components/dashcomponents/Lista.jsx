@@ -42,6 +42,12 @@ const Lista = ({ utenti, loading }) => {
                   </Link>
 
                 </td>
+                 <td className='pt-3'>
+                  <Link to={`/cancella-utente-page/${data._id}`} state={data._id} type="button" className="btn btn-sm btn-outline-danger mx-1">
+                    <i className='bi bi-trash fs-4 mx-2'></i>
+                  </Link>
+
+                </td>
 
 
 
