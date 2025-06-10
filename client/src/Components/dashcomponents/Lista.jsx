@@ -15,7 +15,7 @@ const Lista = ({ utenti, loading }) => {
         )
     }
 
-  
+
 
 
     return (
@@ -25,8 +25,8 @@ const Lista = ({ utenti, loading }) => {
               <h2 className='text-center pt-3 pb-3'>Nessun componente trovato</h2>
             : utenti.map((data, index) => (
                 <tr key={index}>
-                    
-                <td><img src={data.image} className="img-fluid"/></td>
+
+                <td><img src={data.image} style={{width:70}}/></td>
                 <td className='pt-3'>{data.username}</td>
                 <td className='pt-3'>{data.email}</td>
                 <td className='pt-3'>{data.createdAt}</td>
