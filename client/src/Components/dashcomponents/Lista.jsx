@@ -33,8 +33,7 @@ const Lista = ({ utenti, loading }) => {
                    <td className='pt-3'>
                   <Link type="button" to={`/newtraining/${data._id}`} state={data._id} className="btn btn-danger fs-6">
               <i className="bi bi-plus-square fs-4 mx-2"></i>
-              Aggiungi
-              </Link>
+                            </Link>
                 </td>
               
                    <td className='pt-3'>
