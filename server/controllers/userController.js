@@ -3,6 +3,7 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require('bcryptjs')
 var nodemailer = require('nodemailer');
 const validator = require('validator')
+const mongoose = require('mongoose');
 
 
 
