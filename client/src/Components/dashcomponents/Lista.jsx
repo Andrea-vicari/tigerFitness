@@ -31,9 +31,10 @@ const Lista = ({ utenti, loading }) => {
                 <td className='pt-3'>{data.email}</td>
                 <td className='pt-3'>{data.createdAt}</td>
                    <td className='pt-3'>
-                  <Link to={`/modificacomponente/${data._id}`} state={data._id} type="button" className="btn btn-sm btn-outline-danger mx-1">
-                    <i className='bi bi-zoom-in'></i>
-                  </Link>
+                  <Link type="button" to={`/newtraining/${userID}`} state={userID} className="btn btn-danger fs-6">
+              <i className="bi bi-plus-square fs-4 mx-2"></i>
+              Aggiungi
+              </Link>
                   <Link to={`/cancella-utente-page/${data._id}`} state={data._id} type="button" className="btn btn-sm btn-outline-danger mx-1">
                     <i className='bi bi-trash'></i>
                   </Link>
