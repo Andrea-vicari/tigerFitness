@@ -96,7 +96,7 @@ function ListaUtenti() {
         <div className="col-sm-2 d-none d-sm-block">
         <div className='py-4'>
           <label>
-          utenti per pagina:
+          Utenti per pagina:
           <select value={postsPerPage}
             onChange={e => setPostsPerPage(e.target.value)}
             className='mx-3' name="compPerPage">
