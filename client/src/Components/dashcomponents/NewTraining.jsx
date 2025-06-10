@@ -29,6 +29,7 @@ const NewTraining = () =>{
     const [rest, setRest] = useState('')
     const [reps, setReps] = useState('')
     const [series, setSeries] = useState('')
+    //const [series, setSeries] = useState('')
     const [user, setUser] = useState('')
     const [date, setToday] = useState('')
     const [error, setError] = useState(null)
