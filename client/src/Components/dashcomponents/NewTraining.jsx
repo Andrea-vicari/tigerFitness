@@ -29,7 +29,7 @@ const NewTraining = () =>{
     const [rest, setRest] = useState('')
     const [reps, setReps] = useState('')
     const [series, setSeries] = useState('')
-    //const [series, setSeries] = useState('')
+    const [notaAllenamento, setNotaAllenamento] = useState('')
     const [user, setUser] = useState('')
     const [date, setToday] = useState('')
     const [error, setError] = useState(null)
@@ -69,6 +69,7 @@ const NewTraining = () =>{
             setReps('')
             setRest('')
             setSeries('')
+            setNotaAllenamento('')
             setUser('')
             setError(null)
             setemptyFields([])
@@ -116,7 +117,7 @@ const NewTraining = () =>{
                 </label>
                 <input
                   type="number"
-                  placeholder="Inserisci Ripezìtizioni"
+                  placeholder="Inserisci Ripetizioni"
                   autoComplete="off"
                   name="number"
                   className="form-control rounded-0"
@@ -171,6 +172,21 @@ const NewTraining = () =>{
                   className="form-control rounded-0"
                   onChange={(e) => setLoad(e.target.value)}
                   value={loads}
+                  required={true}
+                />
+              </div>
+                <div className="mb-3">
+                <label htmlFor="loads">
+                  <strong>Nota allenameneto</strong>
+                </label>
+                <input
+                  type="number"
+                  placeholder="Inserisci Nota"
+                  autoComplete="off"
+                  name="text"
+                  className="form-control rounded-0"
+                  onChange={(e) => setNotaAllenamento(e.target.value)}
+                  value={notaAllenamento}
                   required={true}
                 />
               </div>
