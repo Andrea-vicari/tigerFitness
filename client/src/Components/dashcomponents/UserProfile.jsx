@@ -100,7 +100,8 @@ function UserProfile() {
     };
 
     axios
-      .patch(`https://pulsefit-server.vercel.app/api/users/aggiungi-immagine-utente/6654d16cc3e78209fb9b37de`, data)
+      //.patch(`https://pulsefit-server.vercel.app/api/users/aggiungi-immagine-utente/6654d16cc3e78209fb9b37de`, data)
+      .patch("https://pulsefit-server.vercel.app/api/users/aggiungi-immagine-utente/" + singleID, data)
       .then((res) => {
         navigate(`/dashboardpage`);
       })
