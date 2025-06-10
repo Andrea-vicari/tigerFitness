@@ -38,6 +38,10 @@ const workoutsSchema = new mongoose.Schema({
         type: String,
         required: false
     },
+    notaAllenamento:{
+        type: String,
+        required: false
+    },
 
     registered:{
         type: Array,
