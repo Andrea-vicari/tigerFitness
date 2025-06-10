@@ -142,6 +142,7 @@ function ListaUtenti() {
                   <th scope="col">Nome Utente</th>
                   <th scope="col">Email</th>
                   <th scope="col">Data iscrizione</th>
+                  <th scope="col">Gestisci</th>
 
                 </tr>
               </thead>
