@@ -5,7 +5,7 @@ import {  Link, useLocation, Navigate, useNavigate } from 'react-router-dom';
 import logo from "../../assets/images/pulseFit_logo.svg";
 import axios from 'axios'
 
-var componenteDaCancID
+var utenteDaCancID
 
 function CancellaUtente() {
 
@@ -20,10 +20,10 @@ function CancellaUtente() {
 
   let clicked = useLocation();
 
-  componenteDaCancID = clicked.state
+  utenteDaCancID = clicked.state
 
   console.log('ID del prodotto da cancellare')
-  console.log(componenteDaCancID)
+  console.log(utenteDaCancID)
 
                         function closeModal(){
 				      document.getElementById('modale_prodotto').classList.remove("d-block")
@@ -39,7 +39,7 @@ function CancellaUtente() {
 
 	openModal()
 
-  axios.delete(`https://pulsefit-server.vercel.app/api/users/cancella-singolo-utente/${componenteDaCancID}`)
+  axios.delete(`https://pulsefit-server.vercel.app/api/users/cancella-singolo-utente/${utenteDaCancID}`)
 
 
  }
