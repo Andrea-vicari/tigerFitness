@@ -82,7 +82,7 @@ function ListaUtenti() {
       <div className={"container-fluid mb-0 py-3" + " " + bgType + " " + textType}>
         <h4 className="mx-2 mb-1" id='filtro_compon'>Filtra utente</h4>
         <div className="row border-bottom">
-        <div className="col-sm-6 py-2 pt-3">
+        <div className="col-sm-2 py-2 pt-3">
         <input
           className="mb-2 mx-2 pb-1"
           type="text"
