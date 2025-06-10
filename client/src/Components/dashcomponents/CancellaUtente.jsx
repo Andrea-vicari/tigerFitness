@@ -39,7 +39,7 @@ function CancellaUtente() {
 
 	openModal()
 
-  axios.delete(`https://autoparts-flame.vercel.app/api/componenti/delete/${componenteDaCancID}`)
+  axios.delete(`https://pulsefit-server.vercel.app/api/users/cancella-singolo-utente/${componenteDaCancID}`)
 
 
  }
