@@ -75,12 +75,12 @@ function CancellaUtente() {
                 <div className="modal-content rounded-4 shadow bg-dark" >
                   <div className="modal-header d-flex justify-content-between">
                   <img src={logo} style={{width:200}} className='img-fluid'></img>
-                    <h2 className="modal-title text-white text-center">COMPONENTE CANCELLATO</h2>
+                    <h2 className="modal-title text-white text-center">UTENTE CANCELLATO</h2>
 
                   </div>
                   <div className="modal-body py-3 text-white">
 
-                  <h4 className="text-white mt-3 fw-bold">Componente cancellato correttamente!</h4>
+                  <h4 className="text-white mt-3 fw-bold">Utente cancellato correttamente!</h4>
                     </div>
 
                   <div className="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
