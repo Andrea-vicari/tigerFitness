@@ -179,8 +179,8 @@ const NewTraining = () =>{
                 <label htmlFor="loads">
                   <strong>Nota allenameneto</strong>
                 </label>
-                <input
-                  type="number"
+                <textarea
+                  type="text"
                   placeholder="Inserisci Nota"
                   autoComplete="off"
                   name="text"
