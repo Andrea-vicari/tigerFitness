@@ -59,14 +59,14 @@ function CancellaUtente() {
                 <div className={"row pt-3 mt-5"  + " " + bgType + " " + textType}>
                    <div className="col-sm-10 text-center pt-5 pb-5">
 				<i className='bi bi-trash fs-1'></i>
-                   	<h3>Richiesta cancellazione componente</h3>
-                   	<h4>Stai per cancellare il componente</h4>
+                   	<h3>Richiesta cancellazione utente</h3>
+                   	<h4>Stai per cancellare l'utente</h4>
 				 <button onClick={()=>cancellaProd()} type="button" className="btn btn-large btn-outline-success mx-1">
                         <i className='bi bi-trash'></i> OK, CANCELLA
                       </button>
 
-                      <Link to="/elencocomponenti" type="button" className="btn btn-large btn-outline-danger mx-1">
-                        <i className='bi bi-arrow-left-circle'></i> NO, TORNA ALL'ELENCO COMPONENTI
+                      <Link to="/elencocomponenti" type="button" className="btn btn-large btn-outline-danger mx-1 mt-3">
+                        <i className='bi bi-arrow-left-circle'></i> NO, TORNA ALL'ELENCO UTENTI
                       </Link>
                     </div>
             {/** MODALE */}
