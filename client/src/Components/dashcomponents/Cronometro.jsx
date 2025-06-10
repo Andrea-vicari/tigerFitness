@@ -54,7 +54,7 @@ function Cronometro() {
                   <div className="modal-header d-flex justify-content-between">
                   <img src={logo} width="50"></img>
                     <h2 className="modal-title text-white mx-3">CRONOMETRO</h2>
-                    <i className='bi bi-alarm px-2 fs-4 text-danger' onClick={()=>closeCrono()}></i>Chiudi
+                    <i className='bi bi-x-circle px-2 fs-4 text-danger' onClick={()=>closeCrono()}></i>Chiudi
 
                   </div>
                   <Timer time={time} />
