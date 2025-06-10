@@ -73,13 +73,13 @@ function ListaUtenti() {
 
   return (
     <>
-      <div className='container-fluid pt-1 mt-5 bg-login d-none d-sm-block'>
+      <div className='container-fluid pt-1 mt-5 bg-stripe d-none d-sm-block'>
         <div className='container text-center mt-5 pb-1'>
           <h1 className='display-2 text-white text-uppercase'>Elenco utenti</h1>
         </div>
       </div>
 
-      <div className={"container-fluid mb-0 py-3" + " " + bg-stripe + " " + textType}>
+      <div className={"container-fluid mb-0 py-3" + " " + bg-type + " " + textType}>
         <h4 className="mx-2 mb-1" id='filtro_compon'>Filtra il componente</h4>
         <div className="row border-bottom">
         <div className="col-sm-6 py-2 pt-3">
