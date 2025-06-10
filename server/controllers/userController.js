@@ -177,6 +177,8 @@ const modificaURLimmagine = async (req, res) => {
 
     const { id } = req.params;
 
+   console.log(req.body)
+
 
     Users.findOneAndUpdate({_id: id}, {...req.body})
     .then(comp => res.json({ msg: 'Updated successfully' }))
