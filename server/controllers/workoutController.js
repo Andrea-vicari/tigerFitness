@@ -90,6 +90,10 @@ const createNewWorkOut = async (req, res)=> {
 
     const {today, user, title, series, reps, rest, loads, status, notaAllenamento} = req.body
 
+    console.log("FYTFYFFTFYTFYT")
+    console.log(req.body)
+    
+
 
     // Add doc to the Mongo DB
 
