@@ -179,13 +179,13 @@ const NewTraining = () =>{
                 <label htmlFor="loads">
                   <strong>Nota allenamento</strong>
                 </label>
-                <input
+                <textarea
                   type="text"
                   placeholder="Inserisci Nota"
                   autoComplete="off"
                   name="text"
                   className="form-control rounded-0"
-                  onChange={(e) => setNotaAllenamento(e.target.value)}
+                  onInput={(e) => setNotaAllenamento(e.target.value)}
                   value={notaAllenamento}
                   required={true}
                 />
