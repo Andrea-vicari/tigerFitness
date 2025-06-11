@@ -3,56 +3,105 @@ import { useSelector } from 'react-redux'
 
 function DettaglioUtente() {
 
-  const themeType = useSelector((state) => state.counter.value)
+    const themeType = useSelector((state) => state.counter.value)
 
-  let bgType, textType;
+  let bgType, textType, darkType;
 
-  themeType == "ligth" ? bgType = "bg-ligth" : bgType = "bg-dark"
-
-  themeType == "ligth" ? textType = "" : textType = "text-bg-dark"
+  themeType == "ligth" ? bgType = "bg-ligth" : bgType = "bg-black"
+  themeType == "ligth" ? textType = "primary" : textType = "text-bg-dark"
+  themeType == "ligth" ? darkType = "" : darkType = "bg-dark"
 
   return (
     <>
-      <section id="features" className={"features" + " " + bgType + " " + textType}>
-        <div id='features_container' className="container">
-          <h1 className="section-title pt-5">Features</h1>
-          <p className='mb-5 text-center'>We are a small team with great skills.</p>
-          <p className='text-center'>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-          <div className="row pt-3 pb-5">
-            <div className="col-lg-4 col-md-6 icon-box">
-              <div className="icon bg-primary"><i className="bi bi-android2"></i></div>
-              <h4 className="title">Applications</h4>
-              <p className="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <section id="team" className={"team pb-5" + " " + bgType + " " + textType}>
+        <div className="container mb-2">
+
+            <div>
+                <h2 className="section-title">Team</h2>
+                <p className='mb-5 text-center'>We are a small team with great skills.</p>
+                <p className='text-center mb-5'>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+
             </div>
-            <div className="col-lg-4 col-md-6 icon-box">
-              <div className="icon bg-primary"><i className="bi bi-apple"></i></div>
-              <h4 className="title">Mobile</h4>
-              <p className="description">Functional components, well organized and fully reusable</p>
+
+            <div className="row">
+
+                <div className={"col-lg-6 mb-3" + " " + bgType + " " + textType}>
+                    <div className={"member d-flex align-items-start"+ " " + darkType + " " + textType}>
+                        <div className="pic">
+                            <img src="https://placehold.co/400x400" className="img-fluid" alt=""/>
+                        </div>
+                        <div className="member-info">
+                        <h4 className='text-primary'>John Doe</h4>
+                        <span>Chief Executive Officer</span>
+                        <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                        <div className="social">
+                            <a href=""><i className="bi bi-instagram"></i></a>
+                            <a href=""><i className="bi bi-facebook"></i></a>
+                            <a href=""> <i className="bi bi-envelope"></i> </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={"col-lg-6 mb-3" + " " + bgType + " " + textType}>
+                    <div className={"member d-flex align-items-start"+ " " + darkType + " " + textType}>
+                        <div className="pic">
+                            <img src="https://placehold.co/400x400" className="img-fluid" alt=""/>
+                        </div>
+                        <div className="member-info">
+                        <h4 className='text-primary'>Jeff White</h4>
+                        <span>H.R. Manager</span>
+                        <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                        <div className="social">
+                            <a href=""><i className="bi bi-instagram"></i></a>
+                            <a href=""><i className="bi bi-facebook"></i></a>
+                            <a href=""> <i className="bi bi-envelope"></i> </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={"col-lg-6 mb-3" + " " + bgType + " " + textType}>
+                    <div className={"member d-flex align-items-start"+ " " + darkType + " " + textType}>
+                        <div className="pic">
+                            <img src="https://placehold.co/400x400" className="img-fluid" alt=""/>
+                        </div>
+                        <div className="member-info">
+                        <h4 className='text-primary'>Tom Reed</h4>
+                        <span>Product Manager</span>
+                        <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                        <div className="social">
+                            <a href=""><i className="bi bi-instagram"></i></a>
+                            <a href=""><i className="bi bi-facebook"></i></a>
+                            <a href=""> <i className="bi bi-envelope"></i> </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={"col-lg-6 mb-3" + " " + bgType + " " + textType}>
+                    <div className={"member d-flex align-items-start"+ " " + darkType + " " + textType}>
+                        <div className="pic">
+                            <img src="https://placehold.co/400x400" className="img-fluid" alt=""/>
+                        </div>
+                        <div className="member-info">
+                        <h4 className='text-primary'>Shawn Stephen</h4>
+                        <span>Finance Manager</span>
+                        <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                        <div className="social">
+                            <a href=""><i className="bi bi-instagram"></i></a>
+                            <a href=""><i className="bi bi-facebook"></i></a>
+                            <a href=""> <i className="bi bi-envelope"></i> </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div className="col-lg-4 col-md-6 icon-box">
-              <div className="icon bg-primary"><i className="bi bi-bootstrap"></i></div>
-              <h4 className="title">Bootstrap5</h4>
-              <p className="description">Coded using Bootstrap5 framework, to speed up future developments</p>
-            </div>
-            <div className="col-lg-4 col-md-6 icon-box">
-              <div className="icon bg-primary"><i className="bi bi-palette"></i></div>
-              <h4 className="title">Clean</h4>
-              <p className="description">Clean and elegant design suitable for many projects and business</p>
-            </div>
-            <div className="col-lg-4 col-md-6 icon-box">
-              <div className="icon bg-primary"><i className="bi bi-diagram-3-fill"></i></div>
-              <h4 className="title">Responsive</h4>
-              <p className="description">Responsive layout, perfectly showcase your projects in all devices</p>
-            </div>
-            <div className="col-lg-4 col-md-6 icon-box">
-              <div className="icon bg-primary"><i className="bi bi-filetype-php"></i></div>
-              <h4 className="title">Database</h4>
-              <p className="description">JSON or API friendly. Customize portfolio via JSON or APIs </p>
-            </div>
-          </div>
 
         </div>
-      </section>
+    </section>
+
     </>
   )
 }
