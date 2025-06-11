@@ -42,7 +42,7 @@ const NewTraining = () =>{
         setUser(userID)
         setToday(today)
         openModal()
-        const workout = {today, user, title, series, reps, rest, loads}
+        const workout = {today, user, title, series, reps, rest, loads, notaAllenamento}
 
         const response = await fetch('https://pulsefit-server.vercel.app/api/workouts', {
 
