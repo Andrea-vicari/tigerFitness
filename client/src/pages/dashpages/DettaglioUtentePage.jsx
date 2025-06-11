@@ -1,18 +1,18 @@
 import React from 'react'
 import Footer from '../../Components/Common/Footer';
 import Navbar from '../../Components/Common/DashNav';
-import SingleUser from '../../Components/dashcomponents/SingleUser';
+import DettaglioUtente from '../../Components/dashcomponents/SingleUser';
 
 
 
-function DettaglioUtente() {
+function DettaglioUtentePage() {
   return (
     <>
     <Navbar />
-    <SingleUser />
+    <DettaglioUtente />
     <Footer />
     </>
   )
 }
 
-export default DettaglioUtente
+export default DettaglioUtentePage
