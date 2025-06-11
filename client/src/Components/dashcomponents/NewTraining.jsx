@@ -177,7 +177,7 @@ const NewTraining = () =>{
               </div>
                 <div className="mb-3">
                 <label htmlFor="loads">
-                  <strong>Nota allenameneto</strong>
+                  <strong>Nota allenamento</strong>
                 </label>
                 <textarea
                   type="text"
