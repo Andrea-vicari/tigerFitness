@@ -25,6 +25,7 @@ import SentPassword from './pages/SentPassword';
 import DashboardPage from './pages/dashpages/DashboardPage';
 import UsersList from './pages/dashpages/UsersListPage';
 import SingleUserPage from './pages/dashpages/SingleUserPage';
+import DettaglioUtentePage from './pages/dashpages/DettaglioUtentePage';
 import CancellaUtentePage from './pages/dashpages/CancellaUtentePage';
 import NewTrainingPage from './pages/dashpages/NewTrainingPage';
 import NewBookingPage from './pages/dashpages/NewBookingPage';
@@ -73,6 +74,7 @@ function App() {
             <Route path="/newbooking" element={user ? <NewBookingPage /> : <Navigate to="/login"/>} />
             <Route path="/schedatrainerpage/:id" element={<SchedaTrainerPage />} />
             <Route path="/schedautentepage/:id" element={<SchedaUtentePage />} />
+            <Route path="/dettaglioutentepage/:id" element={<DettaglioUtentePage />} />
             <Route path="/singleproject" element={<SingleProject />} />
             <Route path="/singleuser/:id" element={user ? <SingleUserPage /> : <Navigate to="/login"/>} />
             <Route path="/*" element={<Error404 />} />
