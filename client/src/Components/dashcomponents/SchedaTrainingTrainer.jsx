@@ -141,6 +141,13 @@ function SchedaTrainingTrainer(){
                     </div>
                   </div>
                   </li>
+                    <li className="list-group-item list-group-item-action d-flex gap-3" aria-current="true">
+                  <div className="d-flex gap-2 w-100 justify-content-between">
+                    <div>
+                     <h5 className="mb-3">Note: {e.notaAllenamento} KG</h5>
+                    </div>
+                  </div>
+                  </li>
 
                   </ul>
                   <hr className="col-3 col-md-2 mb-3 w-100 text-danger"/>
