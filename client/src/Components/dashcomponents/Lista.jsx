@@ -26,7 +26,7 @@ const Lista = ({ utenti, loading }) => {
             : utenti.map((data, index) => (
                 <tr key={index}>
 
-                <td><LigthBox immagine={data.urlImmagine}/></td>
+                <td><LigthBox immagine={data.image}/></td>
                 <td className='pt-3'>{data.username}</td>
                 <td className='pt-3'>{data.email}</td>
                 <td className='pt-3'>{data.createdAt}</td>
