@@ -29,7 +29,8 @@ const NewTraining = () =>{
     const [rest, setRest] = useState('')
     const [reps, setReps] = useState('')
     const [series, setSeries] = useState('')
-    const [notaAllenamento, setNotaAllenamento] = useState('')
+    const [notaAllenamento, setTipologia] = useState('')
+    const [tipologia, setNotaAllenamento] = useState('')
     const [user, setUser] = useState('')
     const [date, setToday] = useState('')
     const [error, setError] = useState(null)
@@ -42,7 +43,7 @@ const NewTraining = () =>{
         setUser(userID)
         setToday(today)
         openModal()
-        const workout = {today, user, title, series, reps, rest, loads, notaAllenamento}
+        const workout = {today, user, title, series, reps, rest, loads, notaAllenamento, tipologia}
 
         const response = await fetch('https://pulsefit-server.vercel.app/api/workouts', {
 
@@ -69,6 +70,7 @@ const NewTraining = () =>{
             setReps('')
             setRest('')
             setSeries('')
+            setTipologia('')
             setNotaAllenamento('')
             setUser('')
             setError(null)
@@ -107,6 +109,21 @@ const NewTraining = () =>{
                   className="form-control rounded-0"
                   onChange={(e) => setTitle(e.target.value)}
                   value={title}
+                  required={true}
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="tipolgia">
+                  <strong>Tipologia (es. Addominali)</strong>
+                </label>
+                <input
+                  type="text"
+                  placeholder="Inserisci Tipologia"
+                  autoComplete="off"
+                  name="text"
+                  className="form-control rounded-0"
+                  onChange={(e) => setTipologia(e.target.value)}
+                  value={tipologia}
                   required={true}
                 />
               </div>
