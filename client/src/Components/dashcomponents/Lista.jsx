@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-//import LigthBox from './LigthBox';
+import LigthBox from './LigthBox';
 
 
 const Lista = ({ utenti, loading }) => {
@@ -26,7 +26,7 @@ const Lista = ({ utenti, loading }) => {
             : utenti.map((data, index) => (
                 <tr key={index}>
 
-                <td><img src={data.image} style={{width:70}}/></td>
+                <td><LigthBox immagine={data.urlImmagine}/></td>
                 <td className='pt-3'>{data.username}</td>
                 <td className='pt-3'>{data.email}</td>
                 <td className='pt-3'>{data.createdAt}</td>
