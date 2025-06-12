@@ -88,7 +88,7 @@ const updateWorkOut = async (req, res)=> {
 const createNewWorkOut = async (req, res)=> {
 
 
-    const {today, user, title, series, reps, rest, loads, status, notaAllenamento} = req.body
+    const {today, user, title, series, reps, rest, loads, status, notaAllenamento, tipologia} = req.body
 
     console.log("FYTFYFFTFYTFYT")
     console.log(req.body)
@@ -98,7 +98,7 @@ const createNewWorkOut = async (req, res)=> {
     // Add doc to the Mongo DB
 
     try{
-        const workout = await Workouts.create({today, user, title, series, reps, rest, loads, status, notaAllenamento})
+        const workout = await Workouts.create({today, user, title, series, reps, rest, loads, status, notaAllenamento, tipologia})
         res.status(200).json(workout)
     }
 
