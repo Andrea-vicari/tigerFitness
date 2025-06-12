@@ -108,6 +108,7 @@ function SchedaTrainingTrainer(){
               <div className="card border-none mb-3 rounded-3 w-75 border-0" key={e._id}>
                 <div className="card-header py-3 text-bg-danger">
                   <h1 className="my-0 fs-1">{e.title}</h1>
+                  <h3 className="my-0 fs-3">{e.tipologia}</h3>
 
                 </div>
                 <div className={"card-body px-3" + bgType + " " + textType}>
