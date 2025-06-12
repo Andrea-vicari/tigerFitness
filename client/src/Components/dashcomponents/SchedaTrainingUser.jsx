@@ -109,7 +109,7 @@ function SchedaTraining(){
                 <div className="card border-none mb-3 rounded-3 w-75 border-0 mx-auto" key={e._id}>
                   <div className="card-header py-3 text-bg-danger">
                     <h1 className="my-0 fs-1">{e.title}</h1>
-                    <h3 className="my-0 fs-1">{e.tipologia}</h3>
+                    <h3 className="my-0 fs-3">{e.tipologia}</h3>
                    </div>
                   <div className="card-body bg-dark">
                     <h6 className="text-white card-title pricing-card-title">Data Emissione<small className="text-white fw-light"> {e.today}</small></h6>
