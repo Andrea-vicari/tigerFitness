@@ -113,8 +113,8 @@ const NewTraining = () =>{
                 />
               </div>
               <div className="mb-3">
-                <label htmlFor="tipolgia">
-                  <strong>Tipologia (es. Addominali)</strong>
+                <label htmlFor="title">
+                  <strong>Tipologia</strong>
                 </label>
                 <input
                   type="text"
