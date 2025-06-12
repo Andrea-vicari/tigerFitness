@@ -197,7 +197,7 @@ const NewTraining = () =>{
                 Inserisci
               </button>
 
-              <Link to={`/elencoutenti/`} type="submit" className="btn btn-outline-danger w-100 rounded-0 mt-3">
+              <Link to={`/userslist/`} type="submit" className="btn btn-outline-danger w-100 rounded-0 mt-3">
                 Torna Indietro
               </Link>
               {error && <div className="error text-danger fs-4 mt-3">{error}</div>}
