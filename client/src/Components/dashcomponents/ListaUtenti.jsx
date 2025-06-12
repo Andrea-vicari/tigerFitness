@@ -117,17 +117,7 @@ function ListaUtenti() {
 
             </div>
           </div>
-          <div className="col-sm-2 d-none d-sm-flex justify-content-end">
-            <div className='pt-3'>
-
-              <Link to="/nuovocomponente" type="button" className="btn btn-outline-success rounded-0">
-                <i className="bi bi-plus-circle mx-2">
-                </i>Aggiungi Componente
-              </Link>
-
-            </div>
           </div>
-        </div>
 
       </div>
 
