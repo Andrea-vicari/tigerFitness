@@ -23,7 +23,7 @@ function StatisticheUtente() {
             fixedLengthExcerpt = arrayPh.join(' ');
             return fixedLengthExcerpt
             }
-
+            /*
             // Run shorter() and add an excerpt to each object of local newsList json
             for(let i=0;i<newsList.length;i++){
                 shorter(newsList[i].description)
@@ -36,6 +36,7 @@ function StatisticheUtente() {
             for (let i=0;i<4;i++){
                 postShorted.push(newsList[i]);
             }
+            */
 
   return (
     <>
