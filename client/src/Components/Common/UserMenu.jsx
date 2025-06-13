@@ -38,7 +38,7 @@ function UserMenu() {
                 <Link className={splitLocation[1] == "elencoprenotazioniutente" ? "active nav-link fs-6" : "nav-link fs-6"} to={'/elencoprenotazioniutente'}>Controlla prenotazioni</Link>
               </li>
               <li className="nav-item">
-                <Link className={splitLocation[1] == "statistiche-utente" ? "active nav-link fs-6" : "nav-link fs-6"} to={`/statistiche-utente/$user.user_id`}>Statistiche</Link>
+                <Link className={splitLocation[1] == "statistiche-utente" ? "active nav-link fs-6" : "nav-link fs-6"} to={`/statistiche-utente/${user.user_id}`}>Statistiche</Link>
               </li>
               <li className="nav-item">
                 <Link className={splitLocation[1] == "elencoschedechiusepage" ? "active nav-link fs-6" : "nav-link fs-6"} to={'/elencoschedechiusepage'}>Schede Completate</Link>
