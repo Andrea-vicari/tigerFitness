@@ -27,7 +27,7 @@ import UsersList from './pages/dashpages/UsersListPage';
 import SingleUserPage from './pages/dashpages/SingleUserPage';
 import CancellaUtentePage from './pages/dashpages/CancellaUtentePage';
 import NewTrainingPage from './pages/dashpages/NewTrainingPage';
-import StatistichePage from './pages/dashpages/StatistichePage';
+import StatisticheUtentePage from './pages/dashpages/StatisticheUtentePage';
 import NewBookingPage from './pages/dashpages/NewBookingPage';
 import SchedaTrainerPage from './pages/dashpages/SchedaTrainerPage';
 import SchedaUtentePage from './pages/dashpages/SchedaUtentePage';
