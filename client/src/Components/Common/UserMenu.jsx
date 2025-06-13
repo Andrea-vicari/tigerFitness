@@ -17,6 +17,9 @@ function UserMenu() {
 
     const {user} = UseAuthContext()
 
+   console.log("User da UserMenu Comp *****")
+   console.log(user)
+
   const role = useSelector((state) => state.setRole.value)
   
   return (
