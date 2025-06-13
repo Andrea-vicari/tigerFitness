@@ -47,7 +47,7 @@ function StatisticheUtente() {
         <h1 className="section-title">Our Blog</h1>
         <p className="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-
+            {/*
                     <div className="row pb-5">
                     {postShorted.map((e)=>{
                     return(
@@ -71,6 +71,7 @@ function StatisticheUtente() {
                     )})}
 
                     </div>
+                    */}
 
     </div>
 
