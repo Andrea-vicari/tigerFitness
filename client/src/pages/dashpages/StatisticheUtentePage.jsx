@@ -1,16 +1,16 @@
 import React from 'react'
 import Footer from '../../Components/Common/Footer';
 import Navbar from '../../Components/Common/DashNav';
-import Statistiche from '../../Components/dashcomponents/Statistiche';
+import Statistiche from '../../Components/dashcomponents/StatisticheUtente';
 
-function AgendaPage() {
+function StatisticheUtentePage() {
   return (
     <>
     <Navbar />
-    <Statistiche />
+    <StatisticheUtente />
     <Footer />
     </>
   )
 }
 
-export default AgendaPage
+export default StatisticheUtentePage
