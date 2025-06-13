@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector} from 'react-redux'
 
 
-function Statistiche() {
+function StatisticheUtente() {
 
 
         const themeType = useSelector((state) => state.counter.value)
@@ -78,4 +78,4 @@ function Statistiche() {
   )
 }
 
-export default Statistiche
+export default StatisticheUtente
