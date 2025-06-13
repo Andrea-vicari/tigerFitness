@@ -7,7 +7,7 @@ function StatisticheUtentePage() {
   return (
     <>
     <Navbar />
-    <StatisticheUtente />
+    <Statistiche />
     <Footer />
     </>
   )
