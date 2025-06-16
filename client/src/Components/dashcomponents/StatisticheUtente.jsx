@@ -12,7 +12,7 @@ function Prices() {
   return (
     <React.Fragment>
         <div className={"container-fluid pb-5"+ " " + bgType + " " + textType} id='pricing'>
-        <h1 className="section-title pt-5">Statistiche</h1>
+        <h1 className="section-title pt-5 mt-5">Statistiche</h1>
         <p className='mb-5 text-center'>dddddd</p>
 
         <div className='container'>
