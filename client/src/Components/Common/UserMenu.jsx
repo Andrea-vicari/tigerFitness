@@ -17,10 +17,11 @@ function UserMenu() {
 
     const {user} = UseAuthContext()
 
-  // console.log("User da UserMenu Comp *****")
-  // console.log(user.user_id)
+  console.log("User da UserMenu Comp *****")
+  console.log(user.user_id)
 
   const role = useSelector((state) => state.setRole.value)
+  
   
   return (
     <ul className="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
