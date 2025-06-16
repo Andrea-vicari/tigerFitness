@@ -44,7 +44,7 @@ function StatisticheUtente() {
 
     <div className="container">
 
-        <h1 className="section-title">Our Blog</h1>
+        <h1 className="section-title mt-5">Our Blog</h1>
         <p className="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
             {/*
