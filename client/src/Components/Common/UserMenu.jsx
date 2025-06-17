@@ -38,7 +38,7 @@ function UserMenu() {
 
              <li className="nav-item">
              
-                <Link className={splitLocation[1] == "elencoschedechiusepage" ? "active nav-link fs-6" : "nav-link fs-6"} to={'/elencoschedechiusepage'}>Statistiche</Link>
+                <Link className={splitLocation[1] == "elencoschedechiusepage" ? "active nav-link fs-6" : "nav-link fs-6"} to={'/elencoschedechiusepage'}>Schede completate</Link>
               </li>
 
 
