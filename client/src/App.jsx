@@ -27,7 +27,6 @@ import UsersList from './pages/dashpages/UsersListPage';
 import SingleUserPage from './pages/dashpages/SingleUserPage';
 import CancellaUtentePage from './pages/dashpages/CancellaUtentePage';
 import NewTrainingPage from './pages/dashpages/NewTrainingPage';
-import StatisticheUtentePage from './pages/dashpages/StatisticheUtentePage';
 import NewBookingPage from './pages/dashpages/NewBookingPage';
 import SchedaTrainerPage from './pages/dashpages/SchedaTrainerPage';
 import SchedaUtentePage from './pages/dashpages/SchedaUtentePage';
@@ -74,7 +73,6 @@ function App() {
             <Route path="/newbooking" element={user ? <NewBookingPage /> : <Navigate to="/login"/>} />
             <Route path="/schedatrainerpage/:id" element={<SchedaTrainerPage />} />
             <Route path="/schedautentepage/:id" element={<SchedaUtentePage />} />
-            <Route path="/statistiche-utente/:id" element={<StatisticheUtentePage />} />
             <Route path="/singleproject" element={<SingleProject />} />
             <Route path="/singleuser/:id" element={user ? <SingleUserPage /> : <Navigate to="/login"/>} />
             <Route path="/*" element={<Error404 />} />
