@@ -34,8 +34,7 @@ function Dashboard() {
             <section className={"py-3" + " " + bgType + " " + textType}>
 
                 <div className="container">
-                    <h1 className="section-title pt-5">{role} Dashboard</h1>
-                    <div className="container">
+                      <div className="container">
                         <div className="row mb-3">
                             <div className="col-md-3">
                                 <h2 className="fw-bold text-body-emphasis">Area Gestionale</h2>
