@@ -23,6 +23,8 @@ function ElencoSchedeChiuse(){
 
     console.log(userID)
 
+   
+
 
     const makeAPICall = async () => {
         try {
@@ -51,6 +53,7 @@ function ElencoSchedeChiuse(){
       });
 
     console.log(singleUserTraining)
+     var lunghezzaSchedeChiuse = singleUserTraining.length
 
     return(
 
@@ -61,6 +64,8 @@ function ElencoSchedeChiuse(){
                   <hr className="col-3 col-md-2 mb-3"/>
 
                   <div className="row mb-3 text-center">
+                  {lunghezzaSchedeChiuse == 0 && 
+                  }
                   {singleUserTraining.map((e)=>{
                       return(
 
