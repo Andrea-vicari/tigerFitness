@@ -130,8 +130,8 @@ function ListaPrenotazioniTrainer () {
                 <tr>
                   <th scope="col">Email</th>
                   <th scope="col">Anno</th>
-                  <th scope="col">Giorno</th>
                   <th scope="col">Mese</th>
+                  <th scope="col">Giorno</th>                  
                   <th scope="col">Ora</th>
                   <th scope="col">Minuto</th>
                   <th scope="col">Status</th>
