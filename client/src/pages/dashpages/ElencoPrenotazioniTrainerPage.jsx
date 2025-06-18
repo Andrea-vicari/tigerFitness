@@ -1,5 +1,5 @@
 import React from 'react'
-import ElencoPrenTrainer from '../../Components/dashcomponents/ListaPrenotazioniTrainer'
+import ListaPrenotazioniTrainer from '../../Components/dashcomponents/ListaPrenotazioniTrainer'
 import Footer from '../../Components/Common/Footer';
 import Navbar from '../../Components/Common/DashNav';
 
