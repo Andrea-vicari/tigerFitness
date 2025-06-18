@@ -138,7 +138,7 @@ function ListaPrenotazioniTrainer () {
                 </tr>
               </thead>
               <tbody>
-                <ListaPren utenti={currentPosts} loading={loading} />
+                <ListaPren prenotazioni={currentPosts} loading={loading} />
               </tbody>
             </table>
             <Pagination length={prenotazioni.length} postsPerPage={postsPerPage} handlePagination={handlePagination} currentPage={currentPage} />
