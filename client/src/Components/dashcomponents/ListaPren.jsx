@@ -1,9 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import LigthBox from './LigthBox';
 
 
-const ListaPren = ({ utenti, loading }) => {
+const ListaPren = ({ prenotazioni, loading }) => {
 
     console.log("== &&&& ===0")
     console.log(utenti)
@@ -26,8 +25,7 @@ const ListaPren = ({ utenti, loading }) => {
             : utenti.map((data, index) => (
                 <tr key={index}>
 
-                <td><LigthBox immagine={data.image}/></td>
-                <td className='pt-3'>{data.username}</td>
+               <td className='pt-3'>{data.username}</td>
                 <td className='pt-3'>{data.email}</td>
                 <td className='pt-3'>{data.createdAt}</td>
                    <td className='pt-3'>
