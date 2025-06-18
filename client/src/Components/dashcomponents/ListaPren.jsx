@@ -27,8 +27,11 @@ const ListaPren = ({ prenotazioni, loading }) => {
 
                <td className='pt-3'>{data.user.email}</td>
                 <td className='pt-3'>{data.anno}</td>
-                <td className='pt-3'>{data.giorno}</td>
                     <td className='pt-3'>{data.mese}</td>
+                <td className='pt-3'>{data.giorno}</td>
+                    <td className='pt-3'>{data.ora}</td>
+                    <td className='pt-3'>{data.minuto}</td>
+                    
                     
                    <td className='pt-3'>
                   <Link type="button" to={`/newtraining/${data._id}`} state={data._id} className="btn btn-outline-danger fs-6">
