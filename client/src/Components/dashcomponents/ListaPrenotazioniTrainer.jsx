@@ -113,7 +113,7 @@ function ListaPrenotazioniTrainer () {
           <div className="col-sm-2 d-none d-sm-flex justify-content-end">
             <div className='pt-3'>
 
-              <ScaricaListaCompCSV utenti={utenti}/>
+              <ScaricaListaCompCSV prenotazioni={prenotazioni}/>
 
             </div>
           </div>
@@ -142,7 +142,7 @@ function ListaPrenotazioniTrainer () {
                 <Lista utenti={currentPosts} loading={loading} />
               </tbody>
             </table>
-            <Pagination length={utenti.length} postsPerPage={postsPerPage} handlePagination={handlePagination} currentPage={currentPage} />
+            <Pagination length={prenotazioni.length} postsPerPage={postsPerPage} handlePagination={handlePagination} currentPage={currentPage} />
           </div>
         </div>
 
