@@ -7,7 +7,7 @@ import ScaricaListaCompCSV from './ScaricaListaCompCSV';
 import Pagination from './Pagination'
 
 
-function ListaPrenotazioni() {
+function ListaPrenotazioniTrainer () {
 
   const themeType = useSelector((state) => state.counter.value)
 
@@ -151,4 +151,4 @@ function ListaPrenotazioni() {
   );
 }
 
-export default ListaPrenotazioni;
+export default ListaPrenotazioniTrainer;
