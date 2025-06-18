@@ -42,11 +42,6 @@ function UserMenu() {
               </li>
 
 
-
-              {user && <li className="nav-item">
-                <Link className="nav-link fs-6" to={'/dashboardpage'}>DashBoard</Link>
-              </li>}
-
             </ul>
   )
 }
