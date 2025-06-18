@@ -75,7 +75,7 @@ function ListaPrenotazioniTrainer () {
     <>
       <div className='container-fluid pt-1 mt-5 bg-stripe d-none d-sm-block'>
         <div className='container text-center mt-5 pb-1'>
-          <h1 className='display-2 text-white text-uppercase'>Elenco utenti</h1>
+          <h1 className='display-2 text-white text-uppercase'>Elenco prenotazioni</h1>
         </div>
       </div>
 
