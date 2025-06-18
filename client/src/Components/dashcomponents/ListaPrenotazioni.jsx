@@ -7,7 +7,7 @@ import ScaricaListaCompCSV from './ScaricaListaCompCSV';
 import Pagination from './Pagination'
 
 
-function ListaUtenti() {
+function ListaPrenotazioni() {
 
   const themeType = useSelector((state) => state.counter.value)
 
@@ -151,4 +151,4 @@ function ListaUtenti() {
   );
 }
 
-export default ListaUtenti;
+export default ListaPrenotazioni;
