@@ -69,8 +69,8 @@ function ElencoSchedeChiuse(){
                                         
                                             <div className="col-md-6">
                                                 <h2>Nessuna Scheda completata</h2>
-                                                <p>Vedi l'elenco delle prenotazioni confermate </p>
-                                                <Link to="/agenda" type="button" className="btn btn-sm btn-outline-primary">Vai alla lista utenti</Link>
+                                                <p>Vai alla tua scheda e completa gli allenamenti</p>
+                                                <Link to="/elencoschedeapertepage" type="button" className="btn btn-sm btn-outline-primary">Scheda</Link>
                                             </div>
                                     </div>
                   }
@@ -97,7 +97,7 @@ function ElencoSchedeChiuse(){
                      )})}
                   </div>
                   <Link to={"/dashboardpage"} className="btn btn-outline-danger d-inline-flex align-items-center px-4" type="button">
-                 Indietro
+                 Torna alla Homepage
                   <i className='fa fa-arrow-circle-left ms-1'></i>
                 </Link>
             </div>
