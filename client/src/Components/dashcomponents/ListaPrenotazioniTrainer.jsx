@@ -1,4 +1,4 @@
-import React from 'react'
+ilimport React from 'react'
 import { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom';
@@ -128,14 +128,13 @@ function ListaPrenotazioniTrainer () {
             <table className={"table table-striped table-hover" + " " + tableType}>
               <thead className='text-uppercase'>
                 <tr>
-                  <th scope="col">Immagine</th>
-                  <th scope="col">Nome Utente</th>
                   <th scope="col">Email</th>
-                  <th scope="col">Data iscrizione</th>
-                  <th scope="col">Aggiungi Allenamento</th>
-                  <th scope="col">Dettagli Utente</th>
-                  <th scope="col">Cancella Utente</th>
-
+                  <th scope="col">Anno</th>
+                  <th scope="col">Giorno</th>
+                  <th scope="col">Mese</th>
+                  <th scope="col">Minuto</th>
+                  <th scope="col">Status</th>
+                  
                 </tr>
               </thead>
               <tbody>
