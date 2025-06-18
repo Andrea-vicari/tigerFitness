@@ -31,6 +31,7 @@ const ListaPren = ({ prenotazioni, loading }) => {
                 <td className='pt-3'>{data.giorno}</td>
                     <td className='pt-3'>{data.ora}</td>
                     <td className='pt-3'>{data.minuto}</td>
+                    <td className='pt-3'>{data.status}</td>
                     
                     
                    <td className='pt-3'>
