@@ -66,9 +66,7 @@ function ElencoSchedeChiuse(){
                   <div className="row mb-3 text-center">
                   {lunghezzaSchedeChiuse == 0 && 
                       <div className='row'>
-                                        <div className="col-md-3">
-                                            <img src={agendaImg} className="img-fluid rounded mb-2"/>
-                                            </div>
+                                        
                                             <div className="col-md-6">
                                                 <h2>Ciao</h2>
                                                 <p>Vedi l'elenco delle prenotazioni confermate </p>
