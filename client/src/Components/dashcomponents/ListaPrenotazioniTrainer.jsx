@@ -17,25 +17,25 @@ function ListaPrenotazioniTrainer () {
   themeType == "ligth" ? textType = "" : textType = "text-bg-dark"
   themeType == "ligth" ? tableType = "table-ligth" : tableType = "table-dark"
 
-  const [utenti, setUtenti] = useState([])
+  const [prenotazioni, setPrenotazioni] = useState([])
   // initialize the loading state as true
   const [loading, setLoading] = useState(true)
   // initialize the error state as null
   const [error, setError] = useState(null)
-  const [utentiFiltrati, setutentiFiltrati] = useState([])
+  const [prenotazioniFiltrate, setprenotazioniFiltrate] = useState([])
   const [nomeFilter, setNomeFilter] = useState('');
 
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(5);
 
   useEffect(() => {
-    fetch('https://pulsefit-server.vercel.app/api/users/')
+    fetch('https://pulsefit-server.vercel.app/api/bookings/')
       .then(response => response.json())
-      .then(utentiDalServer => {
+      .then(prenotazioniDalServer => {
         console.log("*****")
-        console.log(utentiDalServer)
-        setUtenti(utentiDalServer)
-        setutentiFiltrati(utentiDalServer)
+        console.log(prenotazioniDalServer)
+        setPrenotazioni(prenotazioniDalServer)
+        setprenotazioniFiltrate(prenotazioniDalServer)
       })
       .catch(err => {
         console.log(err)
@@ -53,13 +53,13 @@ function ListaPrenotazioniTrainer () {
      setNomeFilter('')
   }
 
-  const filteredUtenti = utenti.filter((product) =>
-    product.username.toLowerCase().includes(nomeFilter.toLowerCase())
+  const filteredPrenotazioni = prenotazioni.filter((booking) =>
+    booking.username.toLowerCase().includes(nomeFilter.toLowerCase())
   );
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = filteredUtenti.slice(indexOfFirstPost, indexOfLastPost);
+  const currentPosts = filteredPrenotazioni.slice(indexOfFirstPost, indexOfLastPost);
 
   console.log("currentPosts")
   console.log(currentPosts)
@@ -68,8 +68,8 @@ function ListaPrenotazioniTrainer () {
     setCurrentPage(pageNumber);
   }
 
-  var totaleUtenti = utenti.length
-  console.log(totaleUtenti)
+  var totalePrenotazioni = prenotazioni.length
+  console.log(totalePrenotazioni)
 
   return (
     <>
