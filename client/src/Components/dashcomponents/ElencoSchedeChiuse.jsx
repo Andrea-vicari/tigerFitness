@@ -63,12 +63,12 @@ function ElencoSchedeChiuse(){
                   <h3 className="text-white">Schede Completate</h3>
                   <hr className="col-3 col-md-2 mb-3"/>
 
-                  <div className="row mb-3 text-center">
+                  <div className="row mb-3">
                   {lunghezzaSchedeChiuse == 0 && 
                       <div className='row'>
                                         
                                             <div className="col-md-6">
-                                                <h2>Ciao</h2>
+                                                <h2>Nessuna Scheda completata</h2>
                                                 <p>Vedi l'elenco delle prenotazioni confermate </p>
                                                 <Link to="/agenda" type="button" className="btn btn-sm btn-outline-primary">Vai alla lista utenti</Link>
                                             </div>
