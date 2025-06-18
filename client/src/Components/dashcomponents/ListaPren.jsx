@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const ListaPren = ({ prenotazioni, loading }) => {
 
     console.log("== &&&& ===0")
-    console.log(utenti)
+    console.log(prenotazioni)
 
 
     if (loading) {
@@ -20,9 +20,9 @@ const ListaPren = ({ prenotazioni, loading }) => {
     return (
         <>
 
-            {utenti.length ===0 ?
+            {prenotazioni.length ===0 ?
               <h2 className='text-center pt-3 pb-3'>Nessun componente trovato</h2>
-            : utenti.map((data, index) => (
+            : prenotazioni.map((data, index) => (
                 <tr key={index}>
 
                <td className='pt-3'>{data.username}</td>
