@@ -54,7 +54,7 @@ function ListaPrenotazioniTrainer () {
   }
 
   const filteredPrenotazioni = prenotazioni.filter((booking) =>
-    booking.username.toLowerCase().includes(nomeFilter.toLowerCase())
+    booking.status.toLowerCase().includes(nomeFilter.toLowerCase())
   );
 
   const indexOfLastPost = currentPage * postsPerPage;
