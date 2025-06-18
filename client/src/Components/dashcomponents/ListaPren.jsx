@@ -25,9 +25,11 @@ const ListaPren = ({ prenotazioni, loading }) => {
             : prenotazioni.map((data, index) => (
                 <tr key={index}>
 
-               <td className='pt-3'>{data.username}</td>
-                <td className='pt-3'>{data.email}</td>
-                <td className='pt-3'>{data.createdAt}</td>
+               <td className='pt-3'>{data.user.email}</td>
+                <td className='pt-3'>{data.anno}</td>
+                <td className='pt-3'>{data.giorno}</td>
+                    <td className='pt-3'>{data.mese}</td>
+                    
                    <td className='pt-3'>
                   <Link type="button" to={`/newtraining/${data._id}`} state={data._id} className="btn btn-outline-danger fs-6">
               <i className="bi bi-plus-square fs-4 mx-2"></i>
