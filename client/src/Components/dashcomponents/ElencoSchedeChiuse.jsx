@@ -70,7 +70,7 @@ function ElencoSchedeChiuse(){
                                             <div className="col-md-6">
                                                 <h2>Nessuna Scheda completata</h2>
                                                 <p>Vai alla tua scheda e completa gli allenamenti</p>
-                                                <Link to="/elencoschedeapertepage" type="button" className="btn btn-sm btn-outline-primary">Scheda</Link>
+                                                <Link to="/elencoschedeapertepage" type="button" className="btn btn-sm btn-outline-primary">vai alla Scheda</Link>
                                             </div>
                                     </div>
                   }
