@@ -45,7 +45,7 @@ const ListaPren = ({ prenotazioni, loading }) => {
                         <i className='bi bi-x-circle fs-4 mx-2'></i>
                       </Link>
                      </td>
-                     <td className='pt-3'>
+                  
 
 
               </tr>
