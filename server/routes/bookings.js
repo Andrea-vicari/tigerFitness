@@ -1,4 +1,4 @@
--singola-prenotazioneconst express = require('express');
+const express = require('express');
 
 const {viewAllBookings, createNewBooking, viewSingleBooking, updateStatusBooking, viewBookingTBA} = require('../controllers/bookingController');
 
