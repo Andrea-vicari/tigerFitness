@@ -28,26 +28,24 @@ function ConfermaPrenotazione() {
   const [error, setError] = useState(null)
  
 
-  useEffect(() => {
-    fetch('https://pulsefit-server.vercel.app/api/bookings/vedi-singola-prenotazione/' + userID)
-      .then(response => response.json())
-      .then(prenotazioneDalServer => {
-        console.log("*****")
-        console.log(prenotazioneDalServer)
-        setPrenotazione(prenotazioneDalServer)
-        
-      })
-      .catch(err => {
-        console.log(err)
-        // update the error state
-        setError(err)
-      })
-      .finally(() => {
-        // wether we sucessfully get the users or not,
-        // we update the loading state
-        setLoading(false)
-      })
-  }, [])
+  const makeAPICall = async () => {
+      try {
+        const response = await fetch('https://pulsefit-server.vercel.app/api/bookings/vedi-singola-prenotazione/' + userID);
+        const data = await response.json();
+        setData(data)
+
+        console.log({ data})
+      }
+      catch (e) {
+        console.log(e)
+      }
+    }
+    useEffect(() => {
+      if(user){
+         makeAPICall();
+      }
+
+    }, [user])
 
   return (
     <React.Fragment>
