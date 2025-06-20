@@ -35,7 +35,7 @@ const ListaPren = ({ prenotazioni, loading }) => {
                     
                     
                    <td className='pt-3'>
-                      <Link type="Link" to={`/newtraining/${data._id}`} state={data._id} className="btn btn-outline-danger fs-6">
+                      <Link type="Link" to={`/conferma-prenotazione/${data._id}`} state={data._id} className="btn btn-outline-danger fs-6">
                          <i className="bi bi-check-square fs-4 mx-2"></i>
                       </Link>
                    </td>
