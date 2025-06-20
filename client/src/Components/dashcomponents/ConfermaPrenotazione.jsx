@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/images/pulseFit_logo.svg";
 import { useSelector } from 'react-redux'
 
-
+var userID
 
 function ConfermaPrenotazione() {
 
@@ -19,7 +19,7 @@ function ConfermaPrenotazione() {
 
   userID = clicked.state
 
-
+  console.log(userID)
 
   return (
     <div className='container'>
