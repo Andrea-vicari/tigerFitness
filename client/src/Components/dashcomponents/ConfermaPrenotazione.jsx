@@ -27,6 +27,9 @@ function ConfermaPrenotazione() {
   const [loading, setLoading] = useState(true)
   // initialize the error state as null
   const [error, setError] = useState(null)
+
+  const [data, setData] = useState([]);
+  const {user} = UseAuthContext()
  
 
   const makeAPICall = async () => {
