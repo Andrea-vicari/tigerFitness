@@ -24,7 +24,7 @@ function ConfermaPrenotazione() {
   return (
     <React.Fragment>
         <div className={"container-fluid pb-5"+ " " + bgType + " " + textType} id='pricing'>
-        <h1 className="section-title pt-5">Our Prices</h1>
+        <h1 className="section-title pt-5 mt-5">Our Prices</h1>
         <p className='mb-5 text-center'>We offer great plans. Find the one that suits your needs.</p>
 
         <div className='container'>
