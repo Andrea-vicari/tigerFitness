@@ -20,6 +20,34 @@ function ConfermaPrenotazione() {
   userID = clicked.state
 
   console.log(userID)
+  
+  const [prenotazione, setPrenotazione] = useState([])
+  // initialize the loading state as true
+  const [loading, setLoading] = useState(true)
+  // initialize the error state as null
+  const [error, setError] = useState(null)
+ 
+
+  useEffect(() => {
+    fetch('https://pulsefit-server.vercel.app/api/bookings/')
+      .then(response => response.json())
+      .then(prenotazioneDalServer => {
+        console.log("*****")
+        console.log(prenotazioneDalServer)
+        setPrenotazione(prenotazioneDalServer)
+        
+      })
+      .catch(err => {
+        console.log(err)
+        // update the error state
+        setError(err)
+      })
+      .finally(() => {
+        // wether we sucessfully get the users or not,
+        // we update the loading state
+        setLoading(false)
+      })
+  }, [])
 
   return (
     <React.Fragment>
