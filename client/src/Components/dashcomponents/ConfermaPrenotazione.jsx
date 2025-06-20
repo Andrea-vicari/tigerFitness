@@ -29,7 +29,7 @@ function ConfermaPrenotazione() {
  
 
   useEffect(() => {
-    fetch('https://pulsefit-server.vercel.app/api/bookings/')
+    fetch('https://pulsefit-server.vercel.app/api/bookings/vedi-singola-prenotazione/' + userID)
       .then(response => response.json())
       .then(prenotazioneDalServer => {
         console.log("*****")
