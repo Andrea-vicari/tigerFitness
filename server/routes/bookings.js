@@ -9,7 +9,7 @@ const router = express.Router();
 router.get('/', viewAllBookings);
 router.post('/', createNewBooking);
 router.get('/:id', viewSingleBooking)
-router.patch('/:id', updateStatusBooking)
+router.patch('/conferma-prenotazione/:id', updateStatusBooking)
 router.get('/tba/list', viewBookingTBA)
 
 
