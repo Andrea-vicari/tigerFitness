@@ -50,7 +50,7 @@ function ConfermaPrenotazione() {
       }, [user])
 
       console.log("prenotazione")
-      console.log(prenotazione)
+      console.log(data)
   
 
 
