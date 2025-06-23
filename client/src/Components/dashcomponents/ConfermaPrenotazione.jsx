@@ -78,7 +78,7 @@ function ConfermaPrenotazione() {
                         <li>ORA: {e.ora} {e.minuto}</li>
                         <li>{e.user.email}</li>
                         </ul>
-                        <button type="button" className="w-100 btn btn-lg btn-outline-primary" onClick={()=>approvaPrenotazione()}>Conferma</button>
+                        <button type="button" className="w-100 btn btn-lg btn-outline-primary" onClick={()=>approvaPrenotazione()}>Approva</button>
                     </div>
                     </div>
                 </div>
