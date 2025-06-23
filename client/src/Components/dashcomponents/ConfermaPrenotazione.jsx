@@ -51,6 +51,42 @@ function ConfermaPrenotazione() {
 
       console.log("prenotazione")
       console.log(prenotazione)
+
+      const [status, setStatus] = useState("CHIUSO")
+      
+      const approvaPrenotazione = async (e) =>{
+
+        e.preventDefault()
+
+        setStatus("CHIUSO")
+        setDatachiusura(dataChiusura)
+
+        const workout = {status, dataChiusura}
+
+        const response = await fetch(`https://pulsefit-server.vercel.app/api/workouts/${title}`, {
+
+            method: 'PATCH',
+            body: JSON.stringify(workout),
+            headers:{
+                'Content-Type': 'application/json'
+              }
+        })
+
+
+        const json = await response.json()
+
+        if(!response.ok){
+            setError(json.error)
+         }
+
+        if(response.ok){
+            setStatus("CHIUSO")
+            setDatachiusura(dataChiusura)
+            setError(null)
+            openModal()
+            console.log('Modificato', json)
+          } }
+
   
 
 
