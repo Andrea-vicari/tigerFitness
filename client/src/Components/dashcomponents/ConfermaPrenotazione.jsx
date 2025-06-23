@@ -33,7 +33,7 @@ function ConfermaPrenotazione() {
 
       const makeAPICall = async () => {
         try {
-          const response = await fetch("https://pulsefit-server.vercel.app/api/bbokings/vedi-singola-prenotazione/" + userID, {mode:'cors'});
+          const response = await fetch("https://pulsefit-server.vercel.app/api/bookings/vedi-singola-prenotazione/" + userID, {mode:'cors'});
           const data = await response.json();
           setData(data)
 
