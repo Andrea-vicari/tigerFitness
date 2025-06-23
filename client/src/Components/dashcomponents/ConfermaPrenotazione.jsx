@@ -28,6 +28,9 @@ function ConfermaPrenotazione() {
   // initialize the error state as null
   const [error, setError] = useState(null)
 
+  const [data, setData] = useState([]);
+   const {user} = UseAuthContext()
+
 
 
   return (
