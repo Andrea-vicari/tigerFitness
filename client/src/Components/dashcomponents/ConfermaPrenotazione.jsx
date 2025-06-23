@@ -72,7 +72,7 @@ function ConfermaPrenotazione() {
                         <h4 className="my-0 fw-normal">Prenotazione</h4>
                     </div>
                     <div className="card-body">
-                        <h3 className="card-title pricing-card-title">{e.status}</h3>
+                        <h3 className="card-title pricing-card-title {e.mese}">Status: {e.status}</h3>
                         <ul className="list-unstyled mt-3 mb-4">
                         <li>{e.giorno} {e.mese}</li>
                         <li>{e.ora} {e.minuto}</li>
