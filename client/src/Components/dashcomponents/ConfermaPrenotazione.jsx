@@ -35,7 +35,7 @@ function ConfermaPrenotazione() {
         try {
           const response = await fetch("https://pulsefit-server.vercel.app/api/bookings/vedi-singola-prenotazione/" + userID, {mode:'cors'});
           const data = await response.json();
-          setPrenotazione(prenotazione)
+          setPrenotazione(data)
 
         }
         catch (e) {
@@ -50,7 +50,7 @@ function ConfermaPrenotazione() {
       }, [user])
 
       console.log("prenotazione")
-      console.log(data)
+      console.log(prenotazione)
   
 
 
