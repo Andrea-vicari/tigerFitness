@@ -61,9 +61,9 @@ function ConfermaPrenotazione() {
         setStatus("CHIUSO")
         setDatachiusura(dataChiusura)
 
-        const workout = {status, dataChiusura}
+        const workout = {status}
 
-        const response = await fetch(`https://pulsefit-server.vercel.app/api/workouts/${title}`, {
+        const response = await fetch("https://pulsefit-server.vercel.app/api/bookings/conferma-prenotazione/" + userID, {
 
             method: 'PATCH',
             body: JSON.stringify(workout),
