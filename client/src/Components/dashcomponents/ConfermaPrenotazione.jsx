@@ -28,14 +28,14 @@ function ConfermaPrenotazione() {
   // initialize the error state as null
   const [error, setError] = useState(null)
 
-  const [data, setData] = useState([]);
+  //const [data, setData] = useState([]);
    const {user} = UseAuthContext()
 
       const makeAPICall = async () => {
         try {
           const response = await fetch("https://pulsefit-server.vercel.app/api/bookings/vedi-singola-prenotazione/" + userID, {mode:'cors'});
           const data = await response.json();
-          setData(data)
+          setPrenotazione(prenotazione)
 
         }
         catch (e) {
