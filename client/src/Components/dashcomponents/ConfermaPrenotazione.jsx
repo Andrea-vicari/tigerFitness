@@ -49,7 +49,8 @@ function ConfermaPrenotazione() {
 
       }, [user])
 
-      console.log(data)
+      console.log("prenotazione")
+      console.log(prenotazione)
   
 
 
