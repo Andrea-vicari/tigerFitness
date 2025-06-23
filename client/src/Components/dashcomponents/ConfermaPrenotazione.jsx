@@ -72,12 +72,13 @@ function ConfermaPrenotazione() {
                         <h4 className="my-0 fw-normal">Prenotazione</h4>
                     </div>
                     <div className="card-body">
-                        <h1 className="card-title pricing-card-title">{e.status}</h1>
+                        <h3 className="card-title pricing-card-title">{e.status}</h3>
                         <ul className="list-unstyled mt-3 mb-4">
-                        <li>10 users included</li>
-                        <li>2 GB of storage</li>
-                        <li>Email support</li>
-                        <li>Help center access</li>
+                        <li>{e.giorno}</li>
+                        <li>{e.mese}</li>
+                        <li>{e.ora}</li>
+                        <li>{e.minuto}</li>
+                        <li>{e.user.email}</li>
                         </ul>
                         <button type="button" className="w-100 btn btn-lg btn-outline-primary" onClick={()=>approvaPrenotazione()}>Conferma</button>
                     </div>
