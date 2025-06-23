@@ -75,7 +75,7 @@ function ConfermaPrenotazione() {
                         <li>Email support</li>
                         <li>Help center access</li>
                         </ul>
-                        <button type="button" className="w-100 btn btn-lg btn-outline-primary">Conferma</button>
+                        <button type="button" className="w-100 btn btn-lg btn-outline-primary" onClick>Conferma</button>
                     </div>
                     </div>
                 </div>
