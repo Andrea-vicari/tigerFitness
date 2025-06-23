@@ -31,6 +31,27 @@ function ConfermaPrenotazione() {
   const [data, setData] = useState([]);
    const {user} = UseAuthContext()
 
+      const makeAPICall = async () => {
+        try {
+          const response = await fetch("https://pulsefit-server.vercel.app/api/bbokings/vedi-singola-prenotazione/" + userID, {mode:'cors'});
+          const data = await response.json();
+          setData(data)
+
+        }
+        catch (e) {
+          console.log(e)
+        }
+      }
+      useEffect(() => {
+        if(user){
+           makeAPICall();
+        }
+
+      }, [user])
+
+      console.log(data)
+  
+
 
 
   return (
