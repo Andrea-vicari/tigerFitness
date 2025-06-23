@@ -56,7 +56,7 @@ function ConfermaPrenotazione() {
       
       const approvaPrenotazione = async (e) =>{
 
-        e.preventDefault()
+       
 
         setStatus("CHIUSO")
         setDatachiusura(dataChiusura)
