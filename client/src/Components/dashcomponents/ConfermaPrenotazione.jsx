@@ -52,21 +52,21 @@ function ConfermaPrenotazione() {
       console.log("prenotazione")
       console.log(prenotazione)
 
-      const [status, setStatus] = useState("Approvato")
+      const [status, setStatus] = useState("")
       
       const approvaPrenotazione = async (e) =>{
 
        
 
-        setStatus("CHIUSO")
+        setStatus("Approvato")
         
 
-        const workout = {status}
+        const booking = {status}
 
         const response = await fetch("https://pulsefit-server.vercel.app/api/bookings/conferma-prenotazione/" + userID, {
 
             method: 'PATCH',
-            body: JSON.stringify(workout),
+            body: JSON.stringify(booking),
             headers:{
                 'Content-Type': 'application/json'
               }
