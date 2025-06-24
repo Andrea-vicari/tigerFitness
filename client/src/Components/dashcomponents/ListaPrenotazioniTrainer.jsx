@@ -29,7 +29,7 @@ function ListaPrenotazioniTrainer () {
   const [postsPerPage, setPostsPerPage] = useState(5);
 
   useEffect(() => {
-    fetch('https://pulsefit-server.vercel.app/api/bookings/')
+    fetch('https://pulsefit-server.vercel.app/api/bookings/prenotazioni-da-approvare/')
       .then(response => response.json())
       .then(prenotazioniDalServer => {
         console.log("*****")
