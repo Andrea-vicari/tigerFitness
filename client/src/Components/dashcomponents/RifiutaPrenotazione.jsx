@@ -52,7 +52,7 @@ function RifiutaPrenotazione() {
       console.log("prenotazione")
       console.log(prenotazione)
 
-      const [status, setStatus] = useState("Approvato")
+      const [status, setStatus] = useState("Rifiutata")
       
       const approvaPrenotazione = async (e) =>{
 
@@ -92,8 +92,8 @@ function RifiutaPrenotazione() {
   return (
     <React.Fragment>
         <div className={"container-fluid pb-5"+ " " + bgType + " " + textType} id='pricing'>
-        <h1 className="section-title pt-5 mt-5">Conferma</h1>
-        <p className='mb-5 text-center'>Clicca Conferma per approvare la prenotazione</p>
+        <h1 className="section-title pt-5 mt-5">Rifiuta</h1>
+        <p className='mb-5 text-center'>Clicca Rifiuta per rifiutare la prenotazione</p>
 
         <div className='container'>
             <div className="row row-cols-1 row-cols-md-3 mb-3 text-center">
@@ -112,7 +112,7 @@ function RifiutaPrenotazione() {
                         <li>ORA: {e.ora} {e.minuto}</li>
                         <li>{e.user.email}</li>
                         </ul>
-                        <button type="button" className="w-100 btn btn-lg btn-outline-primary" onClick={()=>approvaPrenotazione()}>Approva</button>
+                        <button type="button" className="w-100 btn btn-lg btn-outline-primary" onClick={()=>approvaPrenotazione()}>Rifiuta</button>
                     </div>
                     </div>
                 </div>
