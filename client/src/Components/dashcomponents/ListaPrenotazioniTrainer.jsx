@@ -96,7 +96,7 @@ function ListaPrenotazioniTrainer () {
         <div className="col-sm-2 d-none d-sm-block">
         <div className='py-4'>
           <label>
-          Utenti per pagina:
+          Prenotazioni per pagina:
           <select value={postsPerPage}
             onChange={e => setPostsPerPage(e.target.value)}
             className='mx-3' name="compPerPage">
