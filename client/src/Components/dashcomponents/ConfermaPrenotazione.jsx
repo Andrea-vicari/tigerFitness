@@ -59,7 +59,7 @@ function ConfermaPrenotazione() {
        
 
         setStatus("CHIUSO")
-        setDatachiusura(dataChiusura)
+        
 
         const workout = {status}
 
@@ -81,7 +81,6 @@ function ConfermaPrenotazione() {
 
         if(response.ok){
             setStatus("CHIUSO")
-            setDatachiusura(dataChiusura)
             setError(null)
             openModal()
             console.log('Modificato', json)
