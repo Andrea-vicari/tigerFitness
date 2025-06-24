@@ -52,7 +52,7 @@ function ConfermaPrenotazione() {
       console.log("prenotazione")
       console.log(prenotazione)
 
-      const [status, setStatus] = useState("CHIUSO")
+      const [status, setStatus] = useState("Approvato")
       
       const approvaPrenotazione = async (e) =>{
 
