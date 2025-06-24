@@ -10,7 +10,7 @@ router.get('/', viewAllBookings);
 router.post('/', createNewBooking);
 router.get('/vedi-singola-prenotazione/:id', viewSingleBooking)
 router.patch('/conferma-prenotazione/:id', updateStatusBooking)
-router.get('/tba/list', viewBookingTBA)
+router.get('/prenotazioni-da-approvare', viewBookingTBA)
 
 
 module.exports = router;
