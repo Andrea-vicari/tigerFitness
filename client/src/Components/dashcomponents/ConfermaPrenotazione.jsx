@@ -82,7 +82,6 @@ function ConfermaPrenotazione() {
         if(response.ok){
             setStatus("CHIUSO")
             setError(null)
-            openModal()
             console.log('Modificato', json)
           } }
 
