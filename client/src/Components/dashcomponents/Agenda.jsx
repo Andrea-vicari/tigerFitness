@@ -8,6 +8,7 @@ function Agenda() {
 
 
   return (
+    <>
     <div className='container'>
       <div className="month">      
           <ul>
@@ -65,6 +66,7 @@ function Agenda() {
         </ul>
 
     </div>
+      </>
   )
 }
 
