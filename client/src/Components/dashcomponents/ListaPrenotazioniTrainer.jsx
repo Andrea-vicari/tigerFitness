@@ -54,7 +54,7 @@ function ListaPrenotazioniTrainer () {
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = filteredPrenotazioni.slice(indexOfFirstPost, indexOfLastPost);
+  const currentPosts = prenotazioniDalServer.slice(indexOfFirstPost, indexOfLastPost);
 
   console.log("currentPosts")
   console.log(currentPosts)
@@ -75,7 +75,7 @@ function ListaPrenotazioniTrainer () {
       </div>
 
       <div className={"container-fluid mb-0 py-3" + " " + bgType + " " + textType}>
-        <h4 className="mx-2 mb-0" id='filtro_compon'>Filtra per status</h4>
+     
         <div className="row border-bottom">
         
         <div className="col-sm-2 d-none d-sm-block">
