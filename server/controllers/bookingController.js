@@ -61,6 +61,17 @@ const viewBookingTBA = async (req, res) =>{
 
     res.status(200).json(bookingTBA)
 }
+// View Booking approved
+const vediApprovate = async (req, res) =>{
+
+
+    const bookingTBA = await Bookings.find({"status": "Approvato"});
+    if(!bookingTBA){
+        return res.status(400).json({error: "No WorkOut found"})
+    }
+
+    res.status(200).json(bookingTBA)
+}
 
 const updateStatusBooking = async (req, res) =>{
     const {status } = req.body
@@ -80,5 +91,6 @@ module.exports = {
     createNewBooking,
     viewSingleBooking,
     updateStatusBooking,
-    viewBookingTBA
+    viewBookingTBA,
+    vediApprovate
 }
