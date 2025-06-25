@@ -11,6 +11,37 @@ function Agenda() {
   themeType == "ligth" ? textType = "primary" : textType = "text-bg-dark"
   themeType == "ligth" ? darkType = "" : darkType = "bg-dark"
 
+    const [prenotazioni, setPrenotazioni] = useState([])
+  // initialize the loading state as true
+  const [loading, setLoading] = useState(true)
+  // initialize the error state as null
+  const [error, setError] = useState(null)
+ 
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage, setPostsPerPage] = useState(5);
+
+  useEffect(() => {
+    fetch('https://pulsefit-server.vercel.app/api/bookings/prenotazioni-approvate/')
+      .then(response => response.json())
+      .then(prenotazioniDalServer => {
+        console.log("*****")
+        console.log(prenotazioniDalServer)
+        setPrenotazioni(prenotazioniDalServer)
+        
+      })
+      .catch(err => {
+        console.log(err)
+        // update the error state
+        setError(err)
+      })
+      .finally(() => {
+        // wether we sucessfully get the users or not,
+        // we update the loading state
+        setLoading(false)
+      })
+  }, [])
+
   return (
     <>
      <section id="team" className={"team pb-5" + " " + bgType + " " + textType}>
