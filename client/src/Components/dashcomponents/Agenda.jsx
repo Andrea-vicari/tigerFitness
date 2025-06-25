@@ -8,7 +8,7 @@ function Agenda() {
 
 
   return (
-    <>
+    <React.Fragment>
     <div className='container'>
       <div className="month">      
           <ul>
@@ -68,7 +68,7 @@ function Agenda() {
           
 
     </div>
-      </>
+    </React.Fragment>
   )
 }
 
