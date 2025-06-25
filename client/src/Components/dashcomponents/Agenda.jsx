@@ -54,7 +54,7 @@ function Agenda() {
                       <li>9</li>
                       <li><span className="active">10</span></li>
                       <li>11</li>
-                      ...etc
+                      
                     </ul>
 
             </div>
