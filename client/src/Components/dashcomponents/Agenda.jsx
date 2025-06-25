@@ -14,7 +14,7 @@ function Agenda() {
   return (
     <>
     <section id="team" className={"Agenda pb-5" + " " + bgType + " " + textType}>
-        <div className="container mb-2">
+        <div className="container mb-2 mt-5">
 
             <div className="section-title mt-5">
                 <h2 className="section-title">il Agenda</h2>
