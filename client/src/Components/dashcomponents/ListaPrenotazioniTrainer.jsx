@@ -54,7 +54,7 @@ function ListaPrenotazioniTrainer () {
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = prenotazioniDalServer.slice(indexOfFirstPost, indexOfLastPost);
+  const currentPosts = prenotazioni.slice(indexOfFirstPost, indexOfLastPost);
 
   console.log("currentPosts")
   console.log(currentPosts)
