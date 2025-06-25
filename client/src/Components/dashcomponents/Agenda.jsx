@@ -16,7 +16,7 @@ function Agenda() {
     <section id="team" className={"Agenda pb-5" + " " + bgType + " " + textType}>
         <div className="container mb-2 mt-5">
 
-            <div className="section-title mt-5">
+            <div className="section-title pt-5 mt-5">
                 <h2 className="section-title">il Agenda</h2>
                 <p className='mb-5 text-center fs-3'>Un piccolo Agenda di grande qualità al servizio del cliente</p>
                 <h4 className='text-center mb-5'>I nostri istruttori sono esperti nella progettazione di programmi di esercizi sicuri ed efficaci per individui con diversi livelli di forma fisica e condizioni di salute.</h4>
