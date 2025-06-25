@@ -1,73 +1,108 @@
 import React from 'react'
-
+import { useSelector } from 'react-redux'
 
 function Agenda() {
 
+    const themeType = useSelector((state) => state.counter.value)
+
+  let bgType, textType, darkType;
+
+  themeType == "ligth" ? bgType = "bg-ligth" : bgType = "bg-black"
+  themeType == "ligth" ? textType = "primary" : textType = "text-bg-dark"
+  themeType == "ligth" ? darkType = "" : darkType = "bg-dark"
 
   return (
-    <React.Fragment>
-    <div className='container mt-5'>
-      <div className="month">      
-          <ul>
-            <li className="prev">&#10094;</li>
-            <li className="next">&#10095;</li>
-            <li>
-              August<br>
-              <span style="font-size:18px">2021</span>
-            </li>
-          </ul>
-        </div>
-        
-        <div>
-        <ul className="weekdays">
-          <li>Mo</li>
-          <li>Tu</li>
-          <li>We</li>
-          <li>Th</li>
-          <li>Fr</li>
-          <li>Sa</li>
-          <li>Su</li>
-        </ul>
-        </div>
-        <div>
-        <ul className="days">  
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>6</li>
-          <li>7</li>
-          <li>8</li>
-          <li>9</li>
-          <li><span className="active">10</span></li>
-          <li>11</li>
-          <li>12</li>
-          <li>13</li>
-          <li>14</li>
-          <li>15</li>
-          <li>16</li>
-          <li>17</li>
-          <li>18</li>
-          <li>19</li>
-          <li>20</li>
-          <li>21</li>
-          <li>22</li>
-          <li>23</li>
-          <li>24</li>
-          <li>25</li>
-          <li>26</li>
-          <li>27</li>
-          <li>28</li>
-          <li>29</li>
-          <li>30</li>
-          <li>31</li>
-        </ul>
-          </div>
-          
+    <>
+    <section id="Agenda" className={"Agenda pb-5" + " " + bgType + " " + textType}>
+        <div className="container mb-2">
 
-    </div>
-    </React.Fragment>
+            <div>
+                <h2 className="section-title">il Agenda</h2>
+                <p className='mb-5 text-center fs-3'>Un piccolo Agenda di grande qualità al servizio del cliente</p>
+                <h4 className='text-center mb-5'>I nostri istruttori sono esperti nella progettazione di programmi di esercizi sicuri ed efficaci per individui con diversi livelli di forma fisica e condizioni di salute.</h4>
+
+            </div>
+
+            <div className="row">
+
+                <div className={"col-lg-6 mb-3" + " " + bgType + " " + textType}>
+                    <div className={"member d-flex align-items-start"+ " " + darkType + " " + textType}>
+                        <div className="pic">
+                            <img src="https://placehold.co/400x400" className="img-fluid" alt=""/>
+                        </div>
+                        <div className="member-info">
+                        <h4 className='text-primary'>John Doe</h4>
+                        <span>Chief Executive Officer</span>
+                        <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                        <div className="social">
+                            <a href=""><i className="bi bi-instagram"></i></a>
+                            <a href=""><i className="bi bi-facebook"></i></a>
+                            <a href=""> <i className="bi bi-envelope"></i> </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={"col-lg-6 mb-3" + " " + bgType + " " + textType}>
+                    <div className={"member d-flex align-items-start"+ " " + darkType + " " + textType}>
+                        <div className="pic">
+                            <img src="https://placehold.co/400x400" className="img-fluid" alt=""/>
+                        </div>
+                        <div className="member-info">
+                        <h4 className='text-primary'>Jeff White</h4>
+                        <span>H.R. Manager</span>
+                        <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                        <div className="social">
+                            <a href=""><i className="bi bi-instagram"></i></a>
+                            <a href=""><i className="bi bi-facebook"></i></a>
+                            <a href=""> <i className="bi bi-envelope"></i> </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={"col-lg-6 mb-3" + " " + bgType + " " + textType}>
+                    <div className={"member d-flex align-items-start"+ " " + darkType + " " + textType}>
+                        <div className="pic">
+                            <img src="https://placehold.co/400x400" className="img-fluid" alt=""/>
+                        </div>
+                        <div className="member-info">
+                        <h4 className='text-primary'>Tom Reed</h4>
+                        <span>Product Manager</span>
+                        <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                        <div className="social">
+                            <a href=""><i className="bi bi-instagram"></i></a>
+                            <a href=""><i className="bi bi-facebook"></i></a>
+                            <a href=""> <i className="bi bi-envelope"></i> </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={"col-lg-6 mb-3" + " " + bgType + " " + textType}>
+                    <div className={"member d-flex align-items-start"+ " " + darkType + " " + textType}>
+                        <div className="pic">
+                            <img src="https://placehold.co/400x400" className="img-fluid" alt=""/>
+                        </div>
+                        <div className="member-info">
+                        <h4 className='text-primary'>Shawn Stephen</h4>
+                        <span>Finance Manager</span>
+                        <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                        <div className="social">
+                            <a href=""><i className="bi bi-instagram"></i></a>
+                            <a href=""><i className="bi bi-facebook"></i></a>
+                            <a href=""> <i className="bi bi-envelope"></i> </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    </>
   )
 }
 
