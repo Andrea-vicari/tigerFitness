@@ -13,7 +13,7 @@ function Agenda() {
 
   return (
     <>
-    <section id="Agenda" className={"Agenda pb-5" + " " + bgType + " " + textType}>
+    <section id="team" className={"Agenda pb-5" + " " + bgType + " " + textType}>
         <div className="container mb-2">
 
             <div>
