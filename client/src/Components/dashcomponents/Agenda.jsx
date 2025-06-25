@@ -17,10 +17,9 @@ function Agenda() {
         <div className="container mb-2 pt-5">
 
             <div>
-                <h2 className="section-title pt-3">il Team</h2>
-                <p className='mb-5 text-center fs-3'>Un piccolo Team di grande qualità al servizio del cliente</p>
-                <h4 className='text-center mb-5'>I nostri istruttori sono esperti nella progettazione di programmi di esercizi sicuri ed efficaci per individui con diversi livelli di forma fisica e condizioni di salute.</h4>
-
+                <h2 className="section-title pt-5">il Team</h2>
+                <p className='mb-5 text-center fs-4'>Un piccolo Team di grande qualità al servizio del cliente</p>
+                
             </div>
 
             <div className="row">
