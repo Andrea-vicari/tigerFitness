@@ -20,6 +20,7 @@ function Agenda() {
             </li>
           </ul>
         </div>
+        <div>
         
         <ul className="weekdays">
           <li>Mo</li>
@@ -64,6 +65,7 @@ function Agenda() {
           <li>30</li>
           <li>31</li>
         </ul>
+          </div>
 
     </div>
       </>
