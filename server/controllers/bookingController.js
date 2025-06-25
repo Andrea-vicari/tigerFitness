@@ -65,12 +65,12 @@ const viewBookingTBA = async (req, res) =>{
 const vediApprovate = async (req, res) =>{
 
 
-    const bookingTBA = await Bookings.find({"status": "Approvato"});
-    if(!bookingTBA){
+    const prenotApprovate = await Bookings.find({"status": "Approvato"});
+    if(!prenotApprovate){
         return res.status(400).json({error: "No WorkOut found"})
     }
 
-    res.status(200).json(bookingTBA)
+    res.status(200).json(prenotApprovate)
 }
 
 const updateStatusBooking = async (req, res) =>{
