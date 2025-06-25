@@ -21,7 +21,7 @@ function Agenda() {
           </ul>
         </div>
         
-        
+        <div>
         <ul className="weekdays">
           <li>Mo</li>
           <li>Tu</li>
@@ -31,7 +31,8 @@ function Agenda() {
           <li>Sa</li>
           <li>Su</li>
         </ul>
-        
+        </div>
+        <div>
         <ul className="days">  
           <li>1</li>
           <li>2</li>
@@ -65,6 +66,7 @@ function Agenda() {
           <li>30</li>
           <li>31</li>
         </ul>
+          </div>
           
 
     </div>
