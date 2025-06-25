@@ -22,8 +22,7 @@ function ListaPrenotazioniTrainer () {
   const [loading, setLoading] = useState(true)
   // initialize the error state as null
   const [error, setError] = useState(null)
-  const [prenotazioniFiltrate, setprenotazioniFiltrate] = useState([])
-  const [nomeFilter, setNomeFilter] = useState('');
+ 
 
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(5);
@@ -35,7 +34,7 @@ function ListaPrenotazioniTrainer () {
         console.log("*****")
         console.log(prenotazioniDalServer)
         setPrenotazioni(prenotazioniDalServer)
-        setprenotazioniFiltrate(prenotazioniDalServer)
+        
       })
       .catch(err => {
         console.log(err)
@@ -49,13 +48,9 @@ function ListaPrenotazioniTrainer () {
       })
   }, [])
 
-  const resettaRicerca = () =>{
-     setNomeFilter('')
-  }
 
-  const filteredPrenotazioni = prenotazioni.filter((booking) =>
-    booking.status.toLowerCase().includes(nomeFilter.toLowerCase())
-  );
+
+
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
@@ -82,17 +77,7 @@ function ListaPrenotazioniTrainer () {
       <div className={"container-fluid mb-0 py-3" + " " + bgType + " " + textType}>
         <h4 className="mx-2 mb-0" id='filtro_compon'>Filtra per status</h4>
         <div className="row border-bottom">
-        <div className="col-sm-3 py-2 pt-3">
-        <input
-          className="mb-2 mx-2 pb-1"
-          type="text"
-          placeholder="Inserisci lo status (IN APPROVAZIONE, APPROVATO)"
-          value={nomeFilter}
-          onChange={(e) => setNomeFilter(e.target.value)}
-        />
         
-        <button className='btn btn-outline-info py-1 rounded-0' onClick={()=>resettaRicerca()}>RESET</button>
-        </div>
         <div className="col-sm-2 d-none d-sm-block">
         <div className='py-4'>
           <label>
