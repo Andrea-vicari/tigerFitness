@@ -26,7 +26,7 @@ function TrainerMenu() {
                 <Link className="nav-link fs-6" aria-current="page" to={'/'}>Home</Link>
               </li>
               <li className="nav-item">
-                <Link className={splitLocation[1] == "elencoprenotazionitrainer" ? "active nav-link fs-6" : "nav-link fs-6"} to={'/agenda'} >Agenda</Link>
+                <Link className={splitLocation[1] == "elencoprenotazionitrainer" ? "active nav-link fs-6" : "nav-link fs-6"} to={'/PrenotazioniConfermatePage'} >Prenotazioni Confermate</Link>
               </li>
               <li className="nav-item">
                 <Link className={splitLocation[1] == "userslist" ? "active nav-link fs-6" : "nav-link fs-6"} to={'/userslist'}>Elenco utenti</Link>
