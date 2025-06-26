@@ -28,6 +28,7 @@ import SingleUserPage from './pages/dashpages/SingleUserPage';
 import CancellaUtentePage from './pages/dashpages/CancellaUtentePage';
 import NewTrainingPage from './pages/dashpages/NewTrainingPage';
 import NewBookingPage from './pages/dashpages/NewBookingPage';
+import CalendarioPage from './pages/dashpages/CalendarioPage';
 import SchedaTrainerPage from './pages/dashpages/SchedaTrainerPage';
 import SchedaUtentePage from './pages/dashpages/SchedaUtentePage';
 import ElencoSchedeApertePage from './pages/dashpages/ElencoSchedeApertePage';
@@ -70,6 +71,7 @@ function App() {
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/nutrizione" element={<NutrizionePage />} />
             <Route path="/singlepost" element={<SinglePost />} />
+            <Route path="/calendario" element={<CalendarioPage />} />
             <Route path="/newtraining/:id" element={<NewTrainingPage />} />
             <Route path="/cancella-utente-page/:id" element={<CancellaUtentePage />} />
             <Route path="/newbooking" element={user ? <NewBookingPage /> : <Navigate to="/login"/>} />
