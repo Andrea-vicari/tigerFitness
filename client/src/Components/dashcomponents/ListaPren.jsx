@@ -21,7 +21,7 @@ const ListaPren = ({ prenotazioni, loading }) => {
         <>
 
             {prenotazioni.length ===0 ?
-              <h2 className='text-center pt-3 pb-3'>Nessun componente trovato</h2>
+              <h2 className='text-center pt-3 pb-3'>Nessuna prenotazione trovata</h2>
             : prenotazioni.map((data, index) => (
                 <tr key={index}>
 
