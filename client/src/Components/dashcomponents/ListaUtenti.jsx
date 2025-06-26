@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom';
-import Lista from './Lista'
+import ListaUten from './ListaUten'
 import ScaricaListaCompCSV from './ScaricaListaCompCSV';
 import Pagination from './Pagination'
 
@@ -139,7 +139,7 @@ function ListaUtenti() {
                 </tr>
               </thead>
               <tbody>
-                <Lista utenti={currentPosts} loading={loading} />
+                <ListaUten utenti={currentPosts} loading={loading} />
               </tbody>
             </table>
             <Pagination length={utenti.length} postsPerPage={postsPerPage} handlePagination={handlePagination} currentPage={currentPage} />
