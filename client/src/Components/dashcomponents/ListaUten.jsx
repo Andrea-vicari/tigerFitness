@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import LigthBox from './LigthBox';
 
 
-const Lista = ({ utenti, loading }) => {
+const ListaUten = ({ utenti, loading }) => {
 
     console.log("== &&&& ===0")
     console.log(utenti)
@@ -59,4 +59,4 @@ const Lista = ({ utenti, loading }) => {
     )
 }
 
-export default Lista
+export default ListaUten
