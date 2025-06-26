@@ -54,7 +54,7 @@ const viewSingleBooking = async (req, res) => {
 const viewBookingTBA = async (req, res) =>{
 
 
-    const bookingTBA = await Bookings.find({"status": "Da approvare"}.sort({ 'mese': 1 }));
+    const bookingTBA = await Bookings.find({"status": "Da approvare"});
     if(!bookingTBA){
         return res.status(400).json({error: "No WorkOut found"})
     }
