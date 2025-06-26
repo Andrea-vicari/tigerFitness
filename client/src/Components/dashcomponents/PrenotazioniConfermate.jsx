@@ -1,18 +1,23 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
 import { useState, useEffect } from 'react'
+import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom';
+import ListaPren from './ListaPren'
+import ScaricaListaCompCSV from './ScaricaListaCompCSV';
+import Pagination from './Pagination'
 
-function PrenotazioniConfermate() {
 
-    const themeType = useSelector((state) => state.counter.value)
+function PrenotazioniConfermate () {
 
-  let bgType, textType, darkType;
+  const themeType = useSelector((state) => state.counter.value)
 
-  themeType == "ligth" ? bgType = "bg-ligth" : bgType = "bg-black"
-  themeType == "ligth" ? textType = "primary" : textType = "text-bg-dark"
-  themeType == "ligth" ? darkType = "" : darkType = "bg-dark"
+  let bgType, textType, tableType;
 
-    const [prenotazioni, setPrenotazioni] = useState([])
+  themeType == "ligth" ? bgType = "bg-ligth" : bgType = "bg-dark"
+  themeType == "ligth" ? textType = "" : textType = "text-bg-dark"
+  themeType == "ligth" ? tableType = "table-ligth" : tableType = "table-dark"
+
+  const [prenotazioni, setPrenotazioni] = useState([])
   // initialize the loading state as true
   const [loading, setLoading] = useState(true)
   // initialize the error state as null
@@ -23,7 +28,7 @@ function PrenotazioniConfermate() {
   const [postsPerPage, setPostsPerPage] = useState(5);
 
   useEffect(() => {
-    fetch('https://pulsefit-server.vercel.app/api/bookings/prenotazioni-approvate/')
+    fetch('https://pulsefit-server.vercel.app/api/bookings/prenotazioni-da-approvare/')
       .then(response => response.json())
       .then(prenotazioniDalServer => {
         console.log("*****")
@@ -43,98 +48,94 @@ function PrenotazioniConfermate() {
       })
   }, [])
 
+
+
+
+
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = prenotazioni.slice(indexOfFirstPost, indexOfLastPost);
+
+  console.log("currentPosts")
+  console.log(currentPosts)
+
+  const handlePagination = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  }
+
+  var totalePrenotazioni = prenotazioni.length
+  console.log(totalePrenotazioni)
+
   return (
     <>
-     <section id="team" className={"team pb-5" + " " + bgType + " " + textType}>
-        <div className="container mb-2 pt-5">
+      <div className='container-fluid pt-1 mt-5 bg-stripe d-none d-sm-block'>
+        <div className='container text-center mt-5 pb-1'>
+          <h1 className='display-2 text-white text-uppercase'>Elenco prenotazioni</h1>
+        </div>
+      </div>
 
-            <div>
-                <h2 className="section-title pt-5">il Team</h2>
-                <p className='mb-5 text-center fs-4'>Un piccolo Team di grande qualità al servizio del cliente</p>
-                
-            </div>
+      <div className={"container-fluid mb-0 py-3" + " " + bgType + " " + textType}>
+     
+        <div className="row border-bottom">
+        
+        <div className="col-sm-2 d-none d-sm-block">
+        <div className='py-4'>
+          <label>
+          Prenotazioni per pagina:
+          <select value={postsPerPage}
+            onChange={e => setPostsPerPage(e.target.value)}
+            className='mx-3' name="compPerPage">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+          </select>
+        </label>
+        </div>
 
-            <div className="row">
-
-                <div className={"col-lg-6 mb-3" + " " + bgType + " " + textType}>
-                    <div className={"member d-flex align-items-start"+ " " + darkType + " " + textType}>
-                        <div className="pic">
-                            <img src="https://placehold.co/400x400" className="img-fluid" alt=""/>
-                        </div>
-                        <div className="member-info">
-                        <h4 className='text-primary'>John Doe</h4>
-                        <span>Chief Executive Officer</span>
-                        <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                        <div className="social">
-                            <a href=""><i className="bi bi-instagram"></i></a>
-                            <a href=""><i className="bi bi-facebook"></i></a>
-                            <a href=""> <i className="bi bi-envelope"></i> </a>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className={"col-lg-6 mb-3" + " " + bgType + " " + textType}>
-                    <div className={"member d-flex align-items-start"+ " " + darkType + " " + textType}>
-                        <div className="pic">
-                            <img src="https://placehold.co/400x400" className="img-fluid" alt=""/>
-                        </div>
-                        <div className="member-info">
-                        <h4 className='text-primary'>Jeff White</h4>
-                        <span>H.R. Manager</span>
-                        <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                        <div className="social">
-                            <a href=""><i className="bi bi-instagram"></i></a>
-                            <a href=""><i className="bi bi-facebook"></i></a>
-                            <a href=""> <i className="bi bi-envelope"></i> </a>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className={"col-lg-6 mb-3" + " " + bgType + " " + textType}>
-                    <div className={"member d-flex align-items-start"+ " " + darkType + " " + textType}>
-                        <div className="pic">
-                            <img src="https://placehold.co/400x400" className="img-fluid" alt=""/>
-                        </div>
-                        <div className="member-info">
-                        <h4 className='text-primary'>Tom Reed</h4>
-                        <span>Product Manager</span>
-                        <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                        <div className="social">
-                            <a href=""><i className="bi bi-instagram"></i></a>
-                            <a href=""><i className="bi bi-facebook"></i></a>
-                            <a href=""> <i className="bi bi-envelope"></i> </a>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className={"col-lg-6 mb-3" + " " + bgType + " " + textType}>
-                    <div className={"member d-flex align-items-start"+ " " + darkType + " " + textType}>
-                        <div className="pic">
-                            <img src="https://placehold.co/400x400" className="img-fluid" alt=""/>
-                        </div>
-                        <div className="member-info">
-                        <h4 className='text-primary'>Shawn Stephen</h4>
-                        <span>Finance Manager</span>
-                        <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
-                        <div className="social">
-                            <a href=""><i className="bi bi-instagram"></i></a>
-                            <a href=""><i className="bi bi-facebook"></i></a>
-                            <a href=""> <i className="bi bi-envelope"></i> </a>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
 
         </div>
-    </section>
 
+          <div className="col-sm-2 d-none d-sm-flex justify-content-end">
+            <div className='pt-3'>
+
+              <ScaricaListaCompCSV prenotazioni={prenotazioni}/>
+
+            </div>
+          </div>
+          </div>
+
+      </div>
+
+
+          <section className={"py-3" + " " + bgType + " " + textType}>
+        <div className="container-fluid mt-1 pt-0">
+          <div className='table-responsive-lg mt-2'>
+            <table className={"table table-striped table-hover" + " " + tableType}>
+              <thead className='text-uppercase'>
+                <tr>
+                  <th scope="col">Email</th>
+                  <th scope="col">Anno</th>
+                  <th scope="col">Mese</th>
+                  <th scope="col">Giorno</th>                  
+                  <th scope="col">Ora</th>
+                  <th scope="col">Minuto</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Approva</th>
+                  <th scope="col">Rifiuta</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <ListaPren prenotazioni={currentPosts} loading={loading} />
+              </tbody>
+            </table>
+            <Pagination length={prenotazioni.length} postsPerPage={postsPerPage} handlePagination={handlePagination} currentPage={currentPage} />
+          </div>
+        </div>
+
+         </section>
     </>
-  )
+  );
 }
 
-export default PrenotazioniConfermate
+export default PrenotazioniConfermate;
