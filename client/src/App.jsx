@@ -36,7 +36,7 @@ import ConfermaPrenotazionePage from './pages/dashpages/ConfermaPrenotazionePage
 import RifiutaPrenotazionePage from './pages/dashpages/RifiutaPrenotazionePage';
 import ElencoPrenotazioniUtentePage from './pages/dashpages/ElencoPrenotazioniUtentePage';
 import ElencoPrenotazioniTrainerPage from './pages/dashpages/ElencoPrenotazioniTrainerPage';
-import AgendaPage from './pages/dashpages/AgendaPage';
+import PrenotazioniConfermatePage from './pages/dashpages/PrenotazioniConfermatePage';
 import NutrizionePage from './pages/NutrizionePage';
 function App() {
 
@@ -88,7 +88,7 @@ function App() {
             <Route path="/elencoprenotazioniutente" element={user ? <ElencoPrenotazioniUtentePage /> : <Navigate to="/login"/>} />
             <Route path="/elencoprenotazionitrainer" element={user ? <ElencoPrenotazioniTrainerPage /> : <Navigate to="/login"/>} />
             <Route path="/userslist" element={<UsersList />} />
-            <Route path="/agenda" element={<AgendaPage />} />
+            <Route path="/PrenotazioniConfermatePage" element={<PrenotazioniConfermatePage />} />
             <Route path="/resetpassword" element={<ResetPassword />} />
             <Route path="/sentpassword" element={<SentPassword />} />
             <Route path="/newpassword/:token" element={<NewPassword />} />
