@@ -100,7 +100,7 @@ function ConfermaPrenotazione() {
               {prenotazione.map((e)=>{
                    return(
 
-                <div className="col" key={e._id}>
+                <div className="col mx-auto" key={e._id}>
                     <div className="card mb-4 rounded-3 shadow-sm">
                     <div className="card-header py-3">
                         <h4 className="my-0 fw-normal">Prenotazione</h4>
