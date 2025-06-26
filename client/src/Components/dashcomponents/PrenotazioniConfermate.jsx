@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { useState, useEffect } from 'react'
 
-function Agenda() {
+function PrenotazioniConfermate() {
 
     const themeType = useSelector((state) => state.counter.value)
 
@@ -137,4 +137,4 @@ function Agenda() {
   )
 }
 
-export default Agenda
+export default PrenotazioniConfermate
