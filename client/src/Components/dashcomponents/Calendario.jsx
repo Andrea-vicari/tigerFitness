@@ -4,10 +4,6 @@ import logo from "../../assets/images/pulseFit_logo.svg";
 import { useSelector } from 'react-redux'
 import { UseAuthContext } from "../../hooks/UseAuthContext";
 
-
-
-var userID
-
 const Calendario = () =>{
 
   const themeType = useSelector((state) => state.counter.value)
@@ -17,17 +13,6 @@ const Calendario = () =>{
   themeType == "ligth" ? bgType = "bg-light" : bgType = "bg-dark"
   themeType == "ligth" ? textType = "" : textType = "text-bg-dark"
 
-  // let clicked = useLocation();
-
-
-
-  const {user} = UseAuthContext()
-  userID = user
-
-  console.log("userID===")
-  console.log(userID)
-
-  var today = new Date().toDateString()
 
   const elencoMesi = [
     "Gennaio","Febbraio","Marzo","Aprile", "Maggio", "Giugno", "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"
@@ -46,56 +31,19 @@ const Calendario = () =>{
   ];
 
   console.log(today)
-    const [utente, setUser] = useState('')
+    
     const [giorno, setGiorno] = useState('')
     const [mese, setMese] = useState('')
     const [anno, setAnno] = useState('')
     const [ora, setOra] = useState('')
-    const [minuto, setMinuto] = useState('')
-
-    const [date, setToday] = useState('')
+    const [minuto, setMinuto] = useState('')    
     const [error, setError] = useState(null)
     const [emptyFields, setemptyFields] = useState([])
 
     const handleSubmit = async (e) =>{
 
-        e.preventDefault()
-
-        setUser(userID)
-        setToday(today)
+        e.preventDefault()        
         openModal()
-        const booking = {today, user, giorno, mese, anno, ora, minuto}
-
-        const response = await fetch('https://pulsefit-server.vercel.app/api/bookings', {
-
-            method: 'POST',
-            body: JSON.stringify(booking),
-            headers:{
-                'Content-Type': 'application/json'
-              }
-        })
-
-
-        const json = await response.json()
-
-        if(!response.ok){
-            setError(json.error)
-            setemptyFields(json.emptyFields)
-        }
-
-        if(response.ok){
-            console.log('Aggiunto', json)
-            setToday('')
-            setGiorno('')
-            setMese('')
-            setAnno('')
-            setOra('')
-            setMinuto('')
-            setUser('')
-            setError(null)
-            setemptyFields([])
-        }
-
 
     }
 
