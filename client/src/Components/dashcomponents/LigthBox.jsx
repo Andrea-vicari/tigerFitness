@@ -11,7 +11,7 @@ export default function LigthBox({immagine}) {
 
 
 
-      <img src={`${immagine}`} style={{ width: 120 }} type="button" onClick={() => setOpen(true)}/>
+      <img src={`${immagine}`} style={{ width: 80 }} type="button" onClick={() => setOpen(true)}/>
 
 
       <Lightbox

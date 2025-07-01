@@ -1,16 +1,16 @@
 import React from 'react'
 import Footer from '../../Components/Common/Footer';
 import Navbar from '../../Components/Common/DashNav';
-import Agenda from '../../Components/dashcomponents/Agenda';
+import RifiutaPrenotazione from '../../Components/dashcomponents/RifiutaPrenotazione';
 
-function AgendaPage() {
+function RifiutaPrenotazionePage() {
   return (
     <>
     <Navbar />
-    <Agenda />
+    <RifiutaPrenotazione />
     <Footer />
     </>
   )
 }
 
-export default AgendaPage
+export default RifiutaPrenotazionePage

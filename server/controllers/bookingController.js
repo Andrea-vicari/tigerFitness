@@ -42,7 +42,7 @@ const viewSingleBooking = async (req, res) => {
 
     console.log(id)
 
-    const singleBooking = await Bookings.find({"user.user_id": id});
+    const singleBooking = await Bookings.find({"_id": id});
     if(!singleBooking){
         return res.status(400).json({error: "No WorkOut found"})
     }
@@ -54,12 +54,23 @@ const viewSingleBooking = async (req, res) => {
 const viewBookingTBA = async (req, res) =>{
 
 
-    const bookingTBA = await Bookings.find({"status": "IN APPROVAZIONE"});
+    const bookingTBA = await Bookings.find({"status": "Da approvare"});
     if(!bookingTBA){
         return res.status(400).json({error: "No WorkOut found"})
     }
 
     res.status(200).json(bookingTBA)
+}
+// View Booking approved
+const vediApprovate = async (req, res) =>{
+
+
+    const prenotApprovate = await Bookings.find({"status": "Approvato"});
+    if(!prenotApprovate){
+        return res.status(400).json({error: "No WorkOut found"})
+    }
+
+    res.status(200).json(prenotApprovate)
 }
 
 const updateStatusBooking = async (req, res) =>{
@@ -80,5 +91,6 @@ module.exports = {
     createNewBooking,
     viewSingleBooking,
     updateStatusBooking,
-    viewBookingTBA
+    viewBookingTBA,
+    vediApprovate
 }

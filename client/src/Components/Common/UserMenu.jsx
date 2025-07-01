@@ -19,6 +19,7 @@ function UserMenu() {
 
   const role = useSelector((state) => state.setRole.value)
   
+  
   return (
     <ul className="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
 
@@ -34,14 +35,12 @@ function UserMenu() {
               <li className="nav-item">
                 <Link className={splitLocation[1] == "elencoprenotazioniutente" ? "active nav-link fs-6" : "nav-link fs-6"} to={'/elencoprenotazioniutente'}>Controlla prenotazioni</Link>
               </li>
-              <li className="nav-item">
-                <Link className={splitLocation[1] == "elencoschedechiusepage" ? "active nav-link fs-6" : "nav-link fs-6"} to={'/elencoschedechiusepage'}>Schede Completate</Link>
+
+             <li className="nav-item">
+             
+                <Link className={splitLocation[1] == "elencoschedechiusepage" ? "active nav-link fs-6" : "nav-link fs-6"} to={'/elencoschedechiusepage'}>Schede completate</Link>
               </li>
 
-
-              {user && <li className="nav-item">
-                <Link className="nav-link fs-6" to={'/dashboardpage'}>DashBoard</Link>
-              </li>}
 
             </ul>
   )

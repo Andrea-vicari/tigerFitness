@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-//import LigthBox from './LigthBox';
+import LigthBox from './LigthBox';
 
 
-const Lista = ({ utenti, loading }) => {
+const ListaUten = ({ utenti, loading }) => {
 
     console.log("== &&&& ===0")
     console.log(utenti)
@@ -22,11 +22,11 @@ const Lista = ({ utenti, loading }) => {
         <>
 
             {utenti.length ===0 ?
-              <h2 className='text-center pt-3 pb-3'>Nessun componente trovato</h2>
+              <h2 className='text-center pt-3 pb-3'>Nessun utente trovato</h2>
             : utenti.map((data, index) => (
                 <tr key={index}>
 
-                <td><img src={data.image} style={{width:70}}/></td>
+                <td><LigthBox immagine={data.image}/></td>
                 <td className='pt-3'>{data.username}</td>
                 <td className='pt-3'>{data.email}</td>
                 <td className='pt-3'>{data.createdAt}</td>
@@ -59,4 +59,4 @@ const Lista = ({ utenti, loading }) => {
     )
 }
 
-export default Lista
+export default ListaUten

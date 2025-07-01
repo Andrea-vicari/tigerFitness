@@ -23,6 +23,8 @@ function ElencoSchedeChiuse(){
 
     console.log(userID)
 
+   
+
 
     const makeAPICall = async () => {
         try {
@@ -51,6 +53,7 @@ function ElencoSchedeChiuse(){
       });
 
     console.log(singleUserTraining)
+     var lunghezzaSchedeChiuse = singleUserTraining.length
 
     return(
 
@@ -60,7 +63,17 @@ function ElencoSchedeChiuse(){
                   <h3 className="text-white">Schede Completate</h3>
                   <hr className="col-3 col-md-2 mb-3"/>
 
-                  <div className="row mb-3 text-center">
+                  <div className="row mb-3">
+                  {lunghezzaSchedeChiuse == 0 && 
+                      <div className='row'>
+                                        
+                                            <div className="col-md-6">
+                                                <h2>Nessuna Scheda completata</h2>
+                                                <p>Vai alla tua scheda e completa gli allenamenti</p>
+                                                <Link to="/elencoschedeapertepage" type="button" className="btn btn-sm btn-outline-primary">Vai alla Scheda</Link>
+                                            </div>
+                                    </div>
+                  }
                   {singleUserTraining.map((e)=>{
                       return(
 
@@ -84,7 +97,7 @@ function ElencoSchedeChiuse(){
                      )})}
                   </div>
                   <Link to={"/dashboardpage"} className="btn btn-outline-danger d-inline-flex align-items-center px-4" type="button">
-                 Indietro
+                 Torna alla Homepage
                   <i className='fa fa-arrow-circle-left ms-1'></i>
                 </Link>
             </div>

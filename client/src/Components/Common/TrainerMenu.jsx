@@ -26,7 +26,7 @@ function TrainerMenu() {
                 <Link className="nav-link fs-6" aria-current="page" to={'/'}>Home</Link>
               </li>
               <li className="nav-item">
-                <Link className={splitLocation[1] == "elencoprenotazionitrainer" ? "active nav-link fs-6" : "nav-link fs-6"} to={'/agenda'} >Prenotazioni confermate</Link>
+                <Link className={splitLocation[1] == "elencoprenotazionitrainer" ? "active nav-link fs-6" : "nav-link fs-6"} to={'/PrenotazioniConfermatePage'} >Prenotazioni Confermate</Link>
               </li>
               <li className="nav-item">
                 <Link className={splitLocation[1] == "userslist" ? "active nav-link fs-6" : "nav-link fs-6"} to={'/userslist'}>Elenco utenti</Link>
@@ -35,13 +35,12 @@ function TrainerMenu() {
                 <Link className={splitLocation[1] == "userslist" ? "active nav-link fs-6" : "nav-link fs-6"} to={'/userslist'}>Aggiungi Workout</Link>
               </li>
               <li className="nav-item">
-                <Link className={splitLocation[1] == "elencoprenotazionitrainer" ? "active nav-link fs-6" : "nav-link fs-6"} to={'/elencoprenotazionitrainer'}>Prenotazioni confermate</Link>
+                <Link className={splitLocation[1] == "userslist" ? "active nav-link fs-6" : "nav-link fs-6"} to={'/calendario'}>Calendario</Link>
+              </li>
+              <li className="nav-item">
+                <Link className={splitLocation[1] == "elencoprenotazionitrainer" ? "active nav-link fs-6" : "nav-link fs-6"} to={'/elencoprenotazionitrainer'}>Prenotazioni da confermare</Link>
               </li>
 
-
-              {user && <li className="nav-item">
-                <Link className="nav-link fs-6" to={'/dashboardpage'}>DashBoard</Link>
-              </li>}
 
             </ul>
   )

@@ -28,13 +28,16 @@ import SingleUserPage from './pages/dashpages/SingleUserPage';
 import CancellaUtentePage from './pages/dashpages/CancellaUtentePage';
 import NewTrainingPage from './pages/dashpages/NewTrainingPage';
 import NewBookingPage from './pages/dashpages/NewBookingPage';
+import CalendarioPage from './pages/dashpages/CalendarioPage';
 import SchedaTrainerPage from './pages/dashpages/SchedaTrainerPage';
 import SchedaUtentePage from './pages/dashpages/SchedaUtentePage';
 import ElencoSchedeApertePage from './pages/dashpages/ElencoSchedeApertePage';
 import ElencoSchedeChiusePage from './pages/dashpages/ElencoSchedeChiusePage';
+import ConfermaPrenotazionePage from './pages/dashpages/ConfermaPrenotazionePage';
+import RifiutaPrenotazionePage from './pages/dashpages/RifiutaPrenotazionePage';
 import ElencoPrenotazioniUtentePage from './pages/dashpages/ElencoPrenotazioniUtentePage';
 import ElencoPrenotazioniTrainerPage from './pages/dashpages/ElencoPrenotazioniTrainerPage';
-import AgendaPage from './pages/dashpages/AgendaPage';
+import PrenotazioniConfermatePage from './pages/dashpages/PrenotazioniConfermatePage';
 import NutrizionePage from './pages/NutrizionePage';
 function App() {
 
@@ -68,11 +71,14 @@ function App() {
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/nutrizione" element={<NutrizionePage />} />
             <Route path="/singlepost" element={<SinglePost />} />
+            <Route path="/calendario" element={<CalendarioPage />} />
             <Route path="/newtraining/:id" element={<NewTrainingPage />} />
             <Route path="/cancella-utente-page/:id" element={<CancellaUtentePage />} />
             <Route path="/newbooking" element={user ? <NewBookingPage /> : <Navigate to="/login"/>} />
             <Route path="/schedatrainerpage/:id" element={<SchedaTrainerPage />} />
             <Route path="/schedautentepage/:id" element={<SchedaUtentePage />} />
+            <Route path="/conferma-prenotazione/:id" element={<ConfermaPrenotazionePage />} />
+            <Route path="/rifiuta-prenotazione/:id" element={<RifiutaPrenotazionePage />} />
             <Route path="/singleproject" element={<SingleProject />} />
             <Route path="/singleuser/:id" element={user ? <SingleUserPage /> : <Navigate to="/login"/>} />
             <Route path="/*" element={<Error404 />} />
@@ -84,7 +90,7 @@ function App() {
             <Route path="/elencoprenotazioniutente" element={user ? <ElencoPrenotazioniUtentePage /> : <Navigate to="/login"/>} />
             <Route path="/elencoprenotazionitrainer" element={user ? <ElencoPrenotazioniTrainerPage /> : <Navigate to="/login"/>} />
             <Route path="/userslist" element={<UsersList />} />
-            <Route path="/agenda" element={<AgendaPage />} />
+            <Route path="/PrenotazioniConfermatePage" element={<PrenotazioniConfermatePage />} />
             <Route path="/resetpassword" element={<ResetPassword />} />
             <Route path="/sentpassword" element={<SentPassword />} />
             <Route path="/newpassword/:token" element={<NewPassword />} />

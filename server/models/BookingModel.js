@@ -30,7 +30,10 @@ const bookingsSchema = new mongoose.Schema({
     },
     status:{
         type: String,
-        default:"IN APPROVAZIONE"
+        default:"Da approvare"
+    },
+    motivoRifiuto:{
+        type: String
     }
 
 },{ timestamps:true })
