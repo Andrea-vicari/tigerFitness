@@ -57,7 +57,7 @@ const Calendario = () =>{
     return (
       <div className={"container-fluid py-5 " + bgType}>
         <div className={"container py-5 " + bgType}>
-            <input type="date">
+            <input type="date" ></input>
           
         </div>
       </div>
