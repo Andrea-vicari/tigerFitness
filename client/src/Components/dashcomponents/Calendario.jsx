@@ -40,7 +40,7 @@ const Calendario = () => {
   };
 
   return (
-    <div className="calendar">
+    <div className="calendar mt-5 pt-5">
       <div className="header">
         <button onClick={handlePrevMonth}>{"<"}</button>
         <h2>
