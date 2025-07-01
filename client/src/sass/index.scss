@@ -81,7 +81,40 @@ a:focus,
 	color:var($primary);
 }
 
+.calendar {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weekdays,
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.weekday,
+.day,
+.empty-day {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.day {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.day:hover {
+  background-color: #e0e0e0;
+}
 
 /*----------------------
 ---Main Layout Styles---
