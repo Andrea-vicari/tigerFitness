@@ -2,6 +2,10 @@ import React, { useState } from "react";
 
 const Calendario = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
+  
+  const [anno, setAnno] = useState('');
+  const [mese, setMese] = useState(''));
+  const [giorno, setGiorno] = useState('');
 
   const daysInMonth = (year, month) => new Date(year, month + 1, 0).getDate();
 
