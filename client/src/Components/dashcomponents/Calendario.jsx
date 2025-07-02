@@ -4,7 +4,7 @@ const Calendario = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
   
   const [anno, setAnno] = useState('');
-  const [mese, setMese] = useState(''));
+  const [mese, setMese] = useState('');
   const [giorno, setGiorno] = useState('');
 
   console.log("mese")
