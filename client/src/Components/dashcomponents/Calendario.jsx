@@ -7,6 +7,9 @@ const Calendario = () => {
   const [mese, setMese] = useState(''));
   const [giorno, setGiorno] = useState('');
 
+  console.log("mese")
+  console.log(mese)
+
   const daysInMonth = (year, month) => new Date(year, month + 1, 0).getDate();
 
   const renderDays = () => {
