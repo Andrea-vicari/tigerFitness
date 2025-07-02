@@ -17,9 +17,7 @@ const Calendario = () => {
     const days = daysInMonth(year, month);
     const firstDay = new Date(year, month, 1).getDay();
 
-    setMese(month)
-    //console.log("mese dopo il primo set")
-    //console.log(mese)
+  
     const calendarDays = [];
     for (let i = 0; i < firstDay; i++) {
       calendarDays.push(<div key={`empty-${i}`} className="empty-day"></div>);
