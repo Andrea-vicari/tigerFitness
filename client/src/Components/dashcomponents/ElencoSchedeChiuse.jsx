@@ -75,7 +75,7 @@ function ElencoSchedeChiuse(){
                                             </div>
                                     </div>
                   }
-                  {singleUserTraining.map((e)=>{
+                  {data.map((e)=>{
                       return(
 
                     <div className="col-12" key={e._id}>
