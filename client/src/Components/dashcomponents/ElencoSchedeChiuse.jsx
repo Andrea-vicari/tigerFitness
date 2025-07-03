@@ -21,6 +21,7 @@ function ElencoSchedeChiuse(){
 
     userID = clicked.state
 
+    console.log("Sotto user ID")
     console.log(userID)
 
    
