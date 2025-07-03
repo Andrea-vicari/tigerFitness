@@ -44,7 +44,7 @@ function ElencoSchedeChiuse(){
 
       }, [user])
 
-      let singleUserTraining = [];
+      var singleUserTraining = [];
       let fakeVar = false
 
       data.forEach(element => {
