@@ -93,6 +93,19 @@ function ElencoSchedeChiuse(){
                             <small className="card-text mb-0">CHIUSA IL: {e.dataChiusura}</small>
                             </div>
                         </div>
+                        <div className="card mb-3">
+                            <div className="card-body">
+                                <h6 className="card-title">{e.title}</h6>
+
+                                <p className="card-text mb-0">SERIE: {e.series}</p>
+                                <p className="card-text mb-0">REPS: {e.reps}</p>
+                                <p className="card-text mb-0">CARICO: {e.loads}</p>
+                                <p className="card-text mb-0">RIPOSO: {e.rest}</p>
+                            </div>
+                            <div className="card-footer">
+                            <small className="card-text mb-0">CHIUSA IL: {e.dataChiusura}</small>
+                            </div>
+                        </div>
                     </div>
 
 
