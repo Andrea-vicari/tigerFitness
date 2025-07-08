@@ -117,7 +117,7 @@ function ElencoSchedeChiuse(){
                 </Link>
             </div>
                 <div className='container'>
-                    <h3 className="text-white">Schede Completate</h3>
+                    <h3 className=" " + textType>Schede Completate</h3>
             <div className="row row-cols-1 row-cols-md-3 mb-3 text-center">
                 <div className="col">
                     <div className="card mb-4 rounded-3 shadow-sm">
