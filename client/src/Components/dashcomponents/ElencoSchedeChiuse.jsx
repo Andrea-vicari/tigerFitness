@@ -76,40 +76,7 @@ function ElencoSchedeChiuse(){
                                             </div>
                                     </div>
                   }
-                  {data.map((e)=>{
-                      return(
-
-                    <div className="col-12" key={e._id}>
-                        <div className="card mb-3">
-                            <div className="card-body">
-                                <h6 className="card-title">{e.title}</h6>
-
-                                <p className="card-text mb-0">SERIE: {e.series}</p>
-                                <p className="card-text mb-0">REPS: {e.reps}</p>
-                                <p className="card-text mb-0">CARICO: {e.loads}</p>
-                                <p className="card-text mb-0">RIPOSO: {e.rest}</p>
-                            </div>
-                            <div className="card-footer">
-                            <small className="card-text mb-0">CHIUSA IL: {e.dataChiusura}</small>
-                            </div>
-                        </div>
-                        <div className="card mb-3">
-                            <div className="card-body">
-                                <h6 className="card-title">{e.title}</h6>
-
-                                <p className="card-text mb-0">SERIE: {e.series}</p>
-                                <p className="card-text mb-0">REPS: {e.reps}</p>
-                                <p className="card-text mb-0">CARICO: {e.loads}</p>
-                                <p className="card-text mb-0">RIPOSO: {e.rest}</p>
-                            </div>
-                            <div className="card-footer">
-                            <small className="card-text mb-0">CHIUSA IL: {e.dataChiusura}</small>
-                            </div>
-                        </div>
-                    </div>
-
-
-                     )})}
+                  
                   </div>
                   <Link to={"/dashboardpage"} className="btn btn-outline-danger d-inline-flex align-items-center px-4" type="button">
                  Torna alla Homepage
