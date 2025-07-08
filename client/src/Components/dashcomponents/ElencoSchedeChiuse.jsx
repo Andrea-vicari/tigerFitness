@@ -55,7 +55,7 @@ function ElencoSchedeChiuse(){
 
     console.log("sotto sdingolo")
     console.log(singleUserTraining)
-     var lunghezzaSchedeChiuse = singleUserTraining.length
+     var lunghezzaSchedeChiuse = data.length
 
     return(
 
