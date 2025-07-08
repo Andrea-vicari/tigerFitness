@@ -139,6 +139,10 @@ function ElencoSchedeChiuse(){
                 
                 
             </div>
+                <Link to={"/dashboardpage"} className="btn btn-outline-danger d-inline-flex align-items-center px-4" type="button">
+                 Torna alla Homepage
+                  <i className='fa fa-arrow-circle-left ms-1'></i>
+                </Link>
         </div>
 
             </div>
