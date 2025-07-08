@@ -130,10 +130,10 @@ function ElencoSchedeChiuse(){
                             <h1 className="fs-6 pricing-card-title">CHIUSA IL:</h1>
                             <h1 className="fs-5 pricing-card-title">{e.dataChiusura}</h1>
                             <ul className="list-unstyled mt-3 mb-4">
-                            <li>10 users included</li>
-                            <li>2 GB of storage</li>
-                            <li>Email support</li>
-                            <li>Help center access</li>
+                            <li>SERIE: {e.series}</li>
+                            <li>REPS: {e.reps}</li>
+                            <li>CARICO: {e.loads}</li>
+                            <li>RIPOSO: {e.rest}</li>
                             </ul>
                             
                         </div>
