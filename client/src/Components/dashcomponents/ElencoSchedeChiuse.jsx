@@ -124,7 +124,7 @@ function ElencoSchedeChiuse(){
                       return(
                     <div className="card mb-4 rounded-3 shadow-sm" key={e._id}>
                         <div className="card-header py-3">
-                            <h4 className="my-0 fw-normal">Free</h4>
+                            <h4 className="my-0 fw-normal">{e.title}</h4>
                         </div>
                         <div className="card-body">
                             <h1 className="card-title pricing-card-title">$0<small className="text-body-secondary fw-light">/mo</small></h1>
