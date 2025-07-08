@@ -61,16 +61,7 @@ function ElencoSchedeChiuse(){
 
         <div className="container-fluid pt-5 mt-5">
             <div className="col-md-6 pb-4 mx-auto">
-            <div className={"p-3 rounded w-100" + " " + textType + " " + bgType}>
-                  <h3 className="text-white">Schede Completate</h3>
-                  <hr className="col-3 col-md-2 mb-3"/>
-
-                  
-                  <Link to={"/dashboardpage"} className="btn btn-outline-danger d-inline-flex align-items-center px-4" type="button">
-                 Torna alla Homepage
-                  <i className='fa fa-arrow-circle-left ms-1'></i>
-                </Link>
-            </div>
+            
                 <div className='container'>
                 <h3 className="text-white">Schede Completate</h3>
                   <hr className="col-3 col-md-2 mb-3"/>
