@@ -61,7 +61,7 @@ function Dashboard() {
 
                                 </div>
 
-                                <div className="p-3 bg-body-tertiary border rounded-3">
+                               <div className={"p-3 border rounded-3 mb-2" + " " + bgType}>
                                     <div className='row'>
                                         <div className="col-md-3">
                                             <img src={userlistImg} className="img-fluid rounded mb-2"/>
@@ -74,7 +74,7 @@ function Dashboard() {
                                     </div>
 
                                 </div>
-                                <div className="p-3 bg-body-tertiary border rounded-3 mt-2">
+                                <div className={"p-3 border rounded-3 mb-2" + " " + bgType}>
                                     <div className='row'>
                                         <div className="col-md-3">
                                             <img src={elencoPren} className="img-fluid rounded mb-2"/>
@@ -87,7 +87,7 @@ function Dashboard() {
                                     </div>
 
                                 </div>
-                                <div className="p-3 bg-body-tertiary border rounded-3 mt-2">
+                                <div className={"p-3 border rounded-3 mb-2" + " " + bgType}>
                                     <div className='row'>
                                         <div className="col-md-3">
                                             <img src={newTrainingImg} className="img-fluid rounded mb-2"/>
