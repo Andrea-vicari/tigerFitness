@@ -49,7 +49,7 @@ function ElencoSchedeAperte(){
 
     return(
 
-        <div className="container-fluid pt-5 mt-5">
+        <div className={"container-fluid pt-5 mt-5" + " " + bgType + " " + textType}>
             <div className="col-md-6 pb-4 mx-auto">
             <div className={"p-3 rounded w-100 mx-auto" + " " + textType + " " + bgType}>
                   <h3 className={textType}>Scheda Allenamento</h3>
