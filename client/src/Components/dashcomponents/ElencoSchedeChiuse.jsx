@@ -59,7 +59,7 @@ function ElencoSchedeChiuse(){
 
     return(
 
-        <div className="container-fluid pt-5 mt-5">
+         <div className={"container-fluid pt-5 mt-5" + " " + bgType + " " + textType}>
             <div className="col-md-6 pb-4 mx-auto">
             
                 <div className='container'>
