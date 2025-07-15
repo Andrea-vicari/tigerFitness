@@ -82,7 +82,7 @@ function ElencoSchedeChiuse(){
                 <div className="col">
                     {data.map((e)=>{
                       return(
-                    <div className={"card mb-4 rounded-3 shadow-sm" + " " + bgType} key={e._id}>
+                    <div className={"card mb-4 rounded-3 shadow-sm" + " " + bgType + " " + textType} key={e._id}>
                         <div className="card-header py-3">
                             <h4 className="my-0 fw-normal">{e.title}</h4>
                         </div>
