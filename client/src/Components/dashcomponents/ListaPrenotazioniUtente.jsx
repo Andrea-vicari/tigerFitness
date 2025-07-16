@@ -28,7 +28,7 @@ function ListaPrenotazioniUtente () {
   const [postsPerPage, setPostsPerPage] = useState(5);
 
   useEffect(() => {
-    fetch('https://pulsefit-server.vercel.app/api/bookings/prenotazioni-da-approvare/')
+    fetch('https://pulsefit-server.vercel.app/api/bookings/prenotazioni-singolo-utente/6654d072c3e78209fb9b37d6')
       .then(response => response.json())
       .then(prenotazioniDalServer => {
         console.log("*****")
