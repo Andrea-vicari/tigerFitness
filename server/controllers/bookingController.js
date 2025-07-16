@@ -43,7 +43,7 @@ const viewSingleBooking = async (req, res) => {
     console.log(id)
 
     // const singleBooking = await Bookings.find({"_id": id});
-    const singleBooking = await Bookings.find({"user"."user_id": id});
+    const singleBooking = await Bookings.find({"user.user_id": id});
     if(!singleBooking){
         return res.status(400).json({error: "No WorkOut found"})
     }
