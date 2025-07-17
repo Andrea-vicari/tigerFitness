@@ -9,7 +9,7 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
 
     
     prenotazioni.forEach((prenot, index) => {
-      console.log(`${index}: ${prenot}`);
+      console.log(`${index}: ${prenot.status}`);
     });
 
 
