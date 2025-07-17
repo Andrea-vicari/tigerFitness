@@ -7,7 +7,9 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
     console.log("== &&&& ===0")
     console.log(prenotazioni)
 
-    
+     const coloraRiga = () => {
+        alert("CIAO")
+    }
     
 
 prenotazioni.forEach(prenot => {
@@ -18,9 +20,7 @@ prenotazioni.forEach(prenot => {
   
 });
 
-    const coloraRiga = () => {
-        alert("CIAO")
-    }
+   
 
 
     if (loading) {
