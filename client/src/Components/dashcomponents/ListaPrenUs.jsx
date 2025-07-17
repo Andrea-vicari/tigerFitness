@@ -9,16 +9,17 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
 
      const coloraRiga = () => {
         alert("CIAO")
+        document.getElementById("riga-prenot-uten").classList.add('new-class')
     }
     
 
-prenotazioni.forEach(prenot => {
-  console.log(`Pippo: ${prenot.giorno}, Pluto: ${prenot.status}`);
-
- prenot.status == "Rifiutata" ? coloraRiga() : false
+    prenotazioni.forEach(prenot => {
+      console.log(`Pippo: ${prenot.giorno}, Pluto: ${prenot.status}`);
     
-  
-});
+     prenot.status == "Rifiutata" ? coloraRiga() : false
+        
+      
+    });
 
    
 
