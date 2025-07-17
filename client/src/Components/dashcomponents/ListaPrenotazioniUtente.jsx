@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom';
-import ListaPrenTr from './ListaPrenTr'
+import ListaPrenUs from './ListaPrenUs'
 import ScaricaListaCompCSV from './ScaricaListaCompCSV';
 import Pagination from './Pagination'
 
@@ -126,7 +126,7 @@ function ListaPrenotazioniUtente () {
                 </tr>
               </thead>
               <tbody>
-                <ListaPrenTr prenotazioni={currentPosts} loading={loading} />
+                <ListaPrenUs prenotazioni={currentPosts} loading={loading} />
               </tbody>
             </table>
             <Pagination length={prenotazioni.length} postsPerPage={postsPerPage} handlePagination={handlePagination} currentPage={currentPage} />
