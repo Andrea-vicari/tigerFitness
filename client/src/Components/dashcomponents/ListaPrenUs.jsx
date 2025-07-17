@@ -9,7 +9,7 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
 
      const coloraRiga = () => {
         alert("CIAO")
-        document.getElementById("riga-prenot-uten").classList.add('new-class')
+        
     }
     
 
@@ -21,8 +21,9 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
       
     });
 
-   
-
+   const isPrimary = true;
+   const isDisabled = false;
+    
 
     if (loading) {
         return (
@@ -39,7 +40,7 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
             {prenotazioni.length ===0 ?
               <h2 className='text-center pt-3 pb-3'>Nessuna prenotazione trovata</h2>
             : prenotazioni.map((data, index) => (
-                <tr key={index} id="riga-prenot-uten">
+                <tr key={index} className={`${isPrimary ? 'primary' : ''} ${isDisabled ? 'disabled' : ''}`} id="riga-prenot-uten">
 
                     <td className='pt-3'>{data.user.email}</td>
                     <td className='pt-3'>{data.anno}</td>
