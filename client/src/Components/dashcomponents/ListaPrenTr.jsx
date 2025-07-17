@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 
-const ListaPren = ({ prenotazioni, loading }) => {
+const ListaPrenTr = ({ prenotazioni, loading }) => {
 
     console.log("== &&&& ===0")
     console.log(prenotazioni)
@@ -56,4 +56,4 @@ const ListaPren = ({ prenotazioni, loading }) => {
     )
 }
 
-export default ListaPren
+export default ListaPrenTr
