@@ -8,9 +8,11 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
     console.log(prenotazioni)
 
     
-    prenotazioni.forEach((prenot, index) => {
-      console.log(`${index}: ${prenot.status}`);
-    });
+    
+
+prenotazioni.forEach(prenot => {
+  console.log(`Pippo: ${prenot.giorno}, Pluto: ${prenot.status}`);
+});
 
 
     if (loading) {
