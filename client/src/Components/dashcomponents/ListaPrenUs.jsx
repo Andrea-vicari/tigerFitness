@@ -7,6 +7,11 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
     console.log("== &&&& ===0")
     console.log(prenotazioni)
 
+    
+    prenotazioni.forEach((prenot, index) => {
+      console.log(`${index}: ${prenot}`);
+    });
+
 
     if (loading) {
         return (
