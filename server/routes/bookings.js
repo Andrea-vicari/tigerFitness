@@ -12,7 +12,7 @@ router.get('/prenotazioni-singolo-utente/:id', viewSingleBooking)
 router.patch('/conferma-prenotazione/:id', updateStatusBooking)
 router.get('/prenotazioni-da-approvare', viewBookingTBA)
 router.get('/prenotazioni-approvate', vediApprovate)
-router.get('/vedi-singola/:id', viewSingolaPren)
+router.get('/vedi-singola-pren/:id', viewSingolaPren)
 
 
 module.exports = router;
