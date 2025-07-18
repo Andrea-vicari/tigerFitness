@@ -8,7 +8,7 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
     console.log(prenotazioni)
 
    const isPrimary = true;
-   const isDisabled = false;
+   const isDisabled = true;
 
      const coloraRiga = () => {
         alert("CIAO")
