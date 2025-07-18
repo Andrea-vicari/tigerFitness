@@ -93,8 +93,8 @@ const viewSingolaPren = async (req, res)=> {
     console.log("Req from /")
     console.log("View all Bookings")
 
-    const allBookings = await Bookings.find({}).sort({createdAt: -1});
-    res.status(200).json(allBookings)
+    const singleBooking = await Bookings.find({"_id": id});
+    res.status(200).json(singleBooking)
 
 }
 
