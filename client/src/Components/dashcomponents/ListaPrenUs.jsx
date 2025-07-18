@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 const ListaPrenUs = ({ prenotazioni, loading }) => {
@@ -16,14 +16,18 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
         
     }
     
-
-    prenotazioni.forEach(prenot => {
+      useEffect(() => {
+      // Ciclo forEach
+      prenotazioni.forEach(prenot => {
       console.log(`Pippo: ${prenot.giorno}, Pluto: ${prenot.status}`);
     
      prenot.status == "Rifiutata" ? setApprovatoSI(false) : setApprovatoSI(true)
         
       
     });
+          
+    }, []);
+
 
 
     
