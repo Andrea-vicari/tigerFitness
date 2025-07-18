@@ -8,9 +8,9 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
     console.log(prenotazioni)
 
    const approvatoSI = true;
-   const approvatoNO = true;
+   
 
-     const coloraRiga = () => {
+     const coloraRigaseApprovato = () => {
         alert("CIAO")
         
     }
@@ -19,7 +19,7 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
     prenotazioni.forEach(prenot => {
       console.log(`Pippo: ${prenot.giorno}, Pluto: ${prenot.status}`);
     
-     prenot.status == "Rifiutata" ? coloraRiga() : false
+     prenot.status == "Rifiutata" ? coloraRigaseApprovato() : false
         
       
     });
@@ -42,7 +42,7 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
             {prenotazioni.length ===0 ?
               <h2 className='text-center pt-3 pb-3'>Nessuna prenotazione trovata</h2>
             : prenotazioni.map((data, index) => (
-                <tr key={index} className={`${approvatoSI ? 'primary' : ''} ${approvatoNO ? 'disabled' : ''}`} id="riga-prenot-uten">
+                <tr key={index} className={`${approvatoSI ? 'primary' : ''}`}>
 
                     <td className='pt-3'>{data.user.email}</td>
                     <td className='pt-3'>{data.anno}</td>
