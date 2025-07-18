@@ -9,12 +9,6 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
     console.log(prenotazioni)
 
    const [approvatoSI, setApprovatoSI] = useState(false);
-   
-
-     const coloraRigaseApprovato = () => {
-        setApprovatoSI(true)
-        
-    }
     
       useEffect(() => {
       // Ciclo forEach
