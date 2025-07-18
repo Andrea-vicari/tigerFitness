@@ -90,8 +90,9 @@ const updateStatusBooking = async (req, res) =>{
 // Get all Bookings: OK
 const viewSingolaPren = async (req, res)=> {
 
-    console.log("Req from /")
-    console.log("View all Bookings")
+    console.log("*/*/*/*/")
+    console.log("Richiesta singola prenotazione")
+
 
     const singleBooking = await Bookings.find({"_id": id});
     res.status(200).json(singleBooking)
