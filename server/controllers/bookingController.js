@@ -89,7 +89,7 @@ const updateStatusBooking = async (req, res) =>{
 
 // Get all Bookings: OK
 const viewSingolaPren = async (req, res)=> {
-
+    const { id } = req.params;
     console.log("*/*/*/*/")
     console.log("Richiesta singola prenotazione")
 
