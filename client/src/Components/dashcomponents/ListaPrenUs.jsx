@@ -7,7 +7,7 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
     console.log("== &&&& ===0")
     console.log(prenotazioni)
 
-   const [approvatoSI, setApprovatoSI] = false;
+   const [approvatoSI, setApprovatoSI] = useState(false);
    
 
      const coloraRigaseApprovato = () => {
