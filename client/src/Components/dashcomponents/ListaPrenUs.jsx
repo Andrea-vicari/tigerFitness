@@ -7,11 +7,11 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
     console.log("== &&&& ===0")
     console.log(prenotazioni)
 
-   const approvatoSI = true;
+   const [approvatoSI, setApprovatoSI] = false;
    
 
      const coloraRigaseApprovato = () => {
-        alert("CIAO")
+        setApprovatoSI(true)
         
     }
     
