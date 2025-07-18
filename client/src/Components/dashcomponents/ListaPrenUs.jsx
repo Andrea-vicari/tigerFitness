@@ -7,8 +7,8 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
     console.log("== &&&& ===0")
     console.log(prenotazioni)
 
-   const isPrimary = true;
-   const isDisabled = true;
+   const approvatoSI = true;
+   const approvatoNO = true;
 
      const coloraRiga = () => {
         alert("CIAO")
@@ -42,7 +42,7 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
             {prenotazioni.length ===0 ?
               <h2 className='text-center pt-3 pb-3'>Nessuna prenotazione trovata</h2>
             : prenotazioni.map((data, index) => (
-                <tr key={index} className={`${isPrimary ? 'primary' : ''} ${isDisabled ? 'disabled' : ''}`} id="riga-prenot-uten">
+                <tr key={index} className={`${approvatoSI ? 'primary' : ''} ${approvatoNO ? 'disabled' : ''}`} id="riga-prenot-uten">
 
                     <td className='pt-3'>{data.user.email}</td>
                     <td className='pt-3'>{data.anno}</td>
