@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import ListaPrenUs from './ListaPrenUs'
 import ScaricaListaCompCSV from './ScaricaListaCompCSV';
 import Pagination from './Pagination'
-import { UseAuthContext } from "./hooks/UseAuthContext";
+import { UseAuthContext } from "../../hooks/UseAuthContext"
 
 
 function ListaPrenotazioniUtente () {
