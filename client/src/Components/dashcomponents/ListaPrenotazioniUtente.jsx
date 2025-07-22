@@ -33,6 +33,11 @@ function ListaPrenotazioniUtente () {
   console.log("user dal componente ListaPrenotazioniUtente")
   console.log(user)
 
+  var idUtente = user.user_id
+
+  console.log("idUtente dal componente ListaPrenotazioniUtente")
+  console.log(idUtente)
+
   useEffect(() => {
     fetch('https://pulsefit-server.vercel.app/api/bookings/prenotazioni-singolo-utente/6654d072c3e78209fb9b37d6')
       .then(response => response.json())
