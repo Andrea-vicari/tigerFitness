@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import ListaPrenUs from './ListaPrenUs'
 import ScaricaListaCompCSV from './ScaricaListaCompCSV';
 import Pagination from './Pagination'
+import { UseAuthContext } from "./hooks/UseAuthContext";
 
 
 function ListaPrenotazioniUtente () {
@@ -26,6 +27,11 @@ function ListaPrenotazioniUtente () {
 
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(5);
+
+  const {user} = UseAuthContext()
+
+  console.log("user dal componente ListaPrenotazioniUtente")
+  console.log(user)
 
   useEffect(() => {
     fetch('https://pulsefit-server.vercel.app/api/bookings/prenotazioni-singolo-utente/6654d072c3e78209fb9b37d6')
