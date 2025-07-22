@@ -39,12 +39,12 @@ function ListaPrenotazioniUtente () {
   console.log(idUtente)
 
   useEffect(() => {
-    fetch('https://pulsefit-server.vercel.app/api/bookings/prenotazioni-singolo-utente/6654d072c3e78209fb9b37d6')
+    fetch('https://pulsefit-server.vercel.app/api/bookings/prenotazioni-singolo-utente/' + )
       .then(response => response.json())
-      .then(prenotazioniDalServer => {
+      .then(prenotazioniSingoloUtenteDalServer => {
         console.log("*****")
-        console.log(prenotazioniDalServer)
-        setPrenotazioni(prenotazioniDalServer)
+        console.log(prenotazioniSingoloUtenteDalServer)
+        setPrenotazioni(prenotazioniSingoloUtenteDalServer)
         
       })
       .catch(err => {
