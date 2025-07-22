@@ -41,7 +41,8 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
             {prenotazioni.length ===0 ?
               <h2 className='text-center pt-3 pb-3'>Nessuna prenotazione trovata</h2>
             : prenotazioni.map((data, index) => (
-                <tr key={index} className={`${approvatoSI ? 'table-success' : 'table-danger'}`}>
+                {/* <tr key={index} className={`${approvatoSI ? 'table-success' : 'table-danger'}`}> */}
+                <tr key={index} className={`${approvatoSI ? "table-success" : ""} ${!approvatoSI ? "table-danger" : ""}`}>
 
                     <td className='pt-3'>{data.user.email}</td>
                     <td className='pt-3'>{data.anno}</td>
