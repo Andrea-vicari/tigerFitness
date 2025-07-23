@@ -19,6 +19,7 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
     
      prenot.status == "Rifiutata" ? setApprovatoNO(true) : setApprovatoNO(false)
      prenot.status == "Approvato" ? setApprovatoSI(true) : setApprovatoSI(false)
+     prenot.status == "Da approvare" ? setApprovatoSI(false) : setApprovatoSI(true)
         
       
     });
