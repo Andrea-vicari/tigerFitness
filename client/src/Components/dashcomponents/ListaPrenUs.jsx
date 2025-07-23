@@ -14,6 +14,7 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
       useEffect(() => {
       // Ciclo forEach
       prenotazioni.forEach(prenot => {
+      console.log("** DDDDDDDD ****")
       console.log(`Pippo: ${prenot.giorno}, Pluto: ${prenot.status}`);
     
      prenot.status == "Rifiutata" ? setApprovatoNO(true) : setApprovatoNO(false)
