@@ -23,7 +23,7 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
       
     });
           
-    }, []);
+    });
 
 
 
