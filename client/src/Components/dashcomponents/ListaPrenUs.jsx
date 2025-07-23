@@ -9,13 +9,15 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
     console.log(prenotazioni)
 
    const [approvatoSI, setApprovatoSI] = useState(false);
+   const [approvatoNO, setApprovatoNO] = useState(false);
     
       useEffect(() => {
       // Ciclo forEach
       prenotazioni.forEach(prenot => {
       console.log(`Pippo: ${prenot.giorno}, Pluto: ${prenot.status}`);
     
-     prenot.status == "Rifiutata" ? setApprovatoSI(false) : setApprovatoSI(true)
+     prenot.status == "Rifiutata" ? setApprovatoNO(true) : setApprovatoNO(false)
+     prenot.status == "Approvato" ? setApprovatoSI(true) : setApprovatoSI(false)
         
       
     });
@@ -42,7 +44,7 @@ const ListaPrenUs = ({ prenotazioni, loading }) => {
               <h2 className='text-center pt-3 pb-3'>Nessuna prenotazione trovata</h2>
             : prenotazioni.map((data, index) => (
                 {/* <tr key={index} className={`${approvatoSI ? 'table-success' : 'table-danger'}`}> */}
-                <tr key={index} className={`${approvatoSI ? "table-success" : ""} ${!approvatoSI ? "table-danger" : ""}`}>
+                <tr key={index} className={`${approvatoSI ? "table-success" : ""} ${approvatoNO ? "table-success" : ""}`}>
 
                     <td className='pt-3'>{data.user.email}</td>
                     <td className='pt-3'>{data.anno}</td>
