@@ -74,7 +74,7 @@ const vediApprovate = async (req, res) =>{
     res.status(200).json(prenotApprovate)
 }
 
-const updateStatusBooking = async (req, res) =>{
+const confermaPrenotazione = async (req, res) =>{
     const {status } = req.body
     const { id } = req.params;
     const singleBooking = await Bookings.findOneAndUpdate({"_id":id},{
@@ -103,7 +103,7 @@ module.exports = {
     viewAllBookings,
     createNewBooking,
     viewSingleBooking,
-    updateStatusBooking,
+    confermaPrenotazione,
     viewBookingTBA,
     vediApprovate,
     viewSingolaPren
