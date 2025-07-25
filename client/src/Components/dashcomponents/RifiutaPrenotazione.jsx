@@ -33,7 +33,7 @@ function RifiutaPrenotazione() {
 
       const makeAPICall = async () => {
         try {
-          const response = await fetch("https://pulsefit-server.vercel.app/api/bookings/vedi-singola-prenotazione/" + userID, {mode:'cors'});
+          const response = await fetch("https://pulsefit-server.vercel.app/api/bookings/vedi-singola-pren/" + userID, {mode:'cors'});
           const data = await response.json();
           setPrenotazione(data)
 
