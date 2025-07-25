@@ -192,10 +192,10 @@ function SchedaTraining(){
             <div className="modal-dialog-centered large-modal bg-dark" role="document">
               <div className="modal-content rounded-4 shadow bg-dark" >
                 <div className="modal-header d-flex justify-content-between">
-                <img src={logo} className='img-fluid'></img>
-                  <h2 className="modal-title text-white text-center">ALLENAMENTO REGISTRATO</h2>
+                  <img src={logo} style={{width: 100}} className='img-fluid'/>
+                    <h2 className="modal-title text-white text-center">ESECUZIONE REGISTRATA</h2>
 
-                </div>
+                  </div>
                 <div className="modal-body py-3 text-white">
 
                 <h4 className="text-white mt-3 fw-bold">Allenamento registrato correttamente!</h4>
