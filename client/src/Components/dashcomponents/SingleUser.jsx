@@ -27,7 +27,7 @@ function SingleUser() {
 
   const makeAPICall = async () => {
     try {
-      const response = await fetch('https://pulsefit-server.vercel.app/api/users/');
+      const response = await fetch('https://tiger-fitness.vercel.app/api/users/');
       const data = await response.json();
       setData(data)
 
