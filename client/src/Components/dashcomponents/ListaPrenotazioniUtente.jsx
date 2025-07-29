@@ -39,7 +39,7 @@ function ListaPrenotazioniUtente () {
   console.log(idUtente)
 
   useEffect(() => {
-    fetch('https://pulsefit-server.vercel.app/api/bookings/prenotazioni-singolo-utente/' + idUtente)
+    fetch('https://tiger-fitness.vercel.app/api/bookings/prenotazioni-singolo-utente/' + idUtente)
       .then(response => response.json())
       .then(prenotazioniSingoloUtenteDalServer => {
         console.log("*****")
