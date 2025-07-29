@@ -66,7 +66,7 @@ const NewBooking = () =>{
         openModal()
         const booking = {today, user, giorno, mese, anno, ora, minuto}
 
-        const response = await fetch('https://pulsefit-server.vercel.app/api/bookings', {
+        const response = await fetch('https://tiger-fitness.vercel.app/api/bookings', {
 
             method: 'POST',
             body: JSON.stringify(booking),
