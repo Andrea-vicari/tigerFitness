@@ -58,7 +58,7 @@ function SingleUser() {
 
   const makeWORKOUTCall = async () => {
       try {
-        const response = await fetch(`https://pulsefit-server.vercel.app/api/workouts/${userID}`, {mode:'cors'});
+        const response = await fetch(`https://tiger-fitness.vercel.app/api/workouts/${userID}`, {mode:'cors'});
         const work = await response.json();
         setWork(work)
 
