@@ -39,7 +39,7 @@ function CancellaUtente() {
 
 	openModal()
 
-  axios.delete(`https://tiger-fitness.vercel.app/api/users/cancella-singolo-utente/${utenteDaCancID}`)
+  axios.delete(`https://tiger-fitness-server.vercel.app/api/users/cancella-singolo-utente/${utenteDaCancID}`)
 
 
  }
