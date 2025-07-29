@@ -63,7 +63,7 @@ function RifiutaPrenotazione() {
 
         const booking = {status}
 
-        const response = await fetch("https://tiger-fitness.vercel.app/api/bookings/conferma-prenotazione/" + userID, {
+        const response = await fetch("https://tiger-fitness-server.vercel.app/api/bookings/conferma-prenotazione/" + userID, {
 
             method: 'PATCH',
             body: JSON.stringify(booking),
