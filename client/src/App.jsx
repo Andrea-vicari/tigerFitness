@@ -64,7 +64,6 @@ function App() {
             <Route path="/schedautentepage/:id" element={<SchedaUtentePage />} />
             <Route path="/conferma-prenotazione/:id" element={<ConfermaPrenotazionePage />} />
             <Route path="/rifiuta-prenotazione/:id" element={<RifiutaPrenotazionePage />} />
-            <Route path="/singleproject" element={<SingleProject />} />
             <Route path="/singleuser/:id" element={user ? <SingleUserPage /> : <Navigate to="/login"/>} />
             <Route path="/*" element={<Error404 />} />
             <Route path="/login" element={user ? <Navigate to="/dashboardpage"/> : <LoginPage />} />
