@@ -26,7 +26,7 @@ console.log(process.cwd())
 app.use(cors(
     {
         // Use this in production (DO NOT PUT FINAL SLASH!!) //
-        origin: ["https://tiger-fitness.vercel.app/"],
+        origin: ["https://tiger-fitness.vercel.app"],
         methods: ["POST", "GET", "PUT", "PATCH", "DELETE"],
         credentials: true
 
