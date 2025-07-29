@@ -11,7 +11,7 @@ export const useLogin = () =>{
         setisLoading(true)
         setError(null)
 
-        const response = await fetch('https://tiger-fitness.vercel.app/api/users/login', {
+        const response = await fetch('https://tiger-fitness-server.vercel.app/api/users/login', {
             mode:"cors",
             method: 'POST',
             body: JSON.stringify({email, password}),
