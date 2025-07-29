@@ -28,7 +28,7 @@ function ListaPrenotazioniTrainer () {
   const [postsPerPage, setPostsPerPage] = useState(5);
 
   useEffect(() => {
-    fetch('https://tiger-fitness.vercel.app/api/bookings/prenotazioni-da-approvare/')
+    fetch('https://tiger-fitness-server.vercel.app/api/bookings/prenotazioni-da-approvare/')
       .then(response => response.json())
       .then(prenotazioniDalServer => {
         console.log("*****")
