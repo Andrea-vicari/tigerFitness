@@ -20,7 +20,7 @@ function UserProfile() {
 
     const makeUSERCall = async () => {
         try {
-          const response = await fetch('https://tiger-fitness.vercel.app/api/users/');
+          const response = await fetch('https://tiger-fitness-server.vercel.app/api/users/');
           const data = await response.json();
           setData(data)
 
@@ -63,7 +63,7 @@ function UserProfile() {
           setLoading(true);
           const data = new FormData();
           data.append("my_file", file);
-          const res = await axios.post("https://tiger-fitness.vercel.app/api/users/upload", data);
+          const res = await axios.post("https://tiger-fitness-server.vercel.app/api/users/upload", data);
           setRes(res.data);
           urlImmagine = res.data.secure_url
           setImmagineUrl(urlImmagine)
@@ -100,8 +100,8 @@ function UserProfile() {
     };
 
     axios
-      //.patch(`https://pulsefit-server.vercel.app/api/users/aggiungi-immagine-utente/6654d16cc3e78209fb9b37de`, data)
-      .patch("https://tiger-fitness.vercel.app/api/users/aggiungi-immagine-utente/" + singleID, data)
+      //.patch(`https://tiger-fitness-server.vercel.app/api/users/aggiungi-immagine-utente/6654d16cc3e78209fb9b37de`, data)
+      .patch("https://tiger-fitness-server.vercel.app/api/users/aggiungi-immagine-utente/" + singleID, data)
       .then((res) => {
         navigate(`/dashboardpage`);
       })
