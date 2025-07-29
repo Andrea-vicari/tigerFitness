@@ -5,7 +5,7 @@ Repo for Fitness Center React Application.\
 Both FrontEnd and Back End deployed on Vercel platform.
 
  ### Demo
-👉 Live Deployment <a href="https://pulsefit-client.vercel.app/" target="_blank" > VERCEL</a>\
+👉 Live Deployment <a href="https://tiger-fitness.vercel.app/" target="_blank" > VERCEL</a>\
 👉 Video Demo on <a href="https://youtu.be/Gjjc0ujPXWE?feature=shared" target="_blank" > YouTube</a>
 
 ### User-Test
