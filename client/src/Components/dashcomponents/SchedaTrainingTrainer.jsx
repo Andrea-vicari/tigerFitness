@@ -20,7 +20,7 @@ function SchedaTrainingTrainer(){
 
     const makeAPICall = async () => {
         try {
-          const response = await fetch(`https://tiger-fitness.vercel.app/api/workouts`, {mode:'cors'});
+          const response = await fetch(`https://tiger-fitness-server.vercel.app/api/workouts`, {mode:'cors'});
           const data = await response.json();
           setData(data)
 
