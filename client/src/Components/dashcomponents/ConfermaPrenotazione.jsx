@@ -33,7 +33,7 @@ function ConfermaPrenotazione() {
 
       const makeAPICall = async () => {
         try {
-          const response = await fetch("https://tiger-fitness.vercel.app/api/bookings/vedi-singola-pren/" + userID, {mode:'cors'});
+          const response = await fetch("https://tiger-fitness-server.vercel.app/api/bookings/vedi-singola-pren/" + userID, {mode:'cors'});
           const data = await response.json();
           setPrenotazione(data)
 
@@ -63,7 +63,7 @@ function ConfermaPrenotazione() {
 
         const booking = {status}
 
-        const response = await fetch("https://tiger-fitness.vercel.app/api/bookings/conferma-prenotazione/" + userID, {
+        const response = await fetch("https://tiger-fitness-server.vercel.app/api/bookings/conferma-prenotazione/" + userID, {
 
             method: 'PATCH',
             body: JSON.stringify(booking),
