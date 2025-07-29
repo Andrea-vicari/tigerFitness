@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState} from 'react';
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/pulseFit_logo_footer.svg"
+import logo from "../../assets/images/tiger-fitness-logo.svg"
 
 function Footer() {
 
