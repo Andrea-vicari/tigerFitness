@@ -68,7 +68,7 @@ function SchedaTrainingTrainer(){
 
         const workout = {status, dataChiusura}
 
-        const response = await fetch(`https://tiger-fitness.vercel.app/api/workouts/${title}`, {
+        const response = await fetch(`https://tiger-fitness-server.vercel.app/api/workouts/${title}`, {
 
             method: 'PATCH',
             body: JSON.stringify(workout),
