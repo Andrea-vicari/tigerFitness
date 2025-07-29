@@ -55,8 +55,6 @@ function App() {
       <ScrollToTop>
         <Routes>
             <Route path="/" element={!user ? <LoginPage /> : <Navigate to="/dashboardpage"/>} />
-            <Route path="/servizi" element={<ServicePage />} />
-            <Route path="/contatti" element={<ContactPage />} />
             <Route path="/faqpage" element={<FaqPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/newtraining/:id" element={<NewTrainingPage />} />
