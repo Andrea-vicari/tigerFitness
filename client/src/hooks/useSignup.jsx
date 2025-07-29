@@ -11,7 +11,7 @@ export const useSignup = () =>{
         setisLoading(true)
         setError(null)
 
-        const response = await fetch('https://pulsefit-server.vercel.app/api/users/signup', {
+        const response = await fetch('https://tiger-fitness.vercel.app/api/users/signup', {
 
             method: 'POST',
             body: JSON.stringify({email, password, username}),
