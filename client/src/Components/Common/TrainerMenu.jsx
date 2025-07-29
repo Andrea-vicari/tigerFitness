@@ -35,9 +35,6 @@ function TrainerMenu() {
                 <Link className={splitLocation[1] == "userslist" ? "active nav-link fs-6" : "nav-link fs-6"} to={'/userslist'}>Aggiungi Workout</Link>
               </li>
               <li className="nav-item">
-                <Link className={splitLocation[1] == "userslist" ? "active nav-link fs-6" : "nav-link fs-6"} to={'/calendario'}>Calendario</Link>
-              </li>
-              <li className="nav-item">
                 <Link className={splitLocation[1] == "elencoprenotazionitrainer" ? "active nav-link fs-6" : "nav-link fs-6"} to={'/elencoprenotazionitrainer'}>Prenotazioni da confermare</Link>
               </li>
 
