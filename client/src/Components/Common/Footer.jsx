@@ -31,7 +31,7 @@ function Footer() {
     <div className='container-fluid bg-primary py-4'>
       <div className="container">
         <footer className="d-flex flex-wrap justify-content-between align-items-center">
-          <p className="col-md-4 mb-0 text-white">© 2025 Pulse Fit</p>
+          <p className="col-md-4 mb-0 text-white">© 2025 Tiger Fitness</p>
 
           <Link className="navbar-brand d-flex" to={'/'}>
             <img src={logo} style={{width:150}}/>
