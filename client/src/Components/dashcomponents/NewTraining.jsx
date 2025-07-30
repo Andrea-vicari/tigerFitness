@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../assets/images/pulseFit_logo.svg";
+import logo from "../../assets/images/tiger-fitness-logo.svg";
 import { useSelector } from 'react-redux'
 
 var userID
