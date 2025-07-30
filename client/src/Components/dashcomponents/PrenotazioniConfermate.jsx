@@ -120,8 +120,6 @@ function PrenotazioniConfermate () {
                   <th scope="col">Ora</th>
                   <th scope="col">Minuto</th>
                   <th scope="col">Status</th>
-                  <th scope="col">Approva</th>
-                  <th scope="col">Rifiuta</th>
                   
                 </tr>
               </thead>
