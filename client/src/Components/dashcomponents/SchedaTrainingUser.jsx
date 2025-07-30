@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useState, useEffect } from "react"
 import { UseAuthContext } from "../../hooks/UseAuthContext"
-import logo from "../../assets/images/pulseFit_logo.svg";
+import logo from "../../assets/images/tiger-fitness-logo.svg";
 import { useSelector } from 'react-redux'
 import Cronometro from './Cronometro';
 
