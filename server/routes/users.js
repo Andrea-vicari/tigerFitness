@@ -9,6 +9,7 @@ const router = express.Router();
 async function handleUpload(file) {
 
     const res = await cloudinary.uploader.upload(file, {
+	folder: 'Tiger_Fitness',
     resource_type: "auto",
     });
     console.log(res)
