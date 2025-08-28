@@ -4,8 +4,7 @@ const mongoose = require('mongoose');
 // Get all AllenamentiSingoli: OK
 const vediAllenamentoSingolo = async (req, res)=> {
 
-    console.log("Req from /")
-    console.log("View all AllenamentiSingoli")
+    console.log("**** Richiesta visione di singolo allenamento ***** ")
 
 
 }
@@ -14,8 +13,7 @@ const vediAllenamentoSingolo = async (req, res)=> {
 const creaAllenamentoSingolo = async (req, res)=> {
 
 
-    console.log("Req from /")
-    console.log("View all AllenamentiSingoli")
+console.log("**** Richiesta visione di singolo allenamento ***** ")
 
 }
 
