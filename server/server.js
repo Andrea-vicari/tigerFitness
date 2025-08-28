@@ -44,7 +44,7 @@ mongoose.connect(process.env.MONGODB_URI)
     })
 
 const workoutsRoutes = require('./routes/workouts');
-const singoloAllenamentoRoutes = require('./routes/singoloAllenamento');
+const singoloAllenamentoRoutes = require('./routes/singoloAllenamentoRoutes');
 const usersRoutes = require('./routes/users');
 const bookingsRoutes = require('./routes/bookings');
 
