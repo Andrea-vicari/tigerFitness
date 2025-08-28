@@ -61,4 +61,4 @@ const singoloAllenamentoSchema = new mongoose.Schema({
 },{ timestamps:true })
 
 
-module.exports = mongoose.model("WorkoutModel", singoloAllenamentoSchema);
+module.exports = mongoose.model("singoloAllenamentoModel", singoloAllenamentoSchema);
