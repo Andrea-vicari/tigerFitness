@@ -1,14 +1,14 @@
-const Workouts = require('../models/SingoloAllenamentoModel');
+const AllenamentiSingoli = require('../models/SingoloAllenamentoModel');
 const mongoose = require('mongoose');
 
-// Get all workouts: OK
+// Get all AllenamentiSingoli: OK
 const vediAllenamentoSingolo = async (req, res)=> {
 
     console.log("Req from /")
-    console.log("View all workouts")
+    console.log("View all AllenamentiSingoli")
 
-    const allWorkouts = await Workouts.find({}).sort({createdAt: -1});
-    res.status(200).json(allWorkouts)
+    const allenamentiSingoli = await AllenamentiSingoli.find({}).sort({createdAt: -1});
+    res.status(200).json(allAllenamentiSingoli)
 
 }
 
@@ -26,8 +26,8 @@ const creaAllenamentoSingolo = async (req, res)=> {
     // Add doc to the Mongo DB
 
     try{
-        const workout = await Workouts.create({today, user, title, series, reps, rest, loads, status, notaAllenamento, tipologia})
-        res.status(200).json(workout)
+        const allenamentoSingolo = await AllenamentiSingoli.create({today, user, title, series, reps, rest, loads, status, notaAllenamento, tipologia})
+        res.status(200).json(allenamentoSingolo)
     }
 
     catch(error){
