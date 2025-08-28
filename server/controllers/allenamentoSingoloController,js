@@ -2,7 +2,7 @@ const Workouts = require('../models/WorkoutModel');
 const mongoose = require('mongoose');
 
 // Get all workouts: OK
-const viewAllWorkouts = async (req, res)=> {
+const vediAllenamentoSingolo = async (req, res)=> {
 
     console.log("Req from /")
     console.log("View all workouts")
@@ -13,7 +13,7 @@ const viewAllWorkouts = async (req, res)=> {
 }
 
 // Create a NEW workout:
-const createNewWorkOut = async (req, res)=> {
+const creaAllenamentoSingolo = async (req, res)=> {
 
 
     const {today, user, title, series, reps, rest, loads, status, notaAllenamento, tipologia} = req.body
@@ -41,6 +41,7 @@ const createNewWorkOut = async (req, res)=> {
 
 
 module.exports = {
-    createNewWorkOut
+    vediAllenamentoSingolo,
+    creaAllenamentoSingolo  
     
 }
