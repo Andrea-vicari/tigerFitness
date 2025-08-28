@@ -1,6 +1,6 @@
 const express = require('express');
 
-const {creaAllenamentoSingolo} = require('../controllers/creaAllenamentoSingolo');
+const {creaAllenamentoSingolo} = require('../controllers/creaAllenamentoSingoloController');
 
 
 const router = express.Router();
