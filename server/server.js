@@ -44,14 +44,18 @@ mongoose.connect(process.env.MONGODB_URI)
     })
 
 const workoutsRoutes = require('./routes/workouts');
+const singoloAllenamentoRoutes = require('./routes/singoloAllenamento');
 const usersRoutes = require('./routes/users');
 const bookingsRoutes = require('./routes/bookings');
 
 app.use(workoutsRoutes)
 app.use(usersRoutes)
 app.use(bookingsRoutes)
+app.use(singoloAllenamentoRoutes)
+
 
 app.use('/api/workouts', workoutsRoutes)
+app.use('/api/singoloAllenamento', singoloAllenamentoRoutes)
 app.use('/api/users', usersRoutes)
 app.use('/api/bookings', bookingsRoutes)
 
