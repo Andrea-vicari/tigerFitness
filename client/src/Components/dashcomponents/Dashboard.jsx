@@ -23,6 +23,7 @@ function Dashboard() {
     const {user} = UseAuthContext()
 
     console.log(role)
+    console.log(user)
 
     return (
         <React.Fragment>
