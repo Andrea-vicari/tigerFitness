@@ -24,7 +24,7 @@ function Dashboard() {
 
     console.log(role)
     console.log("**** /// ***")
-    console.log(user)
+    console.log(user.user_id)
 
     return (
         <React.Fragment>
