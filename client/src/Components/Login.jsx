@@ -28,7 +28,7 @@ function Login() {
     <React.Fragment>
         <section className={"light-typo py-5 call-to-action"+ " " + bgType + " " + textType}>
 
-        <div className="container-fluid px-5">
+        <div className="container-fluid pz-5 pz-sm-3 px-lg-1">
           <div className='container py-5'>
             <div className="row d-flex align-items-center">
               <div className="col-sm-6">
