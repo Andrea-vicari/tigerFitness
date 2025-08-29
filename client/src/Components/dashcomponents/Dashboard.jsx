@@ -37,7 +37,7 @@ function Dashboard() {
                       <div className="container">
                         <div className="row mb-3">
                             <div className="col-md-3">
-                                <h2 className="fw-bold text-body-emphasis">Area Gestionale</h2>
+                         
                                 <UserProfile />
 
                             </div>
