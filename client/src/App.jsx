@@ -30,6 +30,7 @@ import RifiutaPrenotazionePage from './pages/dashpages/RifiutaPrenotazionePage';
 import ElencoPrenotazioniUtentePage from './pages/dashpages/ElencoPrenotazioniUtentePage';
 import ElencoPrenotazioniTrainerPage from './pages/dashpages/ElencoPrenotazioniTrainerPage';
 import PrenotazioniConfermatePage from './pages/dashpages/PrenotazioniConfermatePage';
+import TuttiWokoutPage from './pages/dashpages/TuttiWokoutPage';
 
 function App() {
 
@@ -78,6 +79,7 @@ function App() {
             <Route path="/resetpassword" element={<ResetPassword />} />
             <Route path="/sentpassword" element={<SentPassword />} />
             <Route path="/newpassword/:token" element={<NewPassword />} />
+            <Route path="/vedi-tutti-allenamenti" element={<TuttiWokoutPage />} />
         </Routes>
         </ScrollToTop>
 
