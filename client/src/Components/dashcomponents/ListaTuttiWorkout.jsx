@@ -52,10 +52,11 @@ function ListaTuttiWorkout() {
   const resettaRicerca = () =>{
      setNomeFilter('')
   }
-
+  /*
   const filteredUtenti = utenti.filter((product) =>
     product.username.toLowerCase().includes(nomeFilter.toLowerCase())
   );
+  */
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
