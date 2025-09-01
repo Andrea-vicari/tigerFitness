@@ -102,6 +102,19 @@ function Dashboard() {
                                     </div>
 
                                 </div>
+                                 <div className={"p-3 border rounded-3 mb-2" + " " + bgType}>
+                                    <div className='row'>
+                                        <div className="col-md-3">
+                                            <img src={newTrainingImg} className="img-fluid rounded mb-2"/>
+                                            </div>
+                                            <div className="col-md-6">
+                                                <h2>Tutti i Workout</h2>
+                                                <p>Vedi l'elenco completo degli utenti da dove potrai vedere/aggiungere i workout di ogni singolo utente </p>
+                                                <Link to="/userslist" type="button" className="btn btn-sm btn-outline-primary">Vedi tutti i Workout</Link>
+                                            </div>
+                                    </div>
+
+                                </div>
                             </div>}
 
                             {/** Below only for USERS */}
