@@ -29,7 +29,7 @@ function ListaTuttiWorkout() {
   const [postsPerPage, setPostsPerPage] = useState(5);
 
   useEffect(() => {
-    fetch('https://tiger-fitness-server.vercel.app/api/users/')
+    fetch('https://tiger-fitness-server.vercel.app/api/workouts/')
       .then(response => response.json())
       .then(utentiDalServer => {
         console.log("*****")
