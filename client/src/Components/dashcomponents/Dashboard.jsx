@@ -109,7 +109,7 @@ function Dashboard() {
                                             </div>
                                             <div className="col-md-6">
                                                 <h2>Tutti i Workout</h2>
-                                                <p>Vedi l'elenco completo degli utenti da dove potrai vedere/aggiungere i workout di ogni singolo utente </p>
+                                                <p>Vedi l'elenco completo di tutti i workout</p>
                                                 <Link to="/vedi-tutti-allenamenti" type="button" className="btn btn-sm btn-outline-primary">Vedi tutti i Workout</Link>
                                             </div>
                                     </div>
