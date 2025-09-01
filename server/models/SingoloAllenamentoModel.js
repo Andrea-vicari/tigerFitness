@@ -13,7 +13,7 @@ const singoloAllenamentoSchema = new mongoose.Schema({
             type: String,
             required: false,
             default: "file_1715325537969.png"
-        }
+        },
     title:{
         type: String,
         required: true
