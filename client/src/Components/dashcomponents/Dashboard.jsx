@@ -102,19 +102,7 @@ function Dashboard() {
                                     </div>
 
                                 </div>
-                                 <div className={"p-3 border rounded-3 mb-2" + " " + bgType}>
-                                    <div className='row'>
-                                        <div className="col-md-3">
-                                            <img src={newTrainingImg} className="img-fluid rounded mb-2"/>
-                                            </div>
-                                            <div className="col-md-6">
-                                                <h2>Tutti i Workout</h2>
-                                                <p>Vedi l'elenco completo di tutti i workout</p>
-                                                <Link to="/vedi-tutti-allenamenti" type="button" className="btn btn-sm btn-outline-primary">Vedi tutti i Workout</Link>
-                                            </div>
-                                    </div>
 
-                                </div>
                             </div>}
 
                             {/** Below only for USERS */}
