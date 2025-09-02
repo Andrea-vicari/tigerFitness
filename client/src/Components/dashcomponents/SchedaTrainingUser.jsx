@@ -106,7 +106,7 @@ function SchedaTraining(){
             {singleTraining.map((e)=>{
             return(
               <div className='container mx-auto' key={e._id}>
-                <div className="card border-none mb-3 rounded-3 w-75 border-0 mx-auto" key={e._id}>
+                <div className="card border-none mb-3 rounded-3 pz-5 pz-sm-3 px-lg-1 border-0 mx-auto" key={e._id}>
                   <div className="card-header py-3 text-bg-danger">
                     <h1 className="my-0 fs-1">{e.title}</h1>
                     <h3 className="my-0 fs-4">TIPOLOGIA: {e.tipologia}</h3>
